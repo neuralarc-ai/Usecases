@@ -1,7 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import DetailCard from "@/components/detail-card";
-import { RiCheckboxCircleLine, RiTimeLine, RiShieldLine, RiBarChartLine, RiFocus3Line } from "react-icons/ri";
+import { RiCheckboxCircleLine, RiTimeLine, RiShieldLine, RiBarChartLine, RiFocus3Line, RiArrowLeftLine } from "react-icons/ri";
 
 interface Metric {
   icon: React.ComponentType<{ className?: string }>;
@@ -57,8 +58,18 @@ const solutions: Solution[] = [
 export default function FinanceOperationsPage() {
   return (
     <main>
-      <section className="relative pt-8 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 pb-20">
+      <section className="relative pt-24 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 pb-20">
         <div className="relative z-10 mx-auto max-w-6xl">
+          {/* Back Button */}
+          <Link 
+            href="/use-cases"
+            className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors mb-6 text-sm font-medium"
+            style={{ fontFamily: "var(--font-manrope)" }}
+          >
+            <RiArrowLeftLine className="w-4 h-4" />
+            Back to Industries
+          </Link>
+          
           {/* Header */}
           <div className="mb-8">
             <h1 className="text-2xl font-bold text-white mb-2 md:text-3xl" style={{ fontFamily: "var(--font-sora)" }}>
@@ -70,7 +81,7 @@ export default function FinanceOperationsPage() {
           </div>
           
           {/* Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {solutions.map((solution) => (
               <DetailCard
                 key={solution.number}
