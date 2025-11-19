@@ -27,7 +27,10 @@ export default function Navbar() {
               alt="Logo"
               width={40}
               height={40}
-              className="h-10 w-auto"
+              className={cn(
+                "h-10 w-auto transition-all duration-300",
+                pathname === "/why-helium" && "brightness-0"
+              )}
               priority
             />
           </Link>
