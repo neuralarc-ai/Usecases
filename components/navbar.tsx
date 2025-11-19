@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Features", href: "/features" },
-  { name: "UseCases", href: "/usecases" },
+  { name: "UseCases", href: "/use-cases" },
   { name: "Why Helium", href: "/why-helium" },
 ];
 

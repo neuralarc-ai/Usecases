@@ -1,0 +1,116 @@
+"use client";
+
+import DetailCard from "@/components/detail-card";
+import { RiTimeLine, RiUserLine, RiCheckboxCircleLine, RiArrowDownLine, RiCalendarLine, RiEmotionHappyLine } from "react-icons/ri";
+
+interface Metric {
+  icon: React.ComponentType<{ className?: string }>;
+  text: string;
+}
+
+interface Solution {
+  number: number;
+  title: string;
+  description: string;
+  metrics: Metric[];
+}
+
+const solutions: Solution[] = [
+  {
+    number: 1,
+    title: "AI-Powered Resume Screening & Candidate Matching",
+    description: "Reduce screening time by 85% and identify 40% more qualified candidates",
+    metrics: [
+      { icon: RiTimeLine, text: "85% Reduction in screening time" },
+      { icon: RiUserLine, text: "40% More qualified candidates identified" }
+    ]
+  },
+  {
+    number: 2,
+    title: "Intelligent Employee Onboarding Automation",
+    description: "Cut onboarding time by 70% and improve new hire satisfaction by 35%",
+    metrics: [
+      { icon: RiTimeLine, text: "70% Reduction in onboarding time" },
+      { icon: RiCheckboxCircleLine, text: "95% Compliance rate for training" }
+    ]
+  },
+  {
+    number: 3,
+    title: "Predictive Employee Retention Analytics",
+    description: "Reduce turnover by 30% with 6-month advance warning for at-risk employees",
+    metrics: [
+      { icon: RiArrowDownLine, text: "30% Reduction in voluntary turnover" },
+      { icon: RiCalendarLine, text: "6 months Advance warning for at-risk employees" }
+    ]
+  },
+  {
+    number: 4,
+    title: "Automated Performance Review & Goal Tracking",
+    description: "Reduce review preparation by 75% and increase goal achievement by 40%",
+    metrics: [
+      { icon: RiTimeLine, text: "75% Reduction in preparation time" },
+      { icon: RiEmotionHappyLine, text: "90% Employee satisfaction with reviews" }
+    ]
+  },
+  {
+    number: 5,
+    title: "Compliance Training Automation & Certification",
+    description: "Achieve 100% compliance tracking with 50% reduction in training time",
+    metrics: [
+      { icon: RiCheckboxCircleLine, text: "100% Compliance tracking accuracy" },
+      { icon: RiTimeLine, text: "50% Reduction in training time" }
+    ]
+  }
+];
+
+export default function HumanResourcesPage() {
+  return (
+    <main>
+      <section className="relative pt-8 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 pb-20">
+        <div className="relative z-10 mx-auto max-w-6xl">
+          {/* Header */}
+          <div className="mb-8">
+            <h1 className="text-2xl font-bold text-white mb-2 md:text-3xl" style={{ fontFamily: "var(--font-sora)" }}>
+              Human Resources
+            </h1>
+            <p className="text-base text-white/80 leading-relaxed max-w-3xl" style={{ fontFamily: "var(--font-manrope)" }}>
+              Transform talent management with AI-powered recruitment, onboarding, and retention solutions
+            </p>
+          </div>
+          
+          {/* Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+            {solutions.slice(0, 3).map((solution) => (
+              <DetailCard
+                key={solution.number}
+                number={solution.number}
+                title={solution.title}
+                description={solution.description}
+                metrics={solution.metrics}
+              />
+            ))}
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 items-stretch">
+            <div className="md:col-start-1 md:col-end-2 flex">
+              <DetailCard
+                number={solutions[3].number}
+                title={solutions[3].title}
+                description={solutions[3].description}
+                metrics={solutions[3].metrics}
+              />
+            </div>
+            <div className="md:col-start-2 md:col-end-3 flex">
+              <DetailCard
+                number={solutions[4].number}
+                title={solutions[4].title}
+                description={solutions[4].description}
+                metrics={solutions[4].metrics}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
+
