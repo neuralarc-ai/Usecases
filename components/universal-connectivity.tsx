@@ -72,32 +72,35 @@ export default function UniversalConnectivity() {
           <div className="relative h-96 lg:h-[500px]">
             {appIcons.map((app, index) => {
               const positions = [
-                { top: '10%', left: '20%' },
-                { top: '25%', right: '15%' },
-                { top: '45%', left: '10%' },
-                { top: '60%', right: '20%' },
-                { top: '15%', left: '50%' },
-                { top: '70%', left: '40%' },
-                { top: '35%', right: '5%' },
-                { top: '80%', right: '10%' },
+                { top: '10%', left: '25%', rotate: '-5deg' },  //Gmail
+                { top: '32%', right: '35%', rotate: '8deg' },  //Notion
+                { top: '12%', left: '45%', rotate: '5deg' },  //Slack
+                { top: '45%', left: '25%', rotate: '6deg' },  //Outlook
+                { top: '65%', right: '40%', rotate: '-8deg' },  //Teams
+                { top: '65%', left: '25%', rotate: '10deg' },  //Dropbox
+                { top: '30%', right: '15%', rotate: '-6deg' },  //Supabase
+                { top: '50%', right: '15%', rotate: '12deg' },  //Zoho
               ]
               const position = positions[index % positions.length]
               
               return (
                 <div
                   key={index}
-                  className="absolute w-16 h-16 rounded-lg bg-gray-100 border-2 border-gray-200 flex items-center justify-center transition-all duration-300 hover:scale-110 group cursor-pointer"
+                  className="absolute w-20 h-20 rounded-xl bg-gray-100 border border-gray-700/50 flex items-center justify-center transition-all duration-300 group cursor-pointer backdrop-blur-sm"
                   style={{
-                    ...position,
+                    top: position.top,
+                    left: position.left,
+                    right: position.right,
+                    transform: `rotate(${position.rotate})`,
                   }}
                 >
                   <div 
-                    className="relative w-10 h-10 opacity-60 group-hover:opacity-100 transition-all duration-300"
+                    className={`relative opacity-70 group-hover:opacity-100 transition-all duration-300 ${app.name === 'Gmail' ? 'w-14 h-14' : 'w-12 h-12'}`}
                     style={{
                       filter: 'none',
                     }}
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.filter = `drop-shadow(0 0 8px ${app.color}) drop-shadow(0 0 12px ${app.color}) brightness(1.2)`
+                      e.currentTarget.style.filter = `drop-shadow(0 0 0px ${app.color})`
                     }}
                     onMouseLeave={(e) => {
                       e.currentTarget.style.filter = 'none'
