@@ -1,0 +1,45 @@
+"use client";
+
+import CaseDetail from "@/components/case-detail";
+import { RiTimeLine, RiBarChartLine, RiCheckboxCircleLine, RiMoneyDollarCircleLine } from "react-icons/ri";
+
+export default function Case2Page() {
+  return (
+    <CaseDetail
+      title="Intelligent Customer Onboarding & KYC"
+      backHref="/use-cases/operations"
+      backLabel="Back to Operations"
+      businessChallenge={{
+        title: "Business Challenge",
+        description: "Customer onboarding and Know Your Customer (KYC) processes take 5-7 days, involving manual document collection (ID, proof of address, financial statements), identity verification, background checks, sanctions screening, risk assessment, account setup, and product enrollment. Manual processes lead to 30% customer abandonment during onboarding, compliance risks from incomplete KYC, regulatory fines ($500K-$2M per violation), poor customer experience, high operational costs ($150+ per customer), and delayed revenue recognition."
+      }}
+      heliumSolution={{
+        title: "Helium Solution",
+        description: "Helium automates customer onboarding end-to-end. The system enables digital document collection through mobile app capture, document upload portal, email submission, and API integration with verification services, uses AI-powered verification (identity document validation, facial recognition matching, address verification, document authenticity checks), automates screening against sanctions lists (OFAC, UN, EU), PEP databases, adverse media, criminal records, and credit checks, performs risk assessment with customer risk scoring and product suitability, automatically provisions accounts (account creation, product enrollment, card issuance, online banking setup), and creates compliance documentation with KYC file creation, audit trail, regulatory reporting, and periodic review scheduling."
+      }}
+      metrics={[
+        {
+          icon: RiTimeLine,
+          value: "80%",
+          label: "Reduction in onboarding time"
+        },
+        {
+          icon: RiBarChartLine,
+          value: "70%",
+          label: "Reduction in customer abandonment"
+        },
+        {
+          icon: RiCheckboxCircleLine,
+          value: "100%",
+          label: "KYC compliance"
+        },
+        {
+          icon: RiMoneyDollarCircleLine,
+          value: "$4.5M",
+          label: "Annual revenue increase"
+        }
+      ]}
+    />
+  );
+}
+

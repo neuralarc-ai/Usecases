@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { RiBankLine, RiShieldLine, RiShoppingCartLine, RiTeamLine, RiToolsLine } from "react-icons/ri";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/tabs";
 import BankingFinanceSection from "@/components/industry-sections/banking-finance";
@@ -26,25 +27,39 @@ const industries: IndustryTab[] = [
 export default function UseCasesPage() {
   return (
     <main>
-      <section className="relative pt-20 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 pb-20">
-        <div className="relative z-10 mx-auto max-w-4xl">
-          {/* Centered Content */}
-          <div className="text-center mb-12">
-            <h1 className="mb-6 text-5xl font-bold leading-tight text-white md:text-7xl lg:text-8xl" style={{ fontFamily: "var(--font-sora)" }}>
+      {/* Hero Section with Background Image */}
+      <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden pt-24 pb-24">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/use-case-hero.png"
+            alt="Use Cases Hero Background"
+            fill
+            className="object-cover"
+            priority
+          />
+          {/* Overlay for better text readability */}
+          <div className="absolute inset-0 bg-[#FBFAF8]/60"></div>
+        </div>
+
+        {/* Centered Content */}
+        <div className="relative z-10 w-full mx-auto max-w-5xl px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          <div className="flex flex-col items-center justify-center text-center">
+            <h1 className="mb-8 text-5xl font-bold leading-tight text-gray-900 md:text-7xl lg:text-8xl" style={{ fontFamily: "var(--font-sora)" }}>
               Helium Across Industries
             </h1>
-            <h2 className="mb-6 text-2xl leading-relaxed text-white md:text-3xl lg:text-4xl font-medium" style={{ fontFamily: "var(--font-manrope)" }}>
+            <h2 className="max-w-4xl mx-auto text-2xl leading-relaxed text-gray-700 md:text-3xl lg:text-4xl font-medium" style={{ fontFamily: "var(--font-manrope)" }}>
               Discover how leading organizations use Helium to transform operations, reduce costs, and accelerate growth across every department.
             </h2>
           </div>
         </div>
-        
-        {/* Horizontal Divider - Full Screen */}
-        <hr className="w-full border-gray-500 border-t opacity-50 my-12" />
-        
+      </section>
+      
+      {/* Content Section */}
+      <section className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-10">
         {/* Left-aligned Header */}
-        <div className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 mb-8">
-          <h3 className="text-left text-xl font-bold text-white md:text-2xl lg:text-3xl mb-6" style={{ fontFamily: "var(--font-sora)" }}>
+        <div className="mb-8">
+          <h3 className="text-left text-xl font-bold text-gray-900 md:text-2xl lg:text-3xl mb-6" style={{ fontFamily: "var(--font-sora)" }}>
             AI Solutions for Your Industry:
           </h3>
           
@@ -53,8 +68,8 @@ export default function UseCasesPage() {
             <Tabs defaultValue="banking" className="w-full">
               <TabsList 
                 className="
-                  overflow-hidden inline-flex w-auto rounded-4xl h-14 p-1.5 gap-1.5 border border-white/5
-                  bg-[rgba(255,255,255,0.05)] backdrop-blur-[20px]
+                  overflow-hidden inline-flex w-auto rounded-4xl h-14 p-1.5 gap-1.5 border border-gray-300
+                  bg-white backdrop-blur-[20px] shadow-sm
                 "
               >
                 {industries.map((industry) => {
@@ -66,8 +81,8 @@ export default function UseCasesPage() {
                       className="
                         relative flex items-center justify-center gap-2.5 rounded-4xl px-5 py-2.5 h-auto
                         text-base font-medium transition-all duration-300 ease-out cursor-pointer whitespace-nowrap
-                        text-white/60 hover:bg-white/8 hover:text-white/85
-                        data-[state=active]:text-white data-[state=active]:bg-[#27272a]
+                        text-gray-600 hover:bg-gray-100 hover:text-gray-900
+                        data-[state=active]:text-gray-900 data-[state=active]:bg-gray-200
                       "
                     >
                       <Icon className="h-5 w-5 shrink-0" />

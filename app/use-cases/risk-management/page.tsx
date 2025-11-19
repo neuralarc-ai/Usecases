@@ -72,7 +72,7 @@ export default function RiskManagementPage() {
           {/* Back Button */}
           <Link 
             href="/use-cases"
-            className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors mb-6 text-sm font-medium"
+            className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors mb-6 text-sm font-medium"
             style={{ fontFamily: "var(--font-manrope)" }}
           >
             <RiArrowLeftLine className="w-4 h-4" />
@@ -81,10 +81,10 @@ export default function RiskManagementPage() {
           
           {/* Header */}
           <div className="mb-8">
-            <h1 className="text-2xl font-bold text-white mb-2 md:text-3xl" style={{ fontFamily: "var(--font-sora)" }}>
+            <h1 className="text-2xl font-bold text-gray-900 mb-2 md:text-3xl" style={{ fontFamily: "var(--font-sora)" }}>
               Risk Management
             </h1>
-            <p className="text-base text-white/80 leading-relaxed max-w-3xl" style={{ fontFamily: "var(--font-manrope)" }}>
+            <p className="text-base text-gray-700 leading-relaxed max-w-3xl" style={{ fontFamily: "var(--font-manrope)" }}>
               Real-time risk assessment, portfolio optimization, and regulatory capital management.
             </p>
           </div>
@@ -98,6 +98,7 @@ export default function RiskManagementPage() {
                 title={solution.title}
                 description={solution.description}
                 metrics={solution.metrics}
+                href={`/use-cases/risk-management/case-${solution.number}`}
               />
             ))}
           </div>
@@ -108,6 +109,7 @@ export default function RiskManagementPage() {
                 title={solutions[3].title}
                 description={solutions[3].description}
                 metrics={solutions[3].metrics}
+                href={`/use-cases/risk-management/case-${solutions[3].number}`}
               />
             </div>
             <div className="md:col-start-2">
@@ -116,6 +118,7 @@ export default function RiskManagementPage() {
                 title={solutions[4].title}
                 description={solutions[4].description}
                 metrics={solutions[4].metrics}
+                href={`/use-cases/risk-management/case-${solutions[4].number}`}
               />
             </div>
           </div>

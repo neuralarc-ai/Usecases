@@ -9,57 +9,43 @@ interface SolutionCardProps {
 
 export default function SolutionCard({ icon: Icon, title, description, href }: SolutionCardProps) {
   const CardContent = (
-    <>
-      <div className="flex items-start justify-between mb-4">
-        <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center shrink-0">
-          <Icon className="w-6 h-6 text-white" />
-        </div>
-        <div className="w-6 h-6 flex items-center justify-center">
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            width="24" 
-            height="24" 
-            viewBox="0 0 24 24" 
-            fill="none" 
-            strokeWidth="2" 
-            strokeLinecap="round" 
-            strokeLinejoin="round"
-            className="transition-all"
-          >
-            <circle 
-              cx="12" 
-              cy="12" 
-              r="10" 
-              fill="none"
-              stroke="currentColor"
-              className="text-white/60 group-hover:fill-white group-hover:stroke-white group-hover:text-white transition-all"
-            />
-            <path 
-              d="m12 16 4-4-4-4" 
-              stroke="currentColor"
-              className="text-white/60 group-hover:text-gray-900 transition-colors"
-            />
-            <path 
-              d="M8 12h8" 
-              stroke="currentColor"
-              className="text-white/60 group-hover:text-gray-900 transition-colors"
-            />
-          </svg>
-        </div>
+    <div className="flex flex-col h-full">
+      {/* Icon and Title Row */}
+      <div className="flex items-center gap-3 mb-3">
+        <Icon className="w-6 h-6 text-gray-900 shrink-0" />
+        <h5 className="text-xl font-bold text-gray-900" style={{ fontFamily: "var(--font-sora)" }}>
+          {title}
+        </h5>
       </div>
-      <h5 className="text-xl font-bold text-white mb-2" style={{ fontFamily: "var(--font-sora)" }}>
-        {title}
-      </h5>
-      <p className="text-base text-white/70 leading-relaxed" style={{ fontFamily: "var(--font-manrope)" }}>
+      
+      {/* Description */}
+      <p className="text-base text-gray-600 leading-relaxed mb-4 flex-1" style={{ fontFamily: "var(--font-manrope)" }}>
         {description}
       </p>
-    </>
+      
+      {/* Arrow at bottom right */}
+      <div className="flex justify-end mt-auto">
+        <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          width="20" 
+          height="20" 
+          viewBox="0 0 24 24" 
+          fill="none" 
+          strokeWidth="2" 
+          strokeLinecap="round" 
+          strokeLinejoin="round"
+          className="text-gray-400 group-hover:text-gray-900 transition-colors"
+        >
+          <path d="m9 18 6-6-6-6" stroke="currentColor" />
+        </svg>
+      </div>
+    </div>
   );
 
   if (href) {
     return (
-      <Link href={href} className="block">
-        <div className="relative bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 group cursor-pointer">
+      <Link href={href} className="block h-full">
+        <div className="relative bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-gray-300 transition-all duration-300 group cursor-pointer h-full flex flex-col">
           {CardContent}
         </div>
       </Link>
@@ -67,7 +53,7 @@ export default function SolutionCard({ icon: Icon, title, description, href }: S
   }
 
   return (
-    <div className="relative bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 group cursor-pointer">
+    <div className="relative bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-gray-300 transition-all duration-300 group cursor-pointer h-full flex flex-col">
       {CardContent}
     </div>
   );

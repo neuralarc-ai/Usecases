@@ -1,0 +1,45 @@
+"use client";
+
+import CaseDetail from "@/components/case-detail";
+import { RiTimeLine, RiBarChartLine, RiCheckboxCircleLine, RiMoneyDollarCircleLine } from "react-icons/ri";
+
+export default function Case1Page() {
+  return (
+    <CaseDetail
+      title="AI-Generated Marketing Content & Campaigns"
+      backHref="/use-cases/marketing-sales"
+      backLabel="Back to Marketing & Sales"
+      businessChallenge={{
+        title: "Business Challenge",
+        description: "Content creation takes 40 hours per campaign, with 60% of content underperforming, manual A/B testing covering only 10% of variations, limited personalization, slow time-to-market, and $5M+ in wasted marketing spend. Content challenges include writer's block and creativity limits, inconsistent brand voice, limited testing, poor performance prediction, and high agency costs."
+      }}
+      heliumSolution={{
+        title: "Helium Solution",
+        description: "Helium generates high-performing content with AI content generation for email copy, social media posts, product descriptions, ad copy, blog articles, and video scripts. The system provides brand voice consistency with tone and style matching, terminology adherence, messaging alignment, and quality control. It includes automated A/B testing with 1000+ variations, multivariate testing, real-time optimization, and statistical significance. The system enables performance prediction with pre-launch scoring, expected CTR and conversion, audience matching, and channel optimization, plus multi-channel orchestration with email campaigns, social media, display ads, SMS marketing, and push notifications."
+      }}
+      metrics={[
+        {
+          icon: RiTimeLine,
+          value: "90%",
+          label: "Reduction in content creation time"
+        },
+        {
+          icon: RiBarChartLine,
+          value: "150%",
+          label: "Improvement in campaign performance"
+        },
+        {
+          icon: RiCheckboxCircleLine,
+          value: "1000%",
+          label: "Increase in A/B test coverage"
+        },
+        {
+          icon: RiMoneyDollarCircleLine,
+          value: "$8M",
+          label: "Annual marketing efficiency gain"
+        }
+      ]}
+    />
+  );
+}
+
