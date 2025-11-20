@@ -68,20 +68,17 @@ export default function FeatureComparisonTable() {
         <thead>
           <tr>
             <th
-              className="bg-gray-800 px-6 py-4 text-left text-sm font-semibold text-white rounded-tl-lg"
-              className="font-sora"
+              className="bg-gray-800 px-6 py-4 text-left text-sm font-semibold text-white rounded-tl-lg font-sora"
             >
               Capability
             </th>
             <th
-              className="bg-gray-800 px-6 py-4 text-left text-sm font-semibold text-white"
-              className="font-sora"
+              className="bg-gray-800 px-6 py-4 text-left text-sm font-semibold text-white font-sora"
             >
               Multiple Tools
             </th>
             <th
-              className="bg-orange-500 px-6 py-4 text-left text-sm font-semibold text-white rounded-tr-lg"
-              className="font-sora"
+              className="bg-orange-500 px-6 py-4 text-left text-sm font-semibold text-white rounded-tr-lg font-sora"
             >
               Helium
             </th>
