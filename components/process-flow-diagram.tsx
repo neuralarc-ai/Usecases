@@ -24,7 +24,7 @@ export default function ProcessFlowDiagram({
 
   return (
     <div className="py-14 max-w-7xl mx-auto px-4">
-      <h2 className="text-center text-3xl font-semibold mb-12 text-gray-900" style={{ fontFamily: "var(--font-sora)" }}>
+      <h2 className="text-center text-3xl font-semibold mb-12 text-gray-900 font-sora">
         {title}
       </h2>
 
@@ -35,13 +35,13 @@ export default function ProcessFlowDiagram({
             <div key={index} className="flex items-center">
               {/* Card */}
               <div className="min-w-[260px] bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-                <div className="text-4xl font-bold text-gray-900/10 mb-3" style={{ fontFamily: "var(--font-sora)" }}>
+                <div className="text-4xl font-bold text-gray-900/10 mb-3 font-sora">
                   {index + 1}
                 </div>
-                <h3 className="text-lg font-semibold mb-1 text-gray-900" style={{ fontFamily: "var(--font-sora)" }}>
+                <h3 className="text-lg font-semibold mb-1 text-gray-900 font-sora">
                   {step.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed" style={{ fontFamily: "var(--font-manrope)" }}>
+                <p className="text-sm text-gray-600 leading-relaxed">
                   {step.description}
                 </p>
               </div>
@@ -76,13 +76,13 @@ export default function ProcessFlowDiagram({
             <div key={index} className="relative">
               {/* Card */}
               <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-                <div className="text-4xl font-bold text-gray-900/10 mb-3" style={{ fontFamily: "var(--font-sora)" }}>
+                <div className="text-4xl font-bold text-gray-900/10 mb-3 font-sora">
                   {index + 1}
                 </div>
-                <h3 className="text-lg font-semibold mb-1 text-gray-900" style={{ fontFamily: "var(--font-sora)" }}>
+                <h3 className="text-lg font-semibold mb-1 text-gray-900 font-sora">
                   {step.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed" style={{ fontFamily: "var(--font-manrope)" }}>
+                <p className="text-sm text-gray-600 leading-relaxed">
                   {step.description}
                 </p>
               </div>
@@ -135,13 +135,13 @@ export default function ProcessFlowDiagram({
           <div key={index} className="relative">
             {/* Card */}
             <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-              <div className="text-4xl font-bold text-gray-900/10 mb-3" style={{ fontFamily: "var(--font-sora)" }}>
+              <div className="text-4xl font-bold text-gray-900/10 mb-3 font-sora">
                 {index + 1}
               </div>
-              <h3 className="text-lg font-semibold mb-1 text-gray-900" style={{ fontFamily: "var(--font-sora)" }}>
+              <h3 className="text-lg font-semibold mb-1 text-gray-900 font-sora">
                 {step.title}
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed" style={{ fontFamily: "var(--font-manrope)" }}>
+              <p className="text-sm text-gray-600 leading-relaxed">
                 {step.description}
               </p>
             </div>

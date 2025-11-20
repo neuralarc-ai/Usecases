@@ -3,14 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { RiBankLine, RiShieldLine, RiShoppingCartLine, RiTeamLine } from 'react-icons/ri'
-import { Sora } from 'next/font/google'
 import { ArrowRight } from 'lucide-react'
-
-const sora = Sora({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-sora',
-})
 
 // Custom Manufacturing Icon Component
 const ManufacturingIcon = ({ className }: { className?: string }) => (
@@ -94,13 +87,12 @@ const industries: IndustryCard[] = [
 export default function IndustryLeaders() {
   return (
     <section 
-      className={`relative flex flex-col items-center justify-center py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 ${sora.variable}`}
+      className="relative flex flex-col items-center justify-center py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16"
     >
       <div className="w-full max-w-7xl mx-auto">
         {/* Title */}
         <h2 
-          className={`${sora.variable} text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 text-center`}
-          style={{ fontFamily: 'Sora, sans-serif' }}
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 text-center font-sora"
         >
           Trusted by Industry Leaders
         </h2>
@@ -119,14 +111,7 @@ export default function IndustryLeaders() {
               return (
                 <div
                   key={index}
-                  className="bg-white rounded-lg shadow-sm border-2 border-transparent transition-all duration-200 h-full hover:shadow-md"
-                  style={{ padding: '2rem' }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = '#E0693D'
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = 'transparent'
-                  }}
+                  className="bg-white rounded-lg shadow-sm border-2 border-transparent hover:border-[#E0693D] transition-all duration-200 h-full hover:shadow-md p-8"
                 >
                   {/* Icon and Title in Flex */}
                   <div className="flex items-center gap-3 mb-4">
@@ -137,15 +122,14 @@ export default function IndustryLeaders() {
                       <Icon className="w-5 h-5 text-white" />
                     </div>
                     <h3 
-                      className={`${sora.variable} font-bold text-gray-900`}
-                      style={{ fontFamily: 'Sora, sans-serif', fontSize: '24px' }}
+                      className="font-bold text-gray-900 font-sora text-2xl"
                     >
                       {industry.title}
                     </h3>
                   </div>
 
                   {/* Description */}
-                  <p className="text-gray-700 leading-relaxed" style={{ fontSize: '18px' }}>
+                  <p className="text-gray-700 leading-relaxed text-lg">
                     {industry.description}
                   </p>
                 </div>
@@ -161,14 +145,7 @@ export default function IndustryLeaders() {
                 return (
                   <div
                     key={index}
-                    className="bg-white rounded-lg shadow-sm border-2 border-transparent transition-all duration-200 h-full hover:shadow-md"
-                    style={{ padding: '2rem' }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.borderColor = '#E0693D'
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.borderColor = 'transparent'
-                    }}
+                    className="bg-white rounded-lg shadow-sm border-2 border-transparent hover:border-[#E0693D] transition-all duration-200 h-full hover:shadow-md p-8"
                   >
                     {/* Icon and Title in Flex */}
                     <div className="flex items-center gap-3 mb-4">
@@ -179,15 +156,14 @@ export default function IndustryLeaders() {
                         <Icon className="w-5 h-5 text-white" />
                       </div>
                       <h3 
-                        className={`${sora.variable} font-bold text-gray-900`}
-                        style={{ fontFamily: 'Sora, sans-serif', fontSize: '24px' }}
+                        className="font-bold text-gray-900 font-sora text-2xl"
                       >
                         {industry.title}
                       </h3>
                     </div>
 
                     {/* Description */}
-                    <p className="text-gray-700 leading-relaxed" style={{ fontSize: '18px' }}>
+                    <p className="text-gray-700 leading-relaxed text-lg">
                       {industry.description}
                     </p>
                   </div>
@@ -200,8 +176,7 @@ export default function IndustryLeaders() {
           <div className="flex justify-center mt-12 sm:mt-16">
             <Link
               href="/use-cases"
-              className={`${sora.variable} inline-flex items-center justify-center px-8 py-4 bg-white text-gray-900 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-200 hover:translate-y-[-2px] hover:shadow-lg border-2 border-black hover:border-black`}
-              style={{ fontFamily: 'Sora, sans-serif' }}
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-900 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-200 hover:translate-y-[-2px] hover:shadow-lg border-2 border-black hover:border-black font-sora"
             >
               View All Use Cases
               <ArrowRight className="w-5 h-5 ml-2" />

@@ -60,7 +60,6 @@ export default function CaseDetail({
           <Link 
             href={backHref}
             className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors mb-6 text-sm font-medium"
-            style={{ fontFamily: "var(--font-manrope)" }}
           >
             <RiArrowLeftLine className="w-4 h-4" />
             {backLabel}
@@ -68,27 +67,27 @@ export default function CaseDetail({
           
           {/* Title */}
           <div className="mb-12">
-            <h1 className="text-3xl font-bold text-gray-900 mb-4 md:text-4xl lg:text-5xl" style={{ fontFamily: "var(--font-sora)" }}>
+            <h1 className="text-3xl font-bold text-gray-900 mb-4 md:text-4xl lg:text-5xl font-sora">
               {title}
             </h1>
           </div>
 
           {/* Business Challenge Section */}
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4 md:text-3xl" style={{ fontFamily: "var(--font-sora)" }}>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4 md:text-3xl font-sora">
               {businessChallenge.title}
             </h2>
-            <p className="text-base text-gray-700 leading-relaxed max-w-4xl" style={{ fontFamily: "var(--font-manrope)" }}>
+            <p className="text-base text-gray-700 leading-relaxed max-w-4xl">
               {businessChallenge.description}
             </p>
           </div>
 
           {/* Helium Solution Section */}
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4 md:text-3xl" style={{ fontFamily: "var(--font-sora)" }}>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4 md:text-3xl font-sora">
               {heliumSolution.title}
             </h2>
-            <p className="text-base text-gray-700 leading-relaxed max-w-4xl" style={{ fontFamily: "var(--font-manrope)" }}>
+            <p className="text-base text-gray-700 leading-relaxed max-w-4xl">
               {heliumSolution.description}
             </p>
           </div>
@@ -109,10 +108,10 @@ export default function CaseDetail({
                           <Icon className="w-5 h-5 text-white" />
                         </div>
                       </div>
-                      <div className="text-3xl font-bold text-green-600 mb-2" style={{ fontFamily: "var(--font-sora)" }}>
+                      <div className="text-3xl font-bold text-green-600 mb-2 font-sora">
                         {metric.value}
                       </div>
-                      <div className="text-sm text-gray-600" style={{ fontFamily: "var(--font-manrope)" }}>
+                      <div className="text-sm text-gray-600">
                         {metric.label}
                       </div>
                     </div>

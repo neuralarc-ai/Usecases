@@ -44,10 +44,10 @@ const solutions: Solution[] = [
 export default function ManufacturingSection() {
   return (
     <div className="mt-8 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
-      <h4 className="text-3xl font-bold text-gray-900 mb-4" style={{ fontFamily: "var(--font-sora)" }}>
+      <h4 className="text-3xl font-bold text-gray-900 mb-4 font-sora">
         Manufacturing
       </h4>
-      <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mb-8" style={{ fontFamily: "var(--font-manrope)" }}>
+      <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mb-8">
         Optimize production, enhance quality control, and reduce downtime with AI-powered manufacturing solutions.
       </p>
       

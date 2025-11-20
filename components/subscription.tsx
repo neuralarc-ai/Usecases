@@ -2,13 +2,6 @@
 
 import React, { useRef } from 'react'
 import Image from 'next/image'
-import { Sora } from 'next/font/google'
-
-const sora = Sora({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-sora',
-})
 
 export default function Subscription() {
   const leftVideoRef = useRef<HTMLVideoElement>(null)
@@ -40,7 +33,7 @@ export default function Subscription() {
   }
 
   return (
-    <section className={`min-h-screen relative flex flex-col items-center justify-start bg-white pt-16 sm:pt-20 md:pt-24 pb-8 sm:pb-12 overflow-hidden ${sora.variable}`}>
+    <section className="min-h-screen relative flex flex-col items-center justify-start bg-white pt-16 sm:pt-20 md:pt-24 pb-8 sm:pb-12 overflow-hidden">
       {/* Image blocks */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-6 mt-6 sm:mt-8 md:mt-18 w-full px-4 sm:px-6">
         {/* LEFT BLOCK */}
@@ -73,8 +66,7 @@ export default function Subscription() {
           {/* Text overlay */}
           <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 flex flex-col text-white">
             <h2 
-              className={`${sora.variable} text-[clamp(18px,3vw,24px)] font-bold mb-1`}
-              style={{ fontFamily: 'Sora, sans-serif' }}
+              className="text-[clamp(18px,3vw,24px)] font-bold mb-1 font-sora"
             >
               Helium Edge
             </h2>
@@ -111,8 +103,7 @@ export default function Subscription() {
 
           <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 flex flex-col text-white text-right">
             <h2 
-              className={`${sora.variable} text-[clamp(18px,3vw,24px)] font-bold mb-1`}
-              style={{ fontFamily: 'Sora, sans-serif' }}
+              className="text-[clamp(18px,3vw,24px)] font-bold mb-1 font-sora"
             >
               Helium Quantum
             </h2>
