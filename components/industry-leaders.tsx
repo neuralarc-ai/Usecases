@@ -153,43 +153,43 @@ export default function IndustryLeaders() {
             })}
           </div>
 
-          {/* Bottom Row - 2 Cards Centered */}
+          {/* Bottom Row - 2 Cards Centered (same size as top row) */}
           <div className="flex justify-center">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-2xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 w-full md:w-2/3">
               {industries.slice(3, 5).map((industry, index) => {
                 const Icon = industry.icon
                 return (
                   <div
                     key={index}
                     className="bg-white rounded-lg shadow-sm border-2 border-transparent transition-all duration-200 h-full hover:shadow-md"
-                    style={{ padding: '2rem' }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.borderColor = '#E0693D'
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.borderColor = 'transparent'
-                    }}
-                  >
-                    {/* Icon and Title in Flex */}
-                    <div className="flex items-center gap-3 mb-4">
-                      <div 
-                        className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
-                        style={{ backgroundColor: industry.iconBgColor }}
-                      >
-                        <Icon className="w-5 h-5 text-white" />
-                      </div>
-                      <h3 
-                        className={`${sora.variable} font-bold text-gray-900`}
-                        style={{ fontFamily: 'Sora, sans-serif', fontSize: '24px' }}
-                      >
-                        {industry.title}
-                      </h3>
+                  style={{ padding: '2rem' }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.borderColor = '#E0693D'
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.borderColor = 'transparent'
+                  }}
+                >
+                  {/* Icon and Title in Flex */}
+                  <div className="flex items-center gap-3 mb-4">
+                    <div 
+                      className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
+                      style={{ backgroundColor: industry.iconBgColor }}
+                    >
+                      <Icon className="w-5 h-5 text-white" />
                     </div>
+                    <h3 
+                      className={`${sora.variable} font-bold text-gray-900`}
+                      style={{ fontFamily: 'Sora, sans-serif', fontSize: '24px' }}
+                    >
+                      {industry.title}
+                    </h3>
+                  </div>
 
-                    {/* Description */}
-                    <p className="text-gray-700 leading-relaxed" style={{ fontSize: '18px' }}>
-                      {industry.description}
-                    </p>
+                  {/* Description */}
+                  <p className="text-gray-700 leading-relaxed" style={{ fontSize: '18px' }}>
+                    {industry.description}
+                  </p>
                   </div>
                 )
               })}

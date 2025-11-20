@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+
 interface ProcessStep {
   title: string;
   description: string;
@@ -14,118 +16,151 @@ export default function ProcessFlowDiagram({
   title = "Process Flow",
   steps 
 }: ProcessFlowDiagramProps) {
-  // Determine how many columns based on number of steps
-  const getGridCols = () => {
-    if (steps.length <= 4) return "grid-cols-4";
-    if (steps.length <= 5) return "grid-cols-5";
-    if (steps.length <= 6) return "grid-cols-6";
-    return "grid-cols-7";
+  const [currentIndex, setCurrentIndex] = useState(0);
+  
+  // Calculate how many slides we need (3 cards per slide)
+  const totalSlides = Math.ceil(steps.length / 3);
+  
+  const goToNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % totalSlides);
+  };
+  
+  const goToPrev = () => {
+    setCurrentIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
+  };
+  
+  const getCurrentSteps = () => {
+    const start = currentIndex * 3;
+    return steps.slice(start, start + 3);
   };
 
   return (
-    <div className="py-14 max-w-7xl mx-auto px-4">
+    <div className="max-w-6xl mx-auto">
       <h2 className="text-center text-3xl font-semibold mb-12 text-gray-900" style={{ fontFamily: "var(--font-sora)" }}>
         {title}
       </h2>
 
-      {/* Desktop Layout - Horizontal Flow with Cards */}
-      <div className="hidden lg:block">
-        <div className="flex items-center gap-4 justify-center flex-wrap">
-          {steps.map((step, index) => (
-            <div key={index} className="flex items-center">
-              {/* Card */}
-              <div className="min-w-[260px] bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-                <div className="text-4xl font-bold text-gray-900/10 mb-3" style={{ fontFamily: "var(--font-sora)" }}>
-                  {index + 1}
-                </div>
-                <h3 className="text-lg font-semibold mb-1 text-gray-900" style={{ fontFamily: "var(--font-sora)" }}>
-                  {step.title}
-                </h3>
-                <p className="text-sm text-gray-600 leading-relaxed" style={{ fontFamily: "var(--font-manrope)" }}>
-                  {step.description}
-                </p>
-              </div>
+      {/* Desktop & Tablet Layout - Slider with 3 cards */}
+      <div className="hidden md:block">
+        <div className="relative">
+          {/* Navigation Buttons */}
+          {totalSlides > 1 && (
+            <>
+              <button
+                onClick={goToPrev}
+                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 z-10 w-12 h-12 rounded-full bg-white border border-gray-300 shadow-md hover:bg-gray-50 transition-all duration-200 flex items-center justify-center"
+                aria-label="Previous slide"
+              >
+                <svg
+                  className="w-6 h-6 text-gray-700"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button
+                onClick={goToNext}
+                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 z-10 w-12 h-12 rounded-full bg-white border border-gray-300 shadow-md hover:bg-gray-50 transition-all duration-200 flex items-center justify-center"
+                aria-label="Next slide"
+              >
+                <svg
+                  className="w-6 h-6 text-gray-700"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </>
+          )}
 
-              {/* Connecting Arrow */}
-              {index < steps.length - 1 && (
-                <div className="flex-shrink-0 mx-2">
-                  <svg
-                    className="w-6 h-6 text-gray-400"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
+          {/* Slider Container */}
+          <div className="overflow-hidden">
+            <div
+              className="flex transition-transform duration-500 ease-in-out"
+              style={{
+                transform: `translateX(-${currentIndex * 100}%)`
+              }}
+            >
+              {Array.from({ length: totalSlides }).map((_, slideIndex) => {
+                const slideSteps = steps.slice(slideIndex * 3, slideIndex * 3 + 3);
+                const cardCount = slideSteps.length;
+                
+                return (
+                  <div
+                    key={slideIndex}
+                    className={`min-w-full flex gap-6 ${
+                      cardCount === 3 
+                        ? "justify-start" 
+                        : cardCount === 2 
+                        ? "justify-center" 
+                        : "justify-center"
+                    }`}
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </div>
-              )}
+                    {slideSteps.map((step, cardIndex) => {
+                      const globalIndex = slideIndex * 3 + cardIndex;
+                      return (
+                        <div 
+                          key={globalIndex} 
+                          className={`${
+                            cardCount === 3 
+                              ? "w-full" 
+                              : cardCount === 2 
+                              ? "w-[calc((100%-1.5rem)/2)]" 
+                              : "w-full max-w-md"
+                          }`}
+                        >
+                          {/* Card - Matching metric card styling */}
+                          <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm h-full flex flex-col">
+                            <div className="text-5xl font-bold text-gray-900/10 mb-4" style={{ fontFamily: "var(--font-sora)" }}>
+                              {globalIndex + 1}
+                            </div>
+                            <h3 className="text-lg font-semibold mb-2 text-gray-900" style={{ fontFamily: "var(--font-sora)" }}>
+                              {step.title}
+                            </h3>
+                            <p className="text-sm text-gray-600 leading-relaxed flex-1" style={{ fontFamily: "var(--font-manrope)" }}>
+                              {step.description}
+                            </p>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                );
+              })}
             </div>
-          ))}
-        </div>
-      </div>
+          </div>
 
-      {/* Tablet Layout - 2-3 Columns with Wrapping */}
-      <div className="hidden md:block lg:hidden">
-        <div className="grid grid-cols-2 gap-6">
-          {steps.map((step, index) => (
-            <div key={index} className="relative">
-              {/* Card */}
-              <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-                <div className="text-4xl font-bold text-gray-900/10 mb-3" style={{ fontFamily: "var(--font-sora)" }}>
-                  {index + 1}
-                </div>
-                <h3 className="text-lg font-semibold mb-1 text-gray-900" style={{ fontFamily: "var(--font-sora)" }}>
-                  {step.title}
-                </h3>
-                <p className="text-sm text-gray-600 leading-relaxed" style={{ fontFamily: "var(--font-manrope)" }}>
-                  {step.description}
-                </p>
-              </div>
-
-              {/* Connecting Arrow - Right side for even indices */}
-              {index < steps.length - 1 && index % 2 === 0 && (
-                <div className="absolute -right-3 top-1/2 transform -translate-y-1/2 z-10">
-                  <svg
-                    className="w-6 h-6 text-gray-400"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </div>
-              )}
-
-              {/* Connecting Arrow - Bottom for last item in row (odd indices) */}
-              {index < steps.length - 1 && index % 2 === 1 && index !== steps.length - 1 && (
-                <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 z-10">
-                  <svg
-                    className="w-6 h-6 text-gray-400"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                    />
-                  </svg>
-                </div>
-              )}
+          {/* Dots Indicator */}
+          {totalSlides > 1 && (
+            <div className="flex justify-center gap-2 mt-8">
+              {Array.from({ length: totalSlides }).map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentIndex(index)}
+                  className={`w-2 h-2 rounded-full transition-all duration-200 ${
+                    index === currentIndex
+                      ? "bg-gray-900 w-8"
+                      : "bg-gray-300 hover:bg-gray-400"
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
             </div>
-          ))}
+          )}
         </div>
       </div>
 
@@ -133,19 +168,18 @@ export default function ProcessFlowDiagram({
       <div className="md:hidden space-y-6">
         {steps.map((step, index) => (
           <div key={index} className="relative">
-            {/* Card */}
-            <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
-              <div className="text-4xl font-bold text-gray-900/10 mb-3" style={{ fontFamily: "var(--font-sora)" }}>
+            {/* Card - Matching metric card styling */}
+            <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+              <div className="text-5xl font-bold text-gray-900/10 mb-4" style={{ fontFamily: "var(--font-sora)" }}>
                 {index + 1}
               </div>
-              <h3 className="text-lg font-semibold mb-1 text-gray-900" style={{ fontFamily: "var(--font-sora)" }}>
+              <h3 className="text-lg font-semibold mb-2 text-gray-900" style={{ fontFamily: "var(--font-sora)" }}>
                 {step.title}
               </h3>
               <p className="text-sm text-gray-600 leading-relaxed" style={{ fontFamily: "var(--font-manrope)" }}>
                 {step.description}
               </p>
             </div>
-
             {/* Connecting Arrow - Bottom */}
             {index < steps.length - 1 && (
               <div className="flex justify-center mt-4">

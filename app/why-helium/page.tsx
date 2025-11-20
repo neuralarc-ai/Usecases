@@ -8,7 +8,7 @@ export default function WhyHelium() {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
           <h1 
-            className="mb-4 text-4xl font-bold text-black md:text-5xl lg:text-6xl"
+            className="mb-4 text-5xl font-bold text-black md:text-7xl lg:text-6xl"
             style={{ fontFamily: "var(--font-sora)" }}
           >
             What Your AI Stack Probably Looks Like
@@ -20,7 +20,7 @@ export default function WhyHelium() {
         <div className="mt-24">
           <div className="mb-8 text-center">
             <h2
-              className="mb-4 text-3xl font-bold text-black md:text-4xl lg:text-5xl"
+              className="mb-4 text-4xl font-bold text-black md:text-5xl lg:text-6xl"
               style={{ fontFamily: "var(--font-sora)" }}
             >
               Feature Comparison
@@ -39,7 +39,7 @@ export default function WhyHelium() {
         <div className="mt-24">
           <div className="mb-12 text-center">
             <h2
-              className="mb-4 text-3xl font-bold text-black md:text-4xl lg:text-5xl"
+              className="mb-4 text-4xl font-bold text-black md:text-5xl lg:text-6xl"
               style={{ fontFamily: "var(--font-sora)" }}
             >
               How Helium Replaces Leading AI Tools

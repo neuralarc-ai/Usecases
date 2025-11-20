@@ -90,7 +90,7 @@ export default function UseCasesPage() {
         {/* Centered Content */}
         <div className="relative z-10 w-full mx-auto max-w-5xl px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="flex flex-col items-center justify-center text-center">
-            <h1 className="mb-8 text-5xl font-bold leading-tight text-gray-900 md:text-7xl lg:text-8xl" style={{ fontFamily: "var(--font-sora)" }}>
+            <h1 className="mb-8 text-5xl font-bold leading-tight text-gray-900 md:text-7xl lg:text-6xl" style={{ fontFamily: "var(--font-sora)" }}>
               Helium Across Industries
             </h1>
             <h2 className="max-w-4xl mx-auto text-2xl leading-relaxed text-gray-700 md:text-3xl lg:text-4xl font-medium" style={{ fontFamily: "var(--font-manrope)" }}>
@@ -101,16 +101,17 @@ export default function UseCasesPage() {
       </section>
       
       {/* Content Section */}
-      <section className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-10" ref={tabsSectionRef}>
-        {/* Left-aligned Header */}
-        <div className="mb-8">
-          <h3 className="text-left text-xl font-bold text-gray-900 md:text-2xl lg:text-3xl mb-6" style={{ fontFamily: "var(--font-sora)" }}>
-            AI Solutions for Your Industry:
-          </h3>
-          
-          {/* Industry Selector Tabs */}
-          <div className="flex justify-center">
-            <Tabs defaultValue={defaultTab} className="w-full">
+      <section className="py-10" ref={tabsSectionRef}>
+        <div className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          {/* Left-aligned Header */}
+          <div className="mb-8">
+            <h3 className="text-left text-xl font-bold text-gray-900 md:text-2xl lg:text-3xl mb-6" style={{ fontFamily: "var(--font-sora)" }}>
+              AI Solutions for Your Industry:
+            </h3>
+            
+            {/* Industry Selector Tabs */}
+            <div className="flex justify-start">
+              <Tabs defaultValue={defaultTab} className="w-auto">
               <TabsList 
                 className="
                   overflow-hidden inline-flex w-auto rounded-4xl h-14 p-1.5 gap-1.5 border border-gray-300
@@ -144,7 +145,8 @@ export default function UseCasesPage() {
                   </TabsContent>
                 );
               })}
-            </Tabs>
+              </Tabs>
+            </div>
           </div>
         </div>
       </section>
