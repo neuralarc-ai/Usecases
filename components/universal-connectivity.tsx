@@ -2,14 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
-import { Sora } from 'next/font/google'
 import { Zap } from 'lucide-react'
-
-const sora = Sora({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-sora',
-})
 
 const appIcons = [
   { name: 'Gmail', color: '#EA4335', image: '/icons/Gmail.svg' },
@@ -24,7 +17,7 @@ const appIcons = [
 
 export default function UniversalConnectivity() {
   return (
-    <section className={`relative flex flex-col items-center justify-center bg-white py-16 sm:py-20 md:py-24 px-4 sm:px-6 ${sora.variable}`}>
+    <section className="relative flex flex-col items-center justify-center bg-white py-16 sm:py-20 md:py-24 px-4 sm:px-6">
       <div className="w-full max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left Content */}
@@ -37,8 +30,7 @@ export default function UniversalConnectivity() {
 
             {/* Main Heading */}
             <h2 
-              className={`${sora.variable} text-4xl sm:text-5xl md:text-6xl font-bold`}
-              style={{ fontFamily: 'Sora, sans-serif' }}
+              className="text-4xl sm:text-5xl md:text-6xl font-bold font-sora"
             >
               <span className="text-cyan-500">200+ Integrations</span>
               <br />
@@ -123,21 +115,21 @@ export default function UniversalConnectivity() {
         {/* Bottom Summary Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
           <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-            <h3 className={`${sora.variable} text-2xl font-bold text-cyan-500 mb-2`} style={{ fontFamily: 'Sora, sans-serif' }}>
+            <h3 className="text-2xl font-bold text-cyan-500 mb-2 font-sora">
               100+ Integrations
             </h3>
             <p className="text-gray-700">Connected in seconds</p>
           </div>
 
           <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-            <h3 className={`${sora.variable} text-2xl font-bold text-orange-500 mb-2`} style={{ fontFamily: 'Sora, sans-serif' }}>
+            <h3 className="text-2xl font-bold text-orange-500 mb-2 font-sora">
               Zero Friction
             </h3>
             <p className="text-gray-700">No-code setup</p>
           </div>
 
           <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-            <h3 className={`${sora.variable} text-2xl font-bold text-cyan-500 mb-2`} style={{ fontFamily: 'Sora, sans-serif' }}>
+            <h3 className="text-2xl font-bold text-cyan-500 mb-2 font-sora">
               Total Control
             </h3>
             <p className="text-gray-700">Manage permissions easily</p>

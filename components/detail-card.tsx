@@ -17,10 +17,10 @@ export default function DetailCard({ number, title, description, metrics, href =
   return (
     <div className="h-full flex flex-col bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:border-gray-300 transition-all duration-300">
       <div className="flex-1">
-        <h5 className="text-xl font-bold text-gray-900 mb-2 text-left" style={{ fontFamily: "var(--font-sora)" }}>
+        <h5 className="text-xl font-bold text-gray-900 mb-2 text-left font-sora">
           {title}
         </h5>
-        <p className="text-base text-gray-600 leading-relaxed mb-4 text-left" style={{ fontFamily: "var(--font-manrope)" }}>
+        <p className="text-base text-gray-600 leading-relaxed mb-4 text-left">
           {description}
         </p>
         
@@ -34,11 +34,10 @@ export default function DetailCard({ number, title, description, metrics, href =
             return (
               <div 
                 key={index} 
-                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full w-fit"
-                style={{ backgroundColor: "#27584F" }}
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full w-fit bg-[#27584F]"
               >
                 <Icon className="w-3.5 h-3.5 text-white shrink-0" />
-                <span className="text-xs text-white font-medium" style={{ fontFamily: "var(--font-manrope)" }}>
+                <span className="text-xs text-white font-medium">
                   {metric.text}
                 </span>
               </div>

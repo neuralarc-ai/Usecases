@@ -105,8 +105,7 @@ export default function HeliumReplacementCards() {
                 </div>
                 <div className="flex-1">
                   <h3
-                    className="text-xl font-semibold text-black transition-colors duration-300 group-hover:text-gray-900"
-                    style={{ fontFamily: "var(--font-sora)" }}
+                    className="text-xl font-semibold text-black transition-colors duration-300 group-hover:text-gray-900 font-sora"
                   >
                     {card.title}
                   </h3>
@@ -117,7 +116,6 @@ export default function HeliumReplacementCards() {
               <div className="mb-6 min-h-[80px]">
                 <p
                   className="mb-3 text-xs font-semibold uppercase tracking-wider text-gray-500"
-                  style={{ fontFamily: "var(--font-manrope)" }}
                 >
                   Traditional Tools
                 </p>
@@ -128,7 +126,6 @@ export default function HeliumReplacementCards() {
                       key={tool}
                       className="inline-flex shrink-0 items-center rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-700 transition-all duration-300 hover:bg-gray-200 hover:scale-105 hover:shadow-sm group-hover:shadow-sm"
                       style={{
-                        fontFamily: "var(--font-manrope)",
                         animationDelay: `${(index * 100) + (toolIndex * 50)}ms`,
                       }}
                     >
@@ -144,7 +141,6 @@ export default function HeliumReplacementCards() {
                 <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shimmer" />
                 <p
                   className="relative text-sm font-medium text-gray-800 leading-relaxed"
-                  style={{ fontFamily: "var(--font-manrope)" }}
                 >
                   <span className="font-bold text-black">Helium Advantage:</span>{" "}
                   {card.advantage}
