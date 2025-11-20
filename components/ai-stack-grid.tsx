@@ -108,8 +108,7 @@ export default function AIStackGrid() {
 
               {/* Title */}
               <h3
-                className="mb-4 text-lg font-semibold text-black transition-colors duration-300 group-hover:text-gray-900"
-                style={{ fontFamily: "var(--font-sora)" }}
+                className="mb-4 text-lg font-semibold text-black transition-colors duration-300 group-hover:text-gray-900 font-sora"
               >
                 {category.title}
               </h3>
@@ -121,7 +120,6 @@ export default function AIStackGrid() {
                     key={tool}
                     className="inline-flex items-center rounded-full bg-gray-100 px-3 py-1.5 text-sm font-medium text-gray-700 transition-all duration-300 hover:bg-gray-200 hover:scale-105 hover:shadow-sm"
                     style={{
-                      fontFamily: "var(--font-manrope)",
                       animationDelay: `${(index * 100) + (toolIndex * 50)}ms`,
                     }}
                   >

@@ -47,7 +47,7 @@ export default function RetailSection() {
       <h4 className="text-3xl font-bold text-gray-900 mb-4" style={{ fontFamily: "var(--font-sora)" }}>
         Retail
       </h4>
-      <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mb-8" style={{ fontFamily: "var(--font-manrope)" }}>
+      <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mb-8">
         Optimize inventory, personalize customer experiences, and drive sales with AI-powered retail solutions.
       </p>
       

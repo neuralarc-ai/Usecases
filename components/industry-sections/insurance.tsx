@@ -47,7 +47,7 @@ export default function InsuranceSection() {
       <h4 className="text-3xl font-bold text-gray-900 mb-4" style={{ fontFamily: "var(--font-sora)" }}>
         Insurance
       </h4>
-      <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mb-8" style={{ fontFamily: "var(--font-manrope)" }}>
+      <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mb-8">
         Accelerate claims processing, enhance underwriting accuracy, and deliver exceptional customer service with AI-powered automation.
       </p>
       

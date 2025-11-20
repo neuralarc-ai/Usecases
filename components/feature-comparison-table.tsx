@@ -69,19 +69,19 @@ export default function FeatureComparisonTable() {
           <tr>
             <th
               className="bg-gray-800 px-6 py-4 text-left text-sm font-semibold text-white rounded-tl-lg"
-              style={{ fontFamily: "var(--font-sora)" }}
+              className="font-sora"
             >
               Capability
             </th>
             <th
               className="bg-gray-800 px-6 py-4 text-left text-sm font-semibold text-white"
-              style={{ fontFamily: "var(--font-sora)" }}
+              className="font-sora"
             >
               Multiple Tools
             </th>
             <th
               className="bg-orange-500 px-6 py-4 text-left text-sm font-semibold text-white rounded-tr-lg"
-              style={{ fontFamily: "var(--font-sora)" }}
+              className="font-sora"
             >
               Helium
             </th>
@@ -96,7 +96,6 @@ export default function FeatureComparisonTable() {
                   className={`bg-gray-100 px-6 py-4 text-sm font-medium text-black ${
                     isLastRow ? "rounded-bl-lg border-b-0" : "border-b border-gray-200"
                   }`}
-                  style={{ fontFamily: "var(--font-manrope)" }}
                 >
                   {row.capability}
                 </td>
@@ -104,7 +103,6 @@ export default function FeatureComparisonTable() {
                   className={`bg-white px-6 py-4 text-sm text-black ${
                     isLastRow ? "border-b-0" : "border-b border-gray-200"
                   }`}
-                  style={{ fontFamily: "var(--font-manrope)" }}
                 >
                   {row.multipleTools === "missing" ? (
                     <span className="flex items-center text-red-600">
@@ -118,7 +116,6 @@ export default function FeatureComparisonTable() {
                   className={`bg-white px-6 py-4 text-sm text-black ${
                     isLastRow ? "rounded-br-lg border-b-0" : "border-b border-gray-200"
                   }`}
-                  style={{ fontFamily: "var(--font-manrope)" }}
                 >
                   {row.helium ? (
                     <span className="flex items-center text-green-600">

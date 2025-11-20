@@ -1,12 +1,12 @@
 import React from 'react'
-import { RiFileTextLine, RiCheckLine } from 'react-icons/ri'
+import { RiCheckLine, RiShoppingCartLine, RiMailLine, RiDatabaseLine, RiTaskLine, RiBookLine, RiShareLine } from 'react-icons/ri'
 
 export default function FeaturesPage() {
   return (
     <main className="flex flex-col">
       {/* Top Section - White Background */}
-      <section className="bg-white pt-16 pb-12 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
-        <div className="max-w-7xl mx-auto">
+      <section className="bg-white  pt-16 pb-12 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+        <div className="max-w-7xl mx-auto min-h-[500px] flex flex-col items-center justify-center">
           <h1 
             className="text-5xl md:text-7xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight text-center mt-15"
               style={{ fontFamily: "var(--font-sora)" }}
@@ -15,7 +15,6 @@ export default function FeaturesPage() {
             </h1>
           <p 
             className="text-lg md:text-xl text-gray-700 max-w-4xl leading-relaxed text-center mx-auto"
-            style={{ fontFamily: "var(--font-manrope)" }}
           >
             Helium combines autonomous agents, web automation, data processing, content creation, software development, and workflow orchestration in one unified platform.
           </p>
@@ -26,183 +25,83 @@ export default function FeaturesPage() {
       <div>
         <section className="bg-[#E0693D] pt-16 pb-20 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="max-w-7xl mx-auto">
+            {/* Badge/Tag */}
+            <div className="flex justify-center mb-6">
+              <span className="bg-[#C85A2F] text-white text-sm font-semibold px-4 py-2 rounded-full">
+                AUTONOMOUS AGENTS
+              </span>
+            </div>
+
             {/* Main Heading */}
             <h2 
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center mb-6 leading-tight"
-              style={{ fontFamily: "var(--font-sora)" }}
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center mb-6 leading-tight font-sora"
             >
-              Intelligent Automation
+              AI That Works While You Sleep
             </h2>
 
             {/* Subheading */}
             <p 
               className="text-lg md:text-xl text-white text-center mb-12 max-w-3xl mx-auto leading-relaxed"
-              style={{ fontFamily: "var(--font-manrope)" }}
             >
-              Automate complex workflows and processes with AI-powered intelligence.
+              Deploy intelligent agents that handle complex workflows autonomously, from customer inquiries to data analysis.
             </p>
 
-            {/* Three Feature Cards - Side by Side */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              {/* Card 1 - Document Intelligence */}
-              <div className="border border-white/40 rounded-2xl p-6 md:p-8 shadow-sm">
-                {/* Icon */}
-                <div className="w-14 h-14 bg-white/40 rounded-lg flex items-center justify-center mb-6">
-                  <RiFileTextLine className="text-white text-2xl" />
-                </div>
-
-                {/* Title */}
+            {/* Four Feature Boxes - 2x2 Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+              {/* Box 1 - Multi-Step Reasoning */}
+              <div className="bg-white/10 rounded-2xl p-6 md:p-8 shadow-sm">
                 <h3 
-                  className="text-2xl font-bold text-white mb-4 text-center"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  className="text-2xl font-bold text-white mb-4 font-sora"
                 >
-                  Document Intelligence
+                  Multi-Step Reasoning
                 </h3>
-
-                {/* Description */}
                 <p 
-                  className="text-white mb-6 leading-relaxed text-center"
-                  style={{ fontFamily: "var(--font-manrope)" }}
+                  className="text-white text-base leading-relaxed"
                 >
-                  Extract, classify, and process documents with industry-leading accuracy.
+                  Agents break down complex tasks into logical steps and execute them systematically. They understand context, make decisions, and adapt to changing conditions without human intervention.
                 </p>
-
-                {/* Features List */}
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <RiCheckLine className="text-white mt-1 mr-2 flex-shrink-0" size={20} />
-                    <span className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>
-                      AI-powered OCR with 99.5% accuracy
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <RiCheckLine className="text-white mt-1 mr-2 flex-shrink-0" size={20} />
-                    <span className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>
-                      Intelligent document classification
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <RiCheckLine className="text-white mt-1 mr-2 flex-shrink-0" size={20} />
-                    <span className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>
-                      Data extraction from any format
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <RiCheckLine className="text-white mt-1 mr-2 flex-shrink-0" size={20} />
-                    <span className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>
-                      Automated validation and verification
-                    </span>
-                  </li>
-                </ul>
               </div>
 
-              {/* Card 2 - Workflow Automation */}
-              <div className="border border-white/40 rounded-2xl p-6 md:p-8 shadow-sm">
-                {/* Icon */}
-                <div className="w-14 h-14 bg-white/40 rounded-lg flex items-center justify-center mb-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="text-white text-2xl w-6 h-6">
-                    <path d="M6 21.5C4.067 21.5 2.5 19.933 2.5 18C2.5 16.067 4.067 14.5 6 14.5C7.5852 14.5 8.92427 15.5539 9.35481 16.9992L15 16.9994V15L17 14.9994V9.24339L14.757 6.99938H9V9.00003H3V3.00003H9V4.99939H14.757L18 1.75739L22.2426 6.00003L19 9.24139V14.9994L21 15V21H15V18.9994L9.35499 19.0003C8.92464 20.4459 7.58543 21.5 6 21.5ZM6 16.5C5.17157 16.5 4.5 17.1716 4.5 18C4.5 18.8285 5.17157 19.5 6 19.5C6.82843 19.5 7.5 18.8285 7.5 18C7.5 17.1716 6.82843 16.5 6 16.5ZM19 17H17V19H19V17ZM18 4.58581L16.5858 6.00003L18 7.41424L19.4142 6.00003L18 4.58581ZM7 5.00003H5V7.00003H7V5.00003Z"></path>
-                  </svg>
-                </div>
-
-                {/* Title */}
+              {/* Box 2 - Universal Integration */}
+              <div className="bg-white/10 rounded-2xl p-6 md:p-8 shadow-sm">
                 <h3 
-                  className="text-2xl font-bold text-white mb-4 text-center"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  className="text-2xl font-bold text-white mb-4 font-sora"
                 >
-                  Workflow Automation
+                  Universal Integration
                 </h3>
-
-                {/* Description */}
                 <p 
-                  className="text-white mb-6 leading-relaxed text-center"
-                  style={{ fontFamily: "var(--font-manrope)" }}
+                  className="text-white text-base leading-relaxed"
                 >
-                  Design, deploy, and optimize complex workflows without coding.
+                  Connect to any API, database, or system in your tech stack. Helium agents work seamlessly with your existing tools, eliminating data silos and manual data transfer.
                 </p>
-
-                {/* Features List */}
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <RiCheckLine className="text-white mt-1 mr-2 flex-shrink-0" size={20} />
-                    <span className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>
-                      Visual workflow designer
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <RiCheckLine className="text-white mt-1 mr-2 flex-shrink-0" size={20} />
-                    <span className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>
-                      Pre-built industry templates
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <RiCheckLine className="text-white mt-1 mr-2 flex-shrink-0" size={20} />
-                    <span className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>
-                      Conditional logic and branching
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <RiCheckLine className="text-white mt-1 mr-2 flex-shrink-0" size={20} />
-                    <span className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>
-                      Real-time monitoring and alerts
-                    </span>
-                  </li>
-                </ul>
               </div>
 
-              {/* Card 3 - Natural Language Processing */}
-              <div className="border border-white/40 rounded-2xl p-6 md:p-8 shadow-sm">
-                {/* Icon */}
-                <div className="w-14 h-14 bg-white/40 rounded-lg flex items-center justify-center mb-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="text-white text-2xl w-6 h-6">
-                    <path d="M19.5 4.7832V7.6709L22 9.11426V14.8867L19.499 16.3311L19.5 19.2178L14.5 22.1045L12 20.6611L9.5 22.1045L4.5 19.2178V16.3311L2 14.8877L2.00098 9.11328L4.5 7.66992V4.78418L9.5 1.89746L11.999 3.34082L14.501 1.89648L19.5 4.7832ZM13 5.07227V7H11V5.07324L9.5 4.20703L6.49902 5.93848V8.8252L4 10.2676V13.7334L6.5 15.1768V18.0635L9.5 19.7959L11 18.9287V17H13V18.9297L14.5 19.7959L17.5 18.0625V15.1768L20 13.7324V10.2695L17.499 8.8252L17.5 5.9375L14.501 4.20605L13 5.07227ZM14.2646 13.1602C14.3529 12.9473 14.6472 12.9473 14.7354 13.1602L14.8623 13.4648C15.0783 13.986 15.4807 14.4027 15.9873 14.6279L16.3457 14.7871C16.5511 14.8784 16.5511 15.1773 16.3457 15.2686L15.9658 15.4375C15.4721 15.6571 15.0761 16.0586 14.8564 16.5625L14.7334 16.8447C14.6432 17.0517 14.3569 17.0517 14.2666 16.8447L14.1436 16.5625C13.9239 16.0586 13.5279 15.6571 13.0342 15.4375L12.6543 15.2686C12.4489 15.1773 12.4489 14.8784 12.6543 14.7871L13.0127 14.6279C13.5193 14.4027 13.9217 13.986 14.1377 13.4648L14.2646 13.1602ZM9.58789 7.7793C9.74239 7.40671 10.2577 7.4067 10.4121 7.7793L10.6338 8.31445C11.0118 9.22695 11.7161 9.95624 12.6025 10.3506L13.2305 10.6289C13.5899 10.7887 13.5897 11.3117 13.2305 11.4717L12.5654 11.7676C11.7013 12.152 11.0086 12.8548 10.624 13.7373L10.4082 14.2324C10.2504 14.5948 9.74973 14.5948 9.5918 14.2324L9.37598 13.7373C8.99143 12.8548 8.29875 12.152 7.43457 11.7676L6.76953 11.4717C6.41033 11.3117 6.41022 10.7887 6.76953 10.6289L7.39746 10.3506C8.2839 9.95624 8.98832 9.22697 9.36621 8.31445L9.58789 7.7793Z"></path>
-                  </svg>
-                </div>
-
-                {/* Title */}
+              {/* Box 3 - 24/7 Operation */}
+              <div className="bg-white/10 rounded-2xl p-6 md:p-8 shadow-sm">
                 <h3 
-                  className="text-2xl font-bold text-white mb-4 text-center"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  className="text-2xl font-bold text-white mb-4 font-sora"
                 >
-                  Natural Language Processing
+                  24/7 Operation
                 </h3>
-
-
-                {/* Description */}
                 <p 
-                  className="text-white mb-6 leading-relaxed text-center"
-                  style={{ fontFamily: "var(--font-manrope)" }}
+                  className="text-white text-base leading-relaxed"
                 >
-                  Understand, analyze, and generate human language at scale.
+                  Agents work continuously across time zones, handling tasks while your team sleeps. Wake up to completed work, processed data, and actionable insights every morning.
                 </p>
+              </div>
 
-                {/* Features List */}
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <RiCheckLine className="text-white mt-1 mr-2 flex-shrink-0" size={20} />
-                    <span className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>
-                      Sentiment analysis and emotion detection
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <RiCheckLine className="text-white mt-1 mr-2 flex-shrink-0" size={20} />
-                    <span className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>
-                      Entity recognition and extraction
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <RiCheckLine className="text-white mt-1 mr-2 flex-shrink-0" size={20} />
-                    <span className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>
-                      Multi-language support (100+ languages)
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <RiCheckLine className="text-white mt-1 mr-2 flex-shrink-0" size={20} />
-                    <span className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>
-                      Content generation and summarization
-                    </span>
-                  </li>
-                </ul>
+              {/* Box 4 - Enterprise Security */}
+              <div className="bg-white/10 rounded-2xl p-6 md:p-8 shadow-sm">
+                <h3 
+                  className="text-2xl font-bold text-white mb-4 font-sora"
+                >
+                  Enterprise Security
+                </h3>
+                <p 
+                  className="text-white text-base leading-relaxed"
+                >
+                  SOC 2 compliant with role-based access control, encryption at rest and in transit, and comprehensive audit logs. Your data stays secure and compliant.
+                </p>
               </div>
             </div>
           </div>
@@ -213,105 +112,83 @@ export default function FeaturesPage() {
       <div>
         <section className="bg-[#A69CBE] pt-16 pb-20 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="max-w-7xl mx-auto">
-            {/* Title with Icon */}
-            <div className="flex items-center justify-center gap-4 mb-2">
-              <div className="w-10 h-10 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="text-white w-10 h-10">
-                  <path d="M15.1416 2.81836L13.1016 3.94824L12 3.31055L4.5 7.65234V7.6582L12 12V20.6895L19.5 16.3467V11.5L21.5 10.3291V17.5L12 23L2.5 17.5V6.5L12 1L15.1416 2.81836ZM18.5293 2.31934C18.7059 1.8935 19.2943 1.89349 19.4707 2.31934L19.7236 2.93066C20.1556 3.97346 20.9615 4.80618 21.9746 5.25684L22.6924 5.57617C23.1026 5.75901 23.1026 6.3562 22.6924 6.53906L21.9326 6.87695C20.9449 7.31624 20.1534 8.11944 19.7139 9.12793L19.4668 9.69336C19.2864 10.1075 18.7137 10.1075 18.5332 9.69336L18.2871 9.12793C17.8476 8.11929 17.0552 7.31628 16.0674 6.87695L15.3076 6.53906C14.8974 6.35622 14.8974 5.75899 15.3076 5.57617L16.0254 5.25684C17.0385 4.80618 17.8445 3.97348 18.2764 2.93066L18.5293 2.31934Z"></path>
-                </svg>
-              </div>
-              <h2 
-                className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight text-center"
-                style={{ fontFamily: "var(--font-sora)" }}
-              >
-                Adaptive Intelligence Memory (AIM)
-              </h2>
-          </div>
+            {/* Badge/Tag */}
+            <div className="flex justify-center mb-6">
+              <span className="bg-[#8B7FA8] text-white text-sm font-semibold px-4 py-2 rounded-full">
+                DATA PROCESSING
+              </span>
+            </div>
+
+            {/* Main Heading */}
+            <h2 
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center mb-6 leading-tight font-sora"
+            >
+              Turn Data Into Strategic Intelligence
+            </h2>
 
             {/* Subtitle */}
             <p 
-              className="text-lg md:text-xl text-white mb-8 text-center"
-              style={{ fontFamily: "var(--font-manrope)" }}
+              className="text-lg md:text-xl text-white text-center mb-12 max-w-3xl mx-auto leading-relaxed"
             >
-              Your Business Brain
+              Process millions of records with AI-powered insights that drive business decisions.
             </p>
 
-            {/* Introductory Paragraphs */}
-            <div className="mb-12 space-y-4">
-              <p 
-                className="text-base md:text-lg text-white leading-relaxed max-w-4xl text-center mx-auto"
-                style={{ fontFamily: "var(--font-manrope)" }}
-              >
-                AIM is the master context model that transforms Helium from a generic AI tool into your business's intelligent <span className="whitespace-nowrap">partner.</span>
-              </p>
-              <p 
-                className="text-base md:text-lg text-white leading-relaxed max-w-4xl text-center mx-auto"
-                style={{ fontFamily: "var(--font-manrope)" }}
-              >
-                It's the most advanced and effective way to build custom rules, guardrails, and domain expertise.
-              </p>
-            </div>
-
-            {/* Two-Column Feature Section */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto">
-              {/* Left Column - What You Can Upload */}
-              <div className="text-center">
+            {/* Four Feature Boxes - 2x2 Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+              {/* Box 1 - Data Cleaning & Transformation */}
+              <div className="bg-white/10 rounded-2xl p-6 md:p-8 shadow-sm">
                 <h3 
-                  className="text-xl md:text-2xl font-bold text-white mb-6"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  className="text-2xl font-bold text-white mb-4 font-sora"
                 >
-                  What You Can Upload
+                  Data Cleaning & Transformation
                 </h3>
-                <ul className="space-y-3 list-disc list-inside pl-4 text-left">
-                  <li className="text-white" style={{ fontFamily: "var(--font-manrope)" }}>
-                    Documents, PDFs, and reports
-                  </li>
-                  <li className="text-white" style={{ fontFamily: "var(--font-manrope)" }}>
-                    Images, diagrams, and visual assets
-                  </li>
-                  <li className="text-white" style={{ fontFamily: "var(--font-manrope)" }}>
-                    Websites and web content
-                  </li>
-                  <li className="text-white" style={{ fontFamily: "var(--font-manrope)" }}>
-                    Instructions, policies, and procedures
-                  </li>
-                  <li className="text-white" style={{ fontFamily: "var(--font-manrope)" }}>
-                    Structured data and databases
-                  </li>
-                  <li className="text-white" style={{ fontFamily: "var(--font-manrope)" }}>
-                    Knowledge bases and documentation
-                  </li>
-                </ul>
+                <p 
+                  className="text-white text-base leading-relaxed"
+                >
+                  Automatically clean messy data, handle missing values, standardize formats, and transform datasets into analysis-ready structures. What takes days manually happens in minutes.
+                </p>
               </div>
 
-              {/* Right Column - What AIM Enables */}
-              <div className="text-center">
+              {/* Box 2 - Advanced Analytics */}
+              <div className="bg-white/10 rounded-2xl p-6 md:p-8 shadow-sm">
                 <h3 
-                  className="text-xl md:text-2xl font-bold text-white mb-6"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  className="text-2xl font-bold text-white mb-4 font-sora"
                 >
-                  What AIM Enables
+                  Advanced Analytics
                 </h3>
-                <ul className="space-y-3 list-disc list-inside pl-4 text-left">
-                  <li className="text-white" style={{ fontFamily: "var(--font-manrope)" }}>
-                    Context-aware responses based on your business data
-                  </li>
-                  <li className="text-white" style={{ fontFamily: "var(--font-manrope)" }}>
-                    Automated compliance with your rules and policies
-                  </li>
-                  <li className="text-white" style={{ fontFamily: "var(--font-manrope)" }}>
-                    Brand-consistent outputs across all content
-                  </li>
-                  <li className="text-white" style={{ fontFamily: "var(--font-manrope)" }}>
-                    Domain-specific expertise without retraining
-                  </li>
-                  <li className="text-white" style={{ fontFamily: "var(--font-manrope)" }}>
-                    Persistent memory across all interactions
-                  </li>
-                  <li className="text-white" style={{ fontFamily: "var(--font-manrope)" }}>
-                    Custom guardrails for security and accuracy
-                  </li>
-                </ul>
+                <p 
+                  className="text-white text-base leading-relaxed"
+                >
+                  Run complex statistical analyses, build predictive models, and generate insights using machine learning. Helium makes advanced analytics accessible to every team member.
+                </p>
+              </div>
+
+              {/* Box 3 - Data Visualization */}
+              <div className="bg-white/10 rounded-2xl p-6 md:p-8 shadow-sm">
+                <h3 
+                  className="text-2xl font-bold text-white mb-4 font-sora"
+                >
+                  Data Visualization
+                </h3>
+                <p 
+                  className="text-white text-base leading-relaxed"
+                >
+                  Create interactive dashboards, charts, and reports that update in real-time. Share insights across your organization with beautiful, actionable visualizations.
+                </p>
+              </div>
+
+              {/* Box 4 - Data Integration */}
+              <div className="bg-white/10 rounded-2xl p-6 md:p-8 shadow-sm">
+                <h3 
+                  className="text-2xl font-bold text-white mb-4 font-sora"
+                >
+                  Data Integration
+                </h3>
+                <p 
+                  className="text-white text-base leading-relaxed"
+                >
+                  Connect to any data source - databases, APIs, files, or web services. Helium unifies data from across your enterprise into a single source of truth.
+                </p>
               </div>
             </div>
           </div>
@@ -320,94 +197,88 @@ export default function FeaturesPage() {
 
       {/* Orbit Section - White Background */}
       <div>
-        <section className="bg-[#D0EF5E] pt-16 pb-20 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+        <section className="bg-[#D0EF5E] pt-16 pb-20  px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="max-w-7xl mx-auto">
-            {/* Title with Icon */}
-            <div className="flex items-center justify-center gap-4 mb-2">
-              <div className="flex items-center gap-4 text-center">
-                <div className="w-10 h-10 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="text-gray-600 w-12 h-12">
-                    <path d="M6.75 2.5C9.09721 2.5 11 4.40279 11 6.75V11H6.75C4.40279 11 2.5 9.09721 2.5 6.75 2.5 4.40279 4.40279 2.5 6.75 2.5ZM6.75 13H11V17.25C11 19.5972 9.09721 21.5 6.75 21.5 4.40279 21.5 2.5 19.5972 2.5 17.25 2.5 14.9028 4.40279 13 6.75 13ZM13 13H17.25C19.5972 13 21.5 14.9028 21.5 17.25 21.5 19.5972 19.5972 21.5 17.25 21.5 14.9028 21.5 13 19.5972 13 17.25V13ZM18.008 10.0695 17.746 10.6702C17.5543 11.1099 16.9457 11.1099 16.7539 10.6702L16.492 10.0695C16.0251 8.99837 15.184 8.14559 14.1345 7.67906L13.3273 7.32028C12.8909 7.12628 12.8909 6.49155 13.3273 6.29754L14.0893 5.95881C15.1658 5.48028 16.022 4.59594 16.4809 3.48847L16.7499 2.83932C16.9374 2.38689 17.5626 2.38689 17.75 2.83932L18.019 3.48847C18.478 4.59594 19.3342 5.48028 20.4107 5.95881L21.1726 6.29754C21.6091 6.49155 21.6091 7.12628 21.1726 7.32028L20.3656 7.67906C19.316 8.14559 18.475 8.99837 18.008 10.0695Z"></path>
-                  </svg>
-                </div>
-                <h2 
-                  className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight"
-                  style={{ fontFamily: "var(--font-sora)" }}
-                >
-                  Orbit
-                </h2>
-              </div>
-            </div>
-            <div className="text-center mb-8">
-              <p 
-                className="text-lg md:text-xl text-gray-600 mt-2"
-                style={{ fontFamily: "var(--font-manrope)" }}
-              >
-                Your Published Apps Hub
-              </p>
+            {/* Badge/Tag */}
+            <div className="flex justify-center mb-6">
+              <span className="bg-[#B8C98A] text-gray-800 text-sm font-semibold px-4 py-2 rounded-full">
+                CONTENT CREATION
+              </span>
             </div>
 
-            
-
-            {/* Main Description */}
-            <p 
-              className="text-base md:text-lg text-gray-700 leading-relaxed max-w-4xl mb-12 text-center mx-auto"
-              style={{ fontFamily: "var(--font-manrope)" }}
+            {/* Main Heading */}
+            <h2 
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 text-center mb-6 leading-tight font-sora"
             >
-              Orbit is your centralized workspace for all AI-generated websites, dashboards, and applications. Pin, organize, and access everything Helium creates for you.
+              Generate Content That Converts
+            </h2>
+
+            {/* Subtitle */}
+            <p 
+              className="text-lg md:text-xl text-gray-800 text-center mb-12 max-w-3xl mx-auto leading-relaxed"
+            >
+              Create marketing materials, reports, presentations, and documentation at scale while maintaining your brand voice.
             </p>
 
-            {/* Three Feature Blocks */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {/* Block 1 - Pin & Organize */}
-              <div className="text-center bg-white/30 rounded-2xl p-6">
+            {/* Four Feature Boxes - 2x2 Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+              {/* Box 1 - Document Generation */}
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
                 <h3 
-                  className="text-xl md:text-2xl font-bold text-gray-900 mb-3"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  className="text-2xl font-bold text-gray-900 mb-4 font-sora"
                 >
-                  Pin & Organize
+                  Document Generation
                 </h3>
                 <p 
-                  className="text-gray-700 leading-relaxed"
-                  style={{ fontFamily: "var(--font-manrope)" }}
+                  className="text-gray-800 text-base leading-relaxed"
                 >
-                  Save important websites, dashboards, and apps for quick access
+                  Generate reports, proposals, contracts, and documentation automatically. Helium maintains consistency, accuracy, and your brand guidelines across all content.
                 </p>
               </div>
 
-              {/* Block 2 - Share Seamlessly */}
-              <div className="text-center bg-white/30 rounded-2xl p-6">
+              {/* Box 2 - Marketing Copy */}
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
                 <h3 
-                  className="text-xl md:text-2xl font-bold text-gray-900 mb-3"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  className="text-2xl font-bold text-gray-900 mb-4 font-sora"
                 >
-                  Share Seamlessly
+                  Marketing Copy
                 </h3>
                 <p 
-                  className="text-gray-700 leading-relaxed"
-                  style={{ fontFamily: "var(--font-manrope)" }}
+                  className="text-gray-800 text-base leading-relaxed"
                 >
-                  Generate shareable links for team collaboration
-            </p>
-          </div>
+                  Create compelling ad copy, email campaigns, social media posts, and landing pages that drive conversions. AI-optimized for engagement and performance.
+                </p>
+              </div>
 
-              {/* Block 3 - Version History */}
-              <div className="text-center bg-white/30 rounded-2xl p-6">
+              {/* Box 3 - Presentation Builder */}
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
                 <h3 
-                  className="text-xl md:text-2xl font-bold text-gray-900 mb-3"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  className="text-2xl font-bold text-gray-900 mb-4 font-sora"
                 >
-                  Version History
+                  Presentation Builder
                 </h3>
                 <p 
-                  className="text-gray-700 leading-relaxed"
-                  style={{ fontFamily: "var(--font-manrope)" }}
+                  className="text-gray-800 text-base leading-relaxed"
                 >
-                  Track changes and revert to previous versions
+                  Build professional presentations with AI-generated content, data visualizations, and design templates. Export to PowerPoint or share as interactive web presentations.
+                </p>
+              </div>
+
+              {/* Box 4 - Visual Content */}
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
+                <h3 
+                  className="text-2xl font-bold text-gray-900 mb-4 font-sora"
+                >
+                  Visual Content
+                </h3>
+                <p 
+                  className="text-gray-800 text-base leading-relaxed"
+                >
+                  Generate images, infographics, and visual assets that align with your brand. Create custom visuals for any use case without design expertise.
                 </p>
               </div>
             </div>
-        </div>
+          </div>
         </section>
       </div>
 
@@ -415,244 +286,257 @@ export default function FeaturesPage() {
       <div>
         <section className="bg-[#A6C8D5] pt-16 pb-20 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="max-w-7xl mx-auto">
-            {/* Title with Icon */}
-            <div className="flex items-center justify-center gap-4 mb-2">
-              <div className="flex items-center gap-4 text-center">
-                <div className="w-10 h-10 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="text-gray-600 w-10 h-10">
-                    <path d="M15 3C15.5523 3 16 3.44772 16 4V6H20C20.5523 6 21 6.44772 21 7V19H23V21H1V19H3V7C3 6.44772 3.44772 6 4 6H8V4C8 3.44772 8.44772 3 9 3H15ZM8 8H5V19H8V8ZM14 8H10V19H14V8ZM19 8H16V19H19V8ZM14 5H10V6H14V5Z"></path>
-                  </svg>
-                </div>
-                <h2 
-                  className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight"
-                  style={{ fontFamily: "var(--font-sora)" }}
-                >
-                  Vault
-                </h2>
-              </div>
-            </div>
-            <div className="text-center mb-8">
-              <p 
-                className="text-lg md:text-xl text-gray-600 mt-2 mb-8"
-                style={{ fontFamily: "var(--font-manrope)" }}
-              >
-                Unified File Management
-              </p>
+            {/* Badge/Tag */}
+            <div className="flex justify-center mb-6">
+              <span className="bg-[#FFFFFF]/30  text-black text-sm font-semibold px-4 py-2 rounded-full">
+                WEB AUTOMATION
+              </span>
             </div>
 
-            
-
-            {/* Main Description */}
-            <p 
-              className="text-base md:text-lg text-gray-700 leading-relaxed max-w-4xl mb-12 text-center mx-auto"
-              style={{ fontFamily: "var(--font-manrope)" }}
+            {/* Main Heading */}
+            <h2 
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 text-center mb-6 leading-tight font-sora"
             >
-              Vault provides a unified view of all files created by Helium over time — documents, reports, presentations, images, videos, and more. Never lose track of your AI-generated assets.
+              Automate Any Web-Based Task
+            </h2>
+
+            {/* Subtitle */}
+            <p 
+              className="text-lg md:text-xl text-gray-800 text-center mb-12 max-w-3xl mx-auto leading-relaxed"
+            >
+              From data extraction to form filling, Helium handles web automation at enterprise scale.
             </p>
 
             {/* Four Feature Boxes - 2x2 Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {/* Top-Left Box - Intelligent Search */}
-              <div className="text-center bg-white/30 rounded-2xl p-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+              {/* Box 1 - Intelligent Web Scraping */}
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
                 <h3 
-                  className="text-xl md:text-2xl font-bold text-gray-900 mb-3"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  className="text-2xl font-bold text-gray-900 mb-4 font-sora"
                 >
-                  Intelligent Search
+                  Intelligent Web Scraping
                 </h3>
                 <p 
-                  className="text-gray-700 leading-relaxed"
-                  style={{ fontFamily: "var(--font-manrope)" }}
+                  className="text-gray-800 text-base leading-relaxed"
                 >
-                  Find any file instantly with semantic search across all your content.
+                  Extract structured data from any website, even those with complex JavaScript rendering. Helium handles pagination, infinite scroll, and dynamic content automatically.
                 </p>
               </div>
 
-              {/* Top-Right Box - Smart Filtering */}
-              <div className="text-center bg-white/30 rounded-2xl p-6">
+              {/* Box 2 - Browser Automation */}
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
                 <h3 
-                  className="text-xl md:text-2xl font-bold text-gray-900 mb-3"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  className="text-2xl font-bold text-gray-900 mb-4 font-sora"
                 >
-                  Smart Filtering
+                  Browser Automation
                 </h3>
                 <p 
-                  className="text-gray-700 leading-relaxed"
-                  style={{ fontFamily: "var(--font-manrope)" }}
+                  className="text-gray-800 text-base leading-relaxed"
                 >
-                  Filter by type, date, project, or custom tags.
+                  Automate clicks, form submissions, file uploads, and complex user interactions. Helium can navigate any web application just like a human user would.
                 </p>
               </div>
 
-              {/* Bottom-Left Box - Auto-Organization */}
-              <div className="text-center bg-white/30 rounded-2xl p-6">
+              {/* Box 3 - Site Monitoring */}
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
                 <h3 
-                  className="text-xl md:text-2xl font-bold text-gray-900 mb-3"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  className="text-2xl font-bold text-gray-900 mb-4 font-sora"
                 >
-                  Auto-Organization
+                  Site Monitoring
                 </h3>
                 <p 
-                  className="text-gray-700 leading-relaxed"
-                  style={{ fontFamily: "var(--font-manrope)" }}
+                  className="text-gray-800 text-base leading-relaxed"
                 >
-                  Files are automatically categorized and organized.
+                  Monitor competitor websites, track price changes, detect content updates, and receive instant alerts when important changes occur across thousands of sites.
                 </p>
               </div>
 
-              {/* Bottom-Right Box - Bulk Operations */}
-              <div className="text-center bg-white/30 rounded-2xl p-6">
+              {/* Box 4 - Scheduled Automation */}
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
                 <h3 
-                  className="text-xl md:text-2xl font-bold text-gray-900 mb-3"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  className="text-2xl font-bold text-gray-900 mb-4 font-sora"
                 >
-                  Bulk Operations
+                  Scheduled Automation
                 </h3>
                 <p 
-                  className="text-gray-700 leading-relaxed"
-                  style={{ fontFamily: "var(--font-manrope)" }}
+                  className="text-gray-800 text-base leading-relaxed"
                 >
-                  Download, share, or archive multiple files at once.
+                  Run web automation tasks on schedules or triggers. Daily reports, weekly data pulls, or real-time monitoring - Helium handles it all automatically.
                 </p>
               </div>
-        </div>
-      </div>
-    </section>
+            </div>
+          </div>
+        </section>
       </div>
 
       {/* Integrations Section - White Background */}
       <div>
         <section className="bg-[#27584F] pt-16 pb-20 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="max-w-7xl mx-auto">
-            {/* Title with Icon */}
-            <div className="flex items-center justify-center gap-4 mb-2">
-              <div className="flex items-center gap-4 text-center">
-                <div className="w-10 h-10 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="text-white w-10 h-10">
-                    <path d="M4 15V8.5C4 6.01472 6.01472 4 8.5 4C10.9853 4 13 6.01472 13 8.5V15.5C13 16.8807 14.1193 18 15.5 18C16.8807 18 18 16.8807 18 15.5V8.82929C16.8348 8.41746 16 7.30622 16 6C16 4.34315 17.3431 3 19 3C20.6569 3 22 4.34315 22 6C22 7.30622 21.1652 8.41746 20 8.82929V15.5C20 17.9853 17.9853 20 15.5 20C13.0147 20 11 17.9853 11 15.5V8.5C11 7.11929 9.88071 6 8.5 6C7.11929 6 6 7.11929 6 8.5V15H9L5 20L1 15H4ZM19 7C19.5523 7 20 6.55228 20 6C20 5.44772 19.5523 5 19 5C18.4477 5 18 5.44772 18 6C18 6.55228 18.4477 7 19 7Z"></path>
-                  </svg>
-                </div>
-                <h2 
-                  className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight"
-                  style={{ fontFamily: "var(--font-sora)" }}
-                >
-                  200+ Integrations
-                </h2>
-              </div>
-            </div>
-            <div className="text-center mb-8">
-              <p 
-                className="text-lg md:text-xl text-white mt-2"
-                style={{ fontFamily: "var(--font-manrope)" }}
-              >
-                Connect Your Entire Tech Stack
-              </p>
+            {/* Badge/Tag */}
+            <div className="flex justify-center mb-6">
+              <span className="bg-[#1F4A3F] text-white text-sm font-semibold px-4 py-2 rounded-full">
+                SOFTWARE DEVELOPMENT
+              </span>
             </div>
 
-            {/* Main Description */}
-            <p 
-              className="text-base md:text-lg text-white leading-relaxed max-w-4xl mb-12 text-center mx-auto"
-              style={{ fontFamily: "var(--font-manrope)" }}
+            {/* Main Heading */}
+            <h2 
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center mb-6 leading-tight font-sora"
             >
-              Helium integrates with your entire tech stack in just a few clicks. Connect CRM, ERP, email, social media, databases, and more — all working together under Helium's intelligent orchestration.
+              Build Applications 10x Faster
+            </h2>
+
+            {/* Subtitle */}
+            <p 
+              className="text-lg md:text-xl text-white text-center mb-12 max-w-3xl mx-auto leading-relaxed"
+            >
+              Accelerate development from concept to production with AI-powered coding assistance.
             </p>
 
-            {/* Six Integration Category Boxes - 2x3 Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              {/* Box 1 - CRM & Sales */}
-              <div className="bg-white/30 rounded-lg p-6">
+            {/* Four Feature Boxes - 2x2 Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+              {/* Box 1 - Code Generation */}
+              <div className="bg-white/20 rounded-2xl p-6 md:p-8 shadow-sm">
                 <h3 
-                  className="text-lg md:text-xl font-bold text-white mb-4 text-center"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  className="text-2xl font-bold text-white mb-4 font-sora"
                 >
-                  CRM & Sales
+                  Code Generation
                 </h3>
-                <ul className="space-y-2 text-center">
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>Salesforce</li>
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>HubSpot</li>
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>Pipedrive</li>
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>Zoho CRM</li>
-                </ul>
+                <p 
+                  className="text-white text-base leading-relaxed"
+                >
+                  Generate production-ready code in any language. From APIs to full applications, Helium writes clean, maintainable code that follows best practices.
+                </p>
               </div>
 
-              {/* Box 2 - Email & Communication */}
-              <div className="bg-white/30 rounded-lg p-6">
+              {/* Box 2 - Debugging & Testing */}
+              <div className="bg-white/20 rounded-2xl p-6 md:p-8 shadow-sm">
                 <h3 
-                  className="text-lg md:text-xl font-bold text-white mb-4 text-center"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  className="text-2xl font-bold text-white mb-4 font-sora"
                 >
-                  Email & Communication
+                  Debugging & Testing
                 </h3>
-                <ul className="space-y-2 text-center">
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>Gmail</li>
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>Outlook</li>
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>Slack</li>
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>Microsoft Teams</li>
-                </ul>
+                <p 
+                  className="text-white text-base leading-relaxed"
+                >
+                  Identify bugs, write test cases, and ensure code quality automatically. Helium catches issues before they reach production.
+                </p>
               </div>
 
-              {/* Box 3 - Databases & Storage */}
-              <div className="bg-white/30 rounded-lg p-6">
+              {/* Box 3 - Version Control Integration */}
+              <div className="bg-white/20 rounded-2xl p-6 md:p-8 shadow-sm">
                 <h3 
-                  className="text-lg md:text-xl font-bold text-white mb-4 text-center"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  className="text-2xl font-bold text-white mb-4 font-sora"
                 >
-                  Databases & Storage
+                  Version Control Integration
                 </h3>
-                <ul className="space-y-2 text-center">
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>PostgreSQL</li>
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>MySQL</li>
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>MongoDB</li>
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>Supabase</li>
-                </ul>
+                <p 
+                  className="text-white text-base leading-relaxed"
+                >
+                  Seamlessly integrate with GitHub, GitLab, and Bitbucket. Helium manages branches, commits, and pull requests as part of your development workflow.
+                </p>
               </div>
 
-              {/* Box 4 - Project Management */}
-              <div className="bg-white/30 rounded-lg p-6">
+              {/* Box 4 - Deployment Automation */}
+              <div className="bg-white/20 rounded-2xl p-6 md:p-8 shadow-sm">
                 <h3 
-                  className="text-lg md:text-xl font-bold text-white mb-4 text-center"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  className="text-2xl font-bold text-white mb-4 font-sora"
                 >
-                  Project Management
+                  Deployment Automation
                 </h3>
-                <ul className="space-y-2 text-center">
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>Asana</li>
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>Trello</li>
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>Jira</li>
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>Monday.com</li>
-                </ul>
+                <p 
+                  className="text-white text-base leading-relaxed"
+                >
+                  Deploy applications to any cloud platform with one command. Helium handles CI/CD pipelines, environment configuration, and rollback strategies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* Workflow Orchestration Section */}
+      <div>
+        <section className="bg-[#E7B31B] pt-16 pb-20 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          <div className="max-w-7xl mx-auto">
+            {/* Badge/Tag */}
+            <div className="flex justify-center mb-6">
+              <span className="bg-white/30 text-black text-sm font-semibold px-4 py-2 rounded-full">
+                WORKFLOW ORCHESTRATION
+              </span>
+            </div>
+
+            {/* Main Heading */}
+            <h2 
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 text-center mb-6 leading-tight font-sora"
+            >
+              Connect Your Entire Tech Stack
+            </h2>
+
+            {/* Subtitle */}
+            <p 
+              className="text-lg md:text-xl text-gray-800 text-center mb-12 max-w-3xl mx-auto leading-relaxed"
+            >
+              Orchestrate complex workflows across departments and systems with seamless automation.
+            </p>
+
+            {/* Four Feature Boxes - 2x2 Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+              {/* Box 1 - Universal Connectors */}
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
+                <h3 
+                  className="text-2xl font-bold text-gray-900 mb-4 font-sora"
+                >
+                  Universal Connectors
+                </h3>
+                <p 
+                  className="text-gray-800 text-base leading-relaxed"
+                >
+                  Connect to 1000+ applications and services. From CRMs to databases, email to project management, Helium integrates with your entire ecosystem.
+                </p>
               </div>
 
-              {/* Box 5 - Documentation */}
-              <div className="bg-white/30 rounded-lg p-6">
+              {/* Box 2 - Conditional Logic */}
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
                 <h3 
-                  className="text-lg md:text-xl font-bold text-white mb-4 text-center"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  className="text-2xl font-bold text-gray-900 mb-4 font-sora"
                 >
-                  Documentation
+                  Conditional Logic
                 </h3>
-                <ul className="space-y-2 text-center">
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>Notion</li>
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>Confluence</li>
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>Google Docs</li>
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>Dropbox</li>
-                </ul>
+                <p 
+                  className="text-gray-800 text-base leading-relaxed"
+                >
+                  Build sophisticated workflows with if-then logic, loops, and error handling. Helium adapts to different scenarios and handles exceptions intelligently.
+                </p>
               </div>
 
-              {/* Box 6 - Social Media */}
-              <div className="bg-white/30 rounded-lg p-6">
+              {/* Box 3 - Scheduled Workflows */}
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
                 <h3 
-                  className="text-lg md:text-xl font-bold text-white mb-4 text-center"
-                  style={{ fontFamily: "var(--font-sora)" }}
+                  className="text-2xl font-bold text-gray-900 mb-4 font-sora"
                 >
-                  Social Media
+                  Scheduled Workflows
                 </h3>
-                <ul className="space-y-2 text-center">
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>LinkedIn</li>
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>Twitter</li>
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>Facebook</li>
-                  <li className="text-white text-sm" style={{ fontFamily: "var(--font-manrope)" }}>Instagram</li>
-                </ul>
+                <p 
+                  className="text-gray-800 text-base leading-relaxed"
+                >
+                  Run workflows on schedules, triggers, or events. Daily reports, weekly summaries, or real-time alerts - Helium executes workflows exactly when needed.
+                </p>
+              </div>
+
+              {/* Box 4 - Real-Time Monitoring */}
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
+                <h3 
+                  className="text-2xl font-bold text-gray-900 mb-4 font-sora"
+                >
+                  Real-Time Monitoring
+                </h3>
+                <p 
+                  className="text-gray-800 text-base leading-relaxed"
+                >
+                  Track workflow execution in real-time with detailed logs and performance metrics. Identify bottlenecks and optimize processes continuously.
+                </p>
               </div>
             </div>
           </div>

@@ -72,7 +72,7 @@ export default function BankingFinanceSection() {
       <h4 className="text-3xl font-bold text-gray-900 mb-4" style={{ fontFamily: "var(--font-sora)" }}>
         Banking & Finance
       </h4>
-      <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mb-8" style={{ fontFamily: "var(--font-manrope)" }}>
+      <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mb-8">
         Transform financial operations with AI-powered automation, risk management, and compliance solutions that scale across your entire organization.
       </p>
       

@@ -2,13 +2,6 @@
 
 import React from 'react'
 import { Bot, Globe, Database, PenTool, Code2, Workflow } from 'lucide-react'
-import { Sora } from 'next/font/google'
-
-const sora = Sora({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-sora',
-})
 
 interface FeatureCard {
   icon: React.ComponentType<{ className?: string }>
@@ -63,14 +56,12 @@ const bottomFeatures: FeatureCard[] = [
 export default function BusinessFunctions() {
   return (
     <section 
-      className={`relative flex flex-col items-center justify-center py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 ${sora.variable}`}
-      style={{ backgroundColor: '#ececec' }}
+      className="relative flex flex-col items-center justify-center py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 bg-[#ececec]"
     >
       <div className="w-full max-w-7xl mx-auto">
         {/* Title */}
         <h2 
-          className={`${sora.variable} text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 text-center`}
-          style={{ fontFamily: 'Sora, sans-serif' }}
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 text-center font-sora"
         >
           The AI Platform Built for Enterprise Scale
         </h2>
@@ -87,33 +78,25 @@ export default function BusinessFunctions() {
             return (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-md border-2 border-transparent transition-all duration-200 h-full"
-                style={{ padding: '3rem' }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = '#E0693D'
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = 'transparent'
-                }}
+                className="bg-white rounded-lg shadow-md border-2 border-transparent hover:border-[#E0693D] transition-all duration-200 h-full p-12"
               >
-                {/* Icon */}
-                <div 
-                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center mb-4"
-                  style={{ backgroundColor: feature.iconBgColor }}
-                >
-                  <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
+                {/* Icon and Title */}
+                <div className="flex items-center gap-4 mb-4">
+                  <div 
+                    className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center shrink-0"
+                    style={{ backgroundColor: feature.iconBgColor }}
+                  >
+                    <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
+                  </div>
+                  <h3 
+                    className="font-bold text-gray-900 font-sora text-2xl"
+                  >
+                    {feature.title}
+                  </h3>
                 </div>
 
-                {/* Title */}
-                <h3 
-                  className={`${sora.variable} font-bold text-gray-900 mb-4`}
-                  style={{ fontFamily: 'Sora, sans-serif', fontSize: '24px' }}
-                >
-                  {feature.title}
-                </h3>
-
                 {/* Description */}
-                <p className="text-gray-700 leading-relaxed" style={{ fontSize: '18px' }}>
+                <p className="text-gray-700 leading-relaxed text-lg">
                   {feature.description}
                 </p>
               </div>
@@ -128,33 +111,25 @@ export default function BusinessFunctions() {
             return (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-md border-2 border-transparent transition-all duration-200 h-full"
-                style={{ padding: '3rem' }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = '#E0693D'
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = 'transparent'
-                }}
+                className="bg-white rounded-lg shadow-md border-2 border-transparent hover:border-[#E0693D] transition-all duration-200 h-full p-12"
               >
-                {/* Icon */}
-                <div 
-                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center mb-4"
-                  style={{ backgroundColor: feature.iconBgColor }}
-                >
-                  <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
+                {/* Icon and Title */}
+                <div className="flex items-center gap-4 mb-4">
+                  <div 
+                    className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center shrink-0"
+                    style={{ backgroundColor: feature.iconBgColor }}
+                  >
+                    <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
+                  </div>
+                  <h3 
+                    className="font-bold text-gray-900 font-sora text-2xl"
+                  >
+                    {feature.title}
+                  </h3>
                 </div>
 
-                {/* Title */}
-                <h3 
-                  className={`${sora.variable} font-bold text-gray-900 mb-4`}
-                  style={{ fontFamily: 'Sora, sans-serif', fontSize: '24px' }}
-                >
-                  {feature.title}
-                </h3>
-
                 {/* Description */}
-                <p className="text-gray-700 leading-relaxed" style={{ fontSize: '18px' }}>
+                <p className="text-gray-700 leading-relaxed text-lg">
                   {feature.description}
                 </p>
               </div>

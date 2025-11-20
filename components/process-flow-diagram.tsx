@@ -176,7 +176,7 @@ export default function ProcessFlowDiagram({
               <h3 className="text-lg font-semibold mb-2 text-gray-900" style={{ fontFamily: "var(--font-sora)" }}>
                 {step.title}
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed" style={{ fontFamily: "var(--font-manrope)" }}>
+              <p className="text-sm text-gray-600 leading-relaxed">
                 {step.description}
               </p>
             </div>
