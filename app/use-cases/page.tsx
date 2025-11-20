@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import { RiBankLine, RiShieldLine, RiShoppingCartLine, RiTeamLine } from "react-icons/ri";
@@ -53,7 +53,7 @@ const industries: IndustryTab[] = [
   { id: "manufacturing", label: "Manufacturing", icon: ManufacturingIcon, component: ManufacturingSection },
 ];
 
-export default function UseCasesPage() {
+function UseCasesContent() {
   const searchParams = useSearchParams();
   const industryParam = searchParams.get("industry");
   const defaultTab = industryParam && industries.find(i => i.id === industryParam) ? industryParam : "banking";
@@ -149,6 +149,26 @@ export default function UseCasesPage() {
         </div>
       </section>
     </main>
+  );
+}
+
+export default function UseCasesPage() {
+  return (
+    <Suspense fallback={
+      <main>
+        <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden pt-24 pb-24">
+          <div className="relative z-10 w-full mx-auto max-w-5xl px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+            <div className="flex flex-col items-center justify-center text-center">
+              <h1 className="mb-8 text-5xl font-bold leading-tight text-gray-900 md:text-7xl lg:text-8xl" style={{ fontFamily: "var(--font-sora)" }}>
+                Helium Across Industries
+              </h1>
+            </div>
+          </div>
+        </section>
+      </main>
+    }>
+      <UseCasesContent />
+    </Suspense>
   );
 }
 
