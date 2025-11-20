@@ -111,7 +111,7 @@ export default function IndustryLeaders() {
               return (
                 <div
                   key={index}
-                  className="bg-white rounded-lg shadow-sm border-2 border-transparent hover:border-[#E0693D] transition-all duration-200 h-full hover:shadow-md p-8"
+                  className="bg-white rounded-lg shadow-sm border-2 border-transparent hover:border-[#E0693D] transition-all duration-200 h-full hover:shadow-md p-6 md:p-6 lg:p-8"
                 >
                   {/* Icon and Title in Flex */}
                   <div className="flex items-center gap-3 mb-4">
@@ -122,14 +122,14 @@ export default function IndustryLeaders() {
                       <Icon className="w-5 h-5 text-white" />
                     </div>
                     <h3 
-                      className="font-bold text-gray-900 font-sora text-2xl"
+                      className="font-bold text-gray-900 font-sora text-xl md:text-lg lg:text-2xl break-words"
                     >
                       {industry.title}
                     </h3>
                   </div>
 
                   {/* Description */}
-                  <p className="text-gray-700 leading-relaxed text-lg">
+                  <p className="text-gray-700 leading-relaxed text-base md:text-base lg:text-lg break-words">
                     {industry.description}
                   </p>
                 </div>
@@ -145,8 +145,7 @@ export default function IndustryLeaders() {
                 return (
                   <div
                     key={index}
-                    className="bg-white rounded-lg shadow-sm border-2 border-transparent transition-all duration-200 h-full hover:shadow-md"
-                  style={{ padding: '2rem' }}
+                    className="bg-white rounded-lg shadow-sm border-2 border-transparent transition-all duration-200 h-full hover:shadow-md p-6 md:p-6 lg:p-8"
                   onMouseEnter={(e) => {
                     e.currentTarget.style.borderColor = '#E0693D'
                   }}
@@ -163,14 +162,14 @@ export default function IndustryLeaders() {
                       <Icon className="w-5 h-5 text-white" />
                     </div>
                     <h3 
-                      className="font-bold text-gray-900 font-sora text-2xl"
+                      className="font-bold text-gray-900 font-sora text-xl md:text-lg lg:text-2xl break-words"
                     >
                       {industry.title}
                     </h3>
                   </div>
 
                   {/* Description */}
-                  <p className="text-gray-700 leading-relaxed" style={{ fontSize: '18px' }}>
+                  <p className="text-gray-700 leading-relaxed text-base md:text-base lg:text-lg break-words">
                     {industry.description}
                   </p>
                   </div>
