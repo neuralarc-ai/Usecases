@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Hiring decisions"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Demand Forecasting",
+            description: "Predicts resource needs"
+          },
+          {
+            title: "Capacity Assessment",
+            description: "Evaluates available capacity"
+          },
+          {
+            title: "Gap Analysis",
+            description: "Identifies shortfalls or excess"
+          },
+          {
+            title: "Optimal Allocation",
+            description: "Matches resources to projects"
+          },
+          {
+            title: "Utilization Tracking",
+            description: "Monitors actual utilization"
+          },
+          {
+            title: "Adjustment",
+            description: "Reallocates as needed"
+          },
+          {
+            title: "Analytics",
+            description: "Analyzes patterns and trends"
+          },
+          {
+            title: "Planning",
+            description: "Informs hiring and development"
+          }
+        ]
+      }}
     />
   );
 }

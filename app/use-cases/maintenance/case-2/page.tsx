@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Annual value"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Real-Time Data Collection",
+            description: "Gathers equipment performance data continuously"
+          },
+          {
+            title: "Performance Metrics Calculation",
+            description: "Computes efficiency and health indicators"
+          },
+          {
+            title: "Trend Analysis",
+            description: "Identifies performance patterns and degradation"
+          },
+          {
+            title: "Benchmark Comparison",
+            description: "Compares against standards and historical data"
+          },
+          {
+            title: "Performance Forecasting",
+            description: "Predicts future performance trends"
+          },
+          {
+            title: "Anomaly Detection",
+            description: "Identifies performance issues"
+          },
+          {
+            title: "Alert Generation",
+            description: "Notifies maintenance team of issues"
+          },
+          {
+            title: "Optimization Recommendations",
+            description: "Suggests performance improvements"
+          }
+        ]
+      }}
     />
   );
 }

@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Limit management"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Position Capture",
+            description: "Receives real-time position updates"
+          },
+          {
+            title: "Market Data Integration",
+            description: "Incorporates current prices and volatility"
+          },
+          {
+            title: "Risk Calculation",
+            description: "Computes VaR, ES, and other metrics"
+          },
+          {
+            title: "Limit Monitoring",
+            description: "Checks against all limits"
+          },
+          {
+            title: "Alert Generation",
+            description: "Notifies of breaches or issues"
+          },
+          {
+            title: "Scenario Analysis",
+            description: "Models various market scenarios"
+          },
+          {
+            title: "Hedging Recommendations",
+            description: "Suggests optimal hedges"
+          },
+          {
+            title: "Performance Tracking",
+            description: "Monitors risk-adjusted returns"
+          }
+        ]
+      }}
     />
   );
 }

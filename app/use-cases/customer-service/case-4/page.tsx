@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Legitimate claim resolution"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Fraud Alert",
+            description: "Claim flagged for investigation"
+          },
+          {
+            title: "Automated Evidence Collection",
+            description: "Gathers all relevant data"
+          },
+          {
+            title: "Timeline Construction",
+            description: "Builds event sequence"
+          },
+          {
+            title: "Relationship Mapping",
+            description: "Identifies connections"
+          },
+          {
+            title: "Red Flag Analysis",
+            description: "Highlights suspicious elements"
+          },
+          {
+            title: "Investigation Assignment",
+            description: "Routes to appropriate investigator"
+          },
+          {
+            title: "Guided Investigation",
+            description: "Provides structured workflow"
+          },
+          {
+            title: "Resolution Documentation",
+            description: "Records outcome and evidence"
+          }
+        ]
+      }}
     />
   );
 }

@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "ROE"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Data Aggregation",
+            description: "Collects exposure and risk data"
+          },
+          {
+            title: "Capital Calculation",
+            description: "Computes regulatory requirements"
+          },
+          {
+            title: "Optimization Analysis",
+            description: "Identifies capital efficiency opportunities"
+          },
+          {
+            title: "Scenario Modeling",
+            description: "Models various strategies"
+          },
+          {
+            title: "Recommendation Generation",
+            description: "Suggests optimal capital structure"
+          },
+          {
+            title: "Implementation Tracking",
+            description: "Monitors capital actions"
+          },
+          {
+            title: "Regulatory Reporting",
+            description: "Generates required reports"
+          },
+          {
+            title: "Continuous Monitoring",
+            description: "Tracks capital ratios"
+          }
+        ]
+      }}
     />
   );
 }

@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Annual savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Regulatory Monitoring",
+            description: "Tracks all regulatory sources"
+          },
+          {
+            title: "Change Detection",
+            description: "Identifies new requirements"
+          },
+          {
+            title: "Impact Assessment",
+            description: "Evaluates effect on operations"
+          },
+          {
+            title: "Compliance Gap Analysis",
+            description: "Identifies gaps"
+          },
+          {
+            title: "Alert Generation",
+            description: "Notifies compliance team"
+          },
+          {
+            title: "Policy Update Workflow",
+            description: "Manages implementation"
+          },
+          {
+            title: "Automated Reporting",
+            description: "Generates required reports"
+          },
+          {
+            title: "Audit Trail",
+            description: "Documents all compliance activities"
+          }
+        ]
+      }}
     />
   );
 }

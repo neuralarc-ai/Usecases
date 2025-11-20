@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Annual productivity gain"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "User Context",
+            description: "Understands current project and needs"
+          },
+          {
+            title: "Content Analysis",
+            description: "Analyzes available content"
+          },
+          {
+            title: "Relevance Scoring",
+            description: "Ranks by relevance"
+          },
+          {
+            title: "Recommendation Generation",
+            description: "Suggests top content"
+          },
+          {
+            title: "Personalization",
+            description: "Customizes to user"
+          },
+          {
+            title: "Delivery",
+            description: "Presents recommendations"
+          },
+          {
+            title: "Usage Tracking",
+            description: "Monitors engagement"
+          },
+          {
+            title: "Optimization",
+            description: "Improves recommendations"
+          }
+        ]
+      }}
     />
   );
 }

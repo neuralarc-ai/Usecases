@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Cost savings per project"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Competitor Identification",
+            description: "Defines competitors to track"
+          },
+          {
+            title: "Automated Monitoring",
+            description: "Collects data continuously"
+          },
+          {
+            title: "Data Processing",
+            description: "Structures and analyzes information"
+          },
+          {
+            title: "Framework Application",
+            description: "Applies analysis methodology"
+          },
+          {
+            title: "Insight Generation",
+            description: "Identifies key findings"
+          },
+          {
+            title: "Visualization Creation",
+            description: "Creates compelling visuals"
+          },
+          {
+            title: "Report Generation",
+            description: "Produces comprehensive analysis"
+          },
+          {
+            title: "Continuous Updates",
+            description: "Monitors ongoing changes"
+          }
+        ]
+      }}
     />
   );
 }

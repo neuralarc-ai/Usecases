@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Annual cost savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Performance Monitoring",
+            description: "Tracks all supplier metrics in real-time"
+          },
+          {
+            title: "Automated Scoring",
+            description: "Calculates composite performance scores"
+          },
+          {
+            title: "Issue Detection",
+            description: "Identifies quality, delivery, and pricing problems"
+          },
+          {
+            title: "Risk Assessment",
+            description: "Evaluates supplier risk levels"
+          },
+          {
+            title: "Supplier Portal",
+            description: "Provides visibility and collaboration tools"
+          },
+          {
+            title: "Issue Resolution",
+            description: "Facilitates problem-solving with suppliers"
+          },
+          {
+            title: "Optimization Recommendations",
+            description: "Suggests improvements and alternatives"
+          },
+          {
+            title: "Performance Tracking",
+            description: "Monitors improvement progress"
+          }
+        ]
+      }}
     />
   );
 }

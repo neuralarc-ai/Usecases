@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Annual productivity gain"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Expertise Capture",
+            description: "Documents skills and experience"
+          },
+          {
+            title: "Profile Creation",
+            description: "Builds expert profiles"
+          },
+          {
+            title: "Search Query",
+            description: "User searches for expertise"
+          },
+          {
+            title: "Matching",
+            description: "Identifies relevant experts"
+          },
+          {
+            title: "Introduction",
+            description: "Facilitates connection"
+          },
+          {
+            title: "Collaboration",
+            description: "Enables knowledge sharing"
+          },
+          {
+            title: "Tracking",
+            description: "Monitors collaboration value"
+          },
+          {
+            title: "Expertise Update",
+            description: "Keeps profiles current"
+          }
+        ]
+      }}
     />
   );
 }

@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Customer satisfaction with renewal process"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Renewal Identification",
+            description: "Identifies policies approaching renewal"
+          },
+          {
+            title: "Personalized Offer Creation",
+            description: "Generates customized renewal offer"
+          },
+          {
+            title: "Reminder Campaign",
+            description: "Sends multi-touch reminders"
+          },
+          {
+            title: "One-Click Renewal",
+            description: "Enables easy renewal process"
+          },
+          {
+            title: "Payment Processing",
+            description: "Processes renewal payment"
+          },
+          {
+            title: "Policy Update",
+            description: "Renews policy automatically"
+          },
+          {
+            title: "Confirmation",
+            description: "Sends renewal confirmation"
+          },
+          {
+            title: "Satisfaction Survey",
+            description: "Collects feedback"
+          }
+        ]
+      }}
     />
   );
 }

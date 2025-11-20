@@ -39,6 +39,43 @@ export default function Case5Page() {
           label: "Risk mitigation"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Continuous Data Collection",
+            description: "Monitors risk factors throughout policy term"
+          },
+          {
+            title: "Risk Change Detection",
+            description: "Identifies material changes"
+          },
+          {
+            title: "Impact Assessment",
+            description: "Evaluates effect on loss potential"
+          },
+          {
+            title: "Re-underwriting Trigger",
+            description: "Initiates review for significant changes"
+          },
+          {
+            title: "Pricing Adjustment",
+            description: "Calculates new premium if needed"
+          },
+          {
+            title: "Customer Communication",
+            description: "Notifies of changes and recommendations"
+          },
+          {
+            title: "Policy Modification",
+            description: "Updates coverage or pricing"
+          },
+          {
+            title: "Monitoring Continuation",
+            description: "Continues tracking throughout term"
+          }
+        ]
+      }}
     />
   );
 }

@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Annual operational savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Claim Assessment",
+            description: "Damage and liability determined"
+          },
+          {
+            title: "Settlement Calculation",
+            description: "AI calculates settlement amount"
+          },
+          {
+            title: "Policy Coverage Verification",
+            description: "Confirms coverage and limits"
+          },
+          {
+            title: "Automated Approval",
+            description: "Low-complexity claims auto-approved"
+          },
+          {
+            title: "Payment Processing",
+            description: "Initiates payment via preferred method"
+          },
+          {
+            title: "Customer Notification",
+            description: "Sends settlement confirmation"
+          },
+          {
+            title: "Satisfaction Survey",
+            description: "Collects feedback"
+          },
+          {
+            title: "Case Closure",
+            description: "Closes claim with documentation"
+          }
+        ]
+      }}
     />
   );
 }

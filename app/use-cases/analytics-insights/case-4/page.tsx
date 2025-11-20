@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Annual revenue increase"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Data Collection",
+            description: "Gathers store performance data"
+          },
+          {
+            title: "Metric Calculation",
+            description: "Computes all KPIs"
+          },
+          {
+            title: "Benchmarking",
+            description: "Compares to peers"
+          },
+          {
+            title: "Gap Analysis",
+            description: "Identifies performance gaps"
+          },
+          {
+            title: "Root Cause Analysis",
+            description: "Determines drivers"
+          },
+          {
+            title: "Recommendation Generation",
+            description: "Suggests improvements"
+          },
+          {
+            title: "Action Planning",
+            description: "Develops implementation plans"
+          },
+          {
+            title: "Performance Tracking",
+            description: "Monitors results"
+          }
+        ]
+      }}
     />
   );
 }

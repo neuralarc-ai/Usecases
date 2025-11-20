@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Annual revenue increase"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Customer Profile Analysis",
+            description: "Analyzes customer needs and risks"
+          },
+          {
+            title: "Coverage Gap Identification",
+            description: "Identifies underinsured areas"
+          },
+          {
+            title: "Product Recommendation",
+            description: "Suggests relevant products"
+          },
+          {
+            title: "Bundle Optimization",
+            description: "Creates optimal product combinations"
+          },
+          {
+            title: "Pricing Calculation",
+            description: "Calculates premiums with discounts"
+          },
+          {
+            title: "Policy Configuration",
+            description: "Configures custom policy"
+          },
+          {
+            title: "Approval Workflow",
+            description: "Routes for underwriter approval if needed"
+          },
+          {
+            title: "Policy Issuance",
+            description: "Issues customized policy"
+          }
+        ]
+      }}
     />
   );
 }

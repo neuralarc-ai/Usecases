@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Annual savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Network Analysis",
+            description: "Analyzes current network"
+          },
+          {
+            title: "Demand Modeling",
+            description: "Forecasts demand by location"
+          },
+          {
+            title: "Optimization",
+            description: "Determines optimal network design"
+          },
+          {
+            title: "Scenario Testing",
+            description: "Models various configurations"
+          },
+          {
+            title: "Recommendation Generation",
+            description: "Suggests improvements"
+          },
+          {
+            title: "Implementation Planning",
+            description: "Develops rollout plan"
+          },
+          {
+            title: "Execution Tracking",
+            description: "Monitors implementation"
+          },
+          {
+            title: "Performance Measurement",
+            description: "Validates improvements"
+          }
+        ]
+      }}
     />
   );
 }

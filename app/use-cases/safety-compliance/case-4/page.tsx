@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Annual value"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Risk Identification",
+            description: "Identifies all potential safety risks"
+          },
+          {
+            title: "AI-Powered Analysis",
+            description: "Analyzes risk probability and impact"
+          },
+          {
+            title: "Multi-Factor Assessment",
+            description: "Evaluates contributing factors"
+          },
+          {
+            title: "Risk Scoring",
+            description: "Ranks risks by severity"
+          },
+          {
+            title: "Mitigation Recommendation",
+            description: "Suggests specific risk reduction actions"
+          },
+          {
+            title: "Implementation Planning",
+            description: "Develops action plans"
+          },
+          {
+            title: "Mitigation Execution",
+            description: "Implements risk reduction measures"
+          },
+          {
+            title: "Validation & Tracking",
+            description: "Verifies effectiveness and monitors risks"
+          }
+        ]
+      }}
     />
   );
 }

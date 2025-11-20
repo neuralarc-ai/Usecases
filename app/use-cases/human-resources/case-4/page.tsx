@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Annual savings per 100 managers"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Continuous Data Collection",
+            description: "Tracks achievements, feedback, and metrics year-round"
+          },
+          {
+            title: "Achievement Tracking",
+            description: "Documents accomplishments in real-time with evidence"
+          },
+          {
+            title: "AI Review Generation",
+            description: "Creates data-driven review drafts with specific examples"
+          },
+          {
+            title: "Manager Refinement",
+            description: "Managers add context, insights, and forward-looking guidance"
+          },
+          {
+            title: "Employee Self-Assessment",
+            description: "Employees provide their perspective and aspirations"
+          },
+          {
+            title: "Calibration Analysis",
+            description: "Ensures consistency across organization with peer comparisons"
+          },
+          {
+            title: "Final Review",
+            description: "Completed review with ratings, feedback, and development plan"
+          },
+          {
+            title: "Development Planning",
+            description: "Creates personalized growth roadmap with specific actions"
+          }
+        ]
+      }}
     />
   );
 }

@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Annual revenue increase"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Application Submission",
+            description: "Customer applies for credit"
+          },
+          {
+            title: "Data Aggregation",
+            description: "Collects traditional and alternative data"
+          },
+          {
+            title: "AI Risk Scoring",
+            description: "Calculates comprehensive risk score (0-1000)"
+          },
+          {
+            title: "Alternative Data Analysis",
+            description: "Incorporates non-traditional signals"
+          },
+          {
+            title: "Automated Decision",
+            description: "Approves, reviews, or declines based on score"
+          },
+          {
+            title: "Manual Review",
+            description: "Human review for borderline cases"
+          },
+          {
+            title: "Continuous Monitoring",
+            description: "Tracks ongoing risk throughout loan term"
+          },
+          {
+            title: "Score Updates",
+            description: "Refreshes as new data arrives"
+          }
+        ]
+      }}
     />
   );
 }

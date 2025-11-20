@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Improvement cycles"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Data Collection",
+            description: "Gathers process data"
+          },
+          {
+            title: "Performance Analysis",
+            description: "Calculates efficiency metrics"
+          },
+          {
+            title: "Bottleneck Identification",
+            description: "Finds constraints"
+          },
+          {
+            title: "Optimization Analysis",
+            description: "Identifies improvements"
+          },
+          {
+            title: "Simulation",
+            description: "Models proposed changes"
+          },
+          {
+            title: "Recommendation",
+            description: "Suggests specific actions"
+          },
+          {
+            title: "Implementation",
+            description: "Executes improvements"
+          },
+          {
+            title: "Monitoring",
+            description: "Tracks results"
+          }
+        ]
+      }}
     />
   );
 }

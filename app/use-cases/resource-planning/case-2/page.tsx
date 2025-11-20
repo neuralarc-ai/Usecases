@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Annual value"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Skill Inventory",
+            description: "Maintains comprehensive skill database"
+          },
+          {
+            title: "Project Requirements Analysis",
+            description: "Identifies required skills for each project"
+          },
+          {
+            title: "Skill-Fit Scoring",
+            description: "Matches resources to project needs"
+          },
+          {
+            title: "Availability Check",
+            description: "Verifies resource availability"
+          },
+          {
+            title: "Optimal Assignment",
+            description: "Assigns best-fit resources"
+          },
+          {
+            title: "Workload Balancing",
+            description: "Ensures balanced distribution"
+          },
+          {
+            title: "Performance Tracking",
+            description: "Monitors assignment success"
+          },
+          {
+            title: "Continuous Optimization",
+            description: "Refines matching algorithms"
+          }
+        ]
+      }}
     />
   );
 }

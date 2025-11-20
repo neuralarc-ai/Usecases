@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Improvement in customer satisfaction"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Customer Inquiry",
+            description: "Customer asks question via any channel"
+          },
+          {
+            title: "Intent Recognition",
+            description: "AI understands what customer needs"
+          },
+          {
+            title: "Knowledge Base Search",
+            description: "Finds relevant information"
+          },
+          {
+            title: "Response Generation",
+            description: "Creates personalized response"
+          },
+          {
+            title: "Confidence Check",
+            description: "Validates response quality"
+          },
+          {
+            title: "Automated Response or Escalation",
+            description: "Answers or routes to agent"
+          },
+          {
+            title: "Satisfaction Survey",
+            description: "Collects feedback"
+          },
+          {
+            title: "Learning Update",
+            description: "Improves from interaction"
+          }
+        ]
+      }}
     />
   );
 }

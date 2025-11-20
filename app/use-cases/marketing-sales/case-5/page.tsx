@@ -39,6 +39,43 @@ export default function Case5Page() {
           label: "Annual efficiency gain"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Channel Analysis",
+            description: "Evaluates all acquisition channels"
+          },
+          {
+            title: "CAC Calculation",
+            description: "Computes cost per channel"
+          },
+          {
+            title: "LTV Prediction",
+            description: "Forecasts customer lifetime value"
+          },
+          {
+            title: "Optimization",
+            description: "Determines optimal allocation"
+          },
+          {
+            title: "Targeting Refinement",
+            description: "Improves audience targeting"
+          },
+          {
+            title: "Creative Testing",
+            description: "Tests messaging and visuals"
+          },
+          {
+            title: "Bid Optimization",
+            description: "Adjusts bids for ROI"
+          },
+          {
+            title: "Performance Tracking",
+            description: "Monitors results"
+          }
+        ]
+      }}
     />
   );
 }

@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Annual value"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Risk Factor Analysis",
+            description: "Analyzes safety conditions and behaviors"
+          },
+          {
+            title: "Pattern Recognition",
+            description: "Identifies incident patterns and trends"
+          },
+          {
+            title: "Incident Probability Calculation",
+            description: "Predicts likelihood of safety incidents"
+          },
+          {
+            title: "Early Warning System",
+            description: "Alerts on high-risk situations"
+          },
+          {
+            title: "Preventive Action Recommendation",
+            description: "Suggests specific safety improvements"
+          },
+          {
+            title: "Risk Mitigation",
+            description: "Implements safety improvements"
+          },
+          {
+            title: "Validation",
+            description: "Verifies prevention effectiveness"
+          },
+          {
+            title: "Continuous Learning",
+            description: "Improves prediction models"
+          }
+        ]
+      }}
     />
   );
 }

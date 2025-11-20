@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Annual savings per 15K claims"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Photo Upload",
+            description: "Customer submits damage photos via mobile app"
+          },
+          {
+            title: "Computer Vision Analysis",
+            description: "AI analyzes damage type and severity"
+          },
+          {
+            title: "Damage Classification",
+            description: "Categorizes damage (minor, moderate, severe, total loss)"
+          },
+          {
+            title: "Cost Estimation",
+            description: "Calculates repair costs using pricing database"
+          },
+          {
+            title: "Historical Comparison",
+            description: "Validates against similar claims"
+          },
+          {
+            title: "Repair Recommendation",
+            description: "Suggests repair approach and vendors"
+          },
+          {
+            title: "Approval Workflow",
+            description: "Routes for appropriate approval"
+          },
+          {
+            title: "Settlement",
+            description: "Processes payment"
+          }
+        ]
+      }}
     />
   );
 }

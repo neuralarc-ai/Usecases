@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Annual savings per 10K claims"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Claim Submission",
+            description: "Customer submits claim via app, web, phone, or agent"
+          },
+          {
+            title: "AI Classification",
+            description: "Identifies claim type, severity, and complexity"
+          },
+          {
+            title: "Fraud Screening",
+            description: "Analyzes for fraud indicators"
+          },
+          {
+            title: "Severity Assessment",
+            description: "Determines urgency and priority"
+          },
+          {
+            title: "Adjuster Matching",
+            description: "Selects best adjuster based on expertise and capacity"
+          },
+          {
+            title: "Automated Routing",
+            description: "Assigns claim to adjuster"
+          },
+          {
+            title: "Customer Notification",
+            description: "Sends acknowledgment and timeline"
+          },
+          {
+            title: "Progress Tracking",
+            description: "Monitors claim through resolution"
+          }
+        ]
+      }}
     />
   );
 }

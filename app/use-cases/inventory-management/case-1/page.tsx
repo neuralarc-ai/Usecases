@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Annual inventory cost savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Historical Data Analysis",
+            description: "Analyzes past sales and patterns"
+          },
+          {
+            title: "External Data Integration",
+            description: "Incorporates weather, trends, competitors"
+          },
+          {
+            title: "ML Forecasting",
+            description: "Generates demand forecasts by SKU"
+          },
+          {
+            title: "Demand Sensing",
+            description: "Adjusts for real-time signals"
+          },
+          {
+            title: "Stock Optimization",
+            description: "Calculates optimal inventory levels"
+          },
+          {
+            title: "Replenishment Calculation",
+            description: "Determines order quantities"
+          },
+          {
+            title: "Automated Ordering",
+            description: "Sends orders to suppliers"
+          },
+          {
+            title: "Performance Tracking",
+            description: "Monitors forecast accuracy"
+          }
+        ]
+      }}
     />
   );
 }

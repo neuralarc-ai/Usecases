@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Annual revenue increase"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Customer Data Analysis",
+            description: "Analyzes all customer data"
+          },
+          {
+            title: "Behavioral Clustering",
+            description: "Groups by behavior and attributes"
+          },
+          {
+            title: "Segment Creation",
+            description: "Creates 1000+ micro-segments"
+          },
+          {
+            title: "Predictive Scoring",
+            description: "Scores segment performance potential"
+          },
+          {
+            title: "Campaign Targeting",
+            description: "Assigns campaigns to segments"
+          },
+          {
+            title: "Message Personalization",
+            description: "Customizes messaging"
+          },
+          {
+            title: "Delivery Optimization",
+            description: "Determines best channel and timing"
+          },
+          {
+            title: "Performance Analysis",
+            description: "Measures results and optimizes"
+          }
+        ]
+      }}
     />
   );
 }

@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Annual savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Policy Selection",
+            description: "Identifies policies for testing"
+          },
+          {
+            title: "Automated Testing",
+            description: "Validates compliance"
+          },
+          {
+            title: "Exception Detection",
+            description: "Identifies issues"
+          },
+          {
+            title: "Root Cause Analysis",
+            description: "Determines cause"
+          },
+          {
+            title: "Alert Generation",
+            description: "Notifies compliance team"
+          },
+          {
+            title: "Remediation Workflow",
+            description: "Manages corrections"
+          },
+          {
+            title: "Validation",
+            description: "Verifies fixes"
+          },
+          {
+            title: "Reporting",
+            description: "Documents results"
+          }
+        ]
+      }}
     />
   );
 }

@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Equipment life"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Equipment Monitoring",
+            description: "Tracks all equipment continuously"
+          },
+          {
+            title: "Anomaly Detection",
+            description: "Identifies unusual patterns"
+          },
+          {
+            title: "Failure Prediction",
+            description: "Forecasts potential failures"
+          },
+          {
+            title: "Maintenance Scheduling",
+            description: "Plans optimal maintenance timing"
+          },
+          {
+            title: "Resource Coordination",
+            description: "Allocates technicians and parts"
+          },
+          {
+            title: "Execution",
+            description: "Performs maintenance"
+          },
+          {
+            title: "Validation",
+            description: "Verifies equipment performance"
+          },
+          {
+            title: "Continuous Improvement",
+            description: "Optimizes maintenance strategy"
+          }
+        ]
+      }}
     />
   );
 }

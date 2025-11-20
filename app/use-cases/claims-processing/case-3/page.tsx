@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Annual fraud loss prevention"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Claim Submission",
+            description: "Claim enters system"
+          },
+          {
+            title: "Real-Time Feature Extraction",
+            description: "Analyzes 300+ features"
+          },
+          {
+            title: "ML Fraud Scoring",
+            description: "Calculates fraud probability"
+          },
+          {
+            title: "Network Analysis",
+            description: "Identifies connections to known fraud"
+          },
+          {
+            title: "Risk Assessment",
+            description: "Determines investigation priority"
+          },
+          {
+            title: "Alert Generation",
+            description: "Notifies SIU (Special Investigation Unit)"
+          },
+          {
+            title: "Investigation Assignment",
+            description: "Routes to appropriate investigator"
+          },
+          {
+            title: "Resolution Tracking",
+            description: "Monitors investigation and outcome"
+          }
+        ]
+      }}
     />
   );
 }

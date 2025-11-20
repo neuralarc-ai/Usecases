@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Cost savings per project"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Research Brief",
+            description: "Defines research objectives"
+          },
+          {
+            title: "Automated Data Collection",
+            description: "Gathers from multiple sources"
+          },
+          {
+            title: "Data Processing",
+            description: "Cleans and structures data"
+          },
+          {
+            title: "AI Synthesis",
+            description: "Extracts insights and patterns"
+          },
+          {
+            title: "Report Generation",
+            description: "Creates comprehensive reports"
+          },
+          {
+            title: "Quality Validation",
+            description: "Verifies accuracy"
+          },
+          {
+            title: "Client Delivery",
+            description: "Presents findings"
+          },
+          {
+            title: "Continuous Monitoring",
+            description: "Tracks ongoing developments"
+          }
+        ]
+      }}
     />
   );
 }

@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Annual productivity gain"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Equipment Monitoring",
+            description: "Continuously tracks all equipment sensors"
+          },
+          {
+            title: "Anomaly Detection",
+            description: "Identifies unusual patterns and deviations"
+          },
+          {
+            title: "Failure Prediction",
+            description: "ML models forecast potential failures"
+          },
+          {
+            title: "Early Warning",
+            description: "Alerts before equipment fails"
+          },
+          {
+            title: "Maintenance Scheduling",
+            description: "Plans optimal maintenance timing"
+          },
+          {
+            title: "Resource Coordination",
+            description: "Allocates technicians and spare parts"
+          },
+          {
+            title: "Maintenance Execution",
+            description: "Performs preventive maintenance"
+          },
+          {
+            title: "Validation & Learning",
+            description: "Verifies effectiveness and improves models"
+          }
+        ]
+      }}
     />
   );
 }

@@ -39,6 +39,43 @@ export default function Case5Page() {
           label: "Annual value"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Data Collection",
+            description: "Gathers quality data from all sources"
+          },
+          {
+            title: "Real-Time Dashboard",
+            description: "Displays current quality metrics"
+          },
+          {
+            title: "Trend Analysis",
+            description: "Identifies patterns and trends"
+          },
+          {
+            title: "Predictive Analytics",
+            description: "Forecasts quality risks and opportunities"
+          },
+          {
+            title: "Insight Generation",
+            description: "Extracts actionable recommendations"
+          },
+          {
+            title: "Priority Ranking",
+            description: "Ranks improvements by impact"
+          },
+          {
+            title: "Implementation Guidance",
+            description: "Provides specific action plans"
+          },
+          {
+            title: "Continuous Monitoring",
+            description: "Tracks improvement progress"
+          }
+        ]
+      }}
     />
   );
 }

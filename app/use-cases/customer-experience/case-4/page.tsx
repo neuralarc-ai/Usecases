@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Annual revenue increase"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Touchpoint Tracking",
+            description: "Captures all customer interactions"
+          },
+          {
+            title: "Journey Mapping",
+            description: "Constructs complete customer journey"
+          },
+          {
+            title: "Behavior Analysis",
+            description: "Identifies patterns and preferences"
+          },
+          {
+            title: "Optimization Identification",
+            description: "Finds improvement opportunities"
+          },
+          {
+            title: "Next-Best-Action",
+            description: "Determines optimal next step"
+          },
+          {
+            title: "Personalization",
+            description: "Customizes experience"
+          },
+          {
+            title: "Execution",
+            description: "Delivers personalized interaction"
+          },
+          {
+            title: "Performance Measurement",
+            description: "Tracks outcomes"
+          }
+        ]
+      }}
     />
   );
 }

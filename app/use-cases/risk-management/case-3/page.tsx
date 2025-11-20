@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Risk management"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Data Collection",
+            description: "Gathers operational data and events"
+          },
+          {
+            title: "Risk Identification",
+            description: "Identifies potential risks"
+          },
+          {
+            title: "Predictive Analysis",
+            description: "Forecasts likelihood and impact"
+          },
+          {
+            title: "Control Assessment",
+            description: "Evaluates control effectiveness"
+          },
+          {
+            title: "Alert Generation",
+            description: "Notifies of high-risk areas"
+          },
+          {
+            title: "Mitigation Planning",
+            description: "Recommends risk reduction actions"
+          },
+          {
+            title: "Implementation Tracking",
+            description: "Monitors mitigation progress"
+          },
+          {
+            title: "Effectiveness Measurement",
+            description: "Validates risk reduction"
+          }
+        ]
+      }}
     />
   );
 }

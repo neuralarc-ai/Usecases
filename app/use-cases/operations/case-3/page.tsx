@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Annual operational savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Data Collection",
+            description: "Captures process events from all systems"
+          },
+          {
+            title: "Process Discovery",
+            description: "Maps actual processes automatically"
+          },
+          {
+            title: "Performance Analysis",
+            description: "Calculates metrics and identifies issues"
+          },
+          {
+            title: "Bottleneck Identification",
+            description: "Pinpoints constraints and delays"
+          },
+          {
+            title: "Optimization Recommendations",
+            description: "Suggests improvements with ROI"
+          },
+          {
+            title: "Impact Simulation",
+            description: "Models outcomes of changes"
+          },
+          {
+            title: "Implementation Tracking",
+            description: "Monitors improvement initiatives"
+          },
+          {
+            title: "Continuous Monitoring",
+            description: "Tracks ongoing performance"
+          }
+        ]
+      }}
     />
   );
 }

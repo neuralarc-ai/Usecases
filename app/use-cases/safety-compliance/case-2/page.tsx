@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Annual value"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Real-Time Monitoring",
+            description: "Tracks safety conditions continuously"
+          },
+          {
+            title: "Hazard Detection",
+            description: "Identifies safety hazards automatically"
+          },
+          {
+            title: "Compliance Validation",
+            description: "Checks adherence to regulatory requirements"
+          },
+          {
+            title: "Gap Identification",
+            description: "Identifies compliance gaps"
+          },
+          {
+            title: "Automated Alert",
+            description: "Notifies on violations and gaps"
+          },
+          {
+            title: "Priority Routing",
+            description: "Routes critical issues for immediate action"
+          },
+          {
+            title: "Compliance Reporting",
+            description: "Generates compliance reports automatically"
+          },
+          {
+            title: "Continuous Improvement",
+            description: "Tracks trends and recommends improvements"
+          }
+        ]
+      }}
     />
   );
 }

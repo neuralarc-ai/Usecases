@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Annual savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Invoice Receipt",
+            description: "Receives via email, portal, EDI, or scan"
+          },
+          {
+            title: "AI Data Extraction",
+            description: "Extracts all invoice data (vendor, amount, date, line items)"
+          },
+          {
+            title: "Validation & Matching",
+            description: "Performs 3-way match with PO and receipt"
+          },
+          {
+            title: "Exception Detection",
+            description: "Identifies discrepancies and issues"
+          },
+          {
+            title: "Approval Routing",
+            description: "Routes to appropriate approver based on amount and type"
+          },
+          {
+            title: "Payment Scheduling",
+            description: "Schedules optimal payment date for discounts"
+          },
+          {
+            title: "Vendor Communication",
+            description: "Sends automated confirmation"
+          },
+          {
+            title: "Reconciliation",
+            description: "Matches payment to invoice in accounting system"
+          }
+        ]
+      }}
     />
   );
 }

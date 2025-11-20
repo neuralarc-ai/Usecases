@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Reinsurance optimization savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Portfolio Data Aggregation",
+            description: "Collects all policy data"
+          },
+          {
+            title: "Risk Calculation",
+            description: "Computes portfolio metrics"
+          },
+          {
+            title: "Concentration Analysis",
+            description: "Identifies concentration risks"
+          },
+          {
+            title: "Catastrophe Modeling",
+            description: "Models disaster scenarios"
+          },
+          {
+            title: "Optimization Recommendations",
+            description: "Suggests portfolio adjustments"
+          },
+          {
+            title: "Reinsurance Analysis",
+            description: "Optimizes reinsurance program"
+          },
+          {
+            title: "Capital Calculation",
+            description: "Determines required capital"
+          },
+          {
+            title: "Monitoring",
+            description: "Tracks ongoing portfolio performance"
+          }
+        ]
+      }}
     />
   );
 }

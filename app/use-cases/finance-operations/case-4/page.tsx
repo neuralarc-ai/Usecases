@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Annual improvement"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Data Collection",
+            description: "Gathers internal and external data automatically"
+          },
+          {
+            title: "AI Model Training",
+            description: "Trains on historical patterns and relationships"
+          },
+          {
+            title: "Forecast Generation",
+            description: "Creates multi-scenario forecasts"
+          },
+          {
+            title: "Scenario Analysis",
+            description: "Models various outcomes with probabilities"
+          },
+          {
+            title: "Variance Detection",
+            description: "Identifies changes from plan"
+          },
+          {
+            title: "Alert Generation",
+            description: "Notifies of significant variances"
+          },
+          {
+            title: "Executive Dashboard",
+            description: "Visualizes forecasts and scenarios interactively"
+          },
+          {
+            title: "Model Refinement",
+            description: "Improves accuracy over time based on outcomes"
+          }
+        ]
+      }}
     />
   );
 }

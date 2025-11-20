@@ -39,6 +39,43 @@ export default function Case5Page() {
           label: "Annual value"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Risk Identification",
+            description: "Assesses supplier, material, and logistics risks"
+          },
+          {
+            title: "Predictive Analytics",
+            description: "Predicts risk probability and impact"
+          },
+          {
+            title: "Risk Scoring",
+            description: "Ranks risks by severity and likelihood"
+          },
+          {
+            title: "Early Warning",
+            description: "Alerts on emerging risks"
+          },
+          {
+            title: "Mitigation Planning",
+            description: "Develops alternative sourcing and strategies"
+          },
+          {
+            title: "Risk Monitoring",
+            description: "Tracks risks in real-time"
+          },
+          {
+            title: "Response Execution",
+            description: "Implements mitigation actions"
+          },
+          {
+            title: "Continuous Improvement",
+            description: "Refines risk management strategies"
+          }
+        ]
+      }}
     />
   );
 }

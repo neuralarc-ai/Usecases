@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Annual savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Order Consolidation",
+            description: "Groups orders for delivery"
+          },
+          {
+            title: "Route Optimization",
+            description: "Calculates optimal routes"
+          },
+          {
+            title: "Driver Assignment",
+            description: "Assigns to appropriate driver"
+          },
+          {
+            title: "Real-Time Tracking",
+            description: "Monitors delivery progress"
+          },
+          {
+            title: "ETA Calculation",
+            description: "Updates estimated arrival"
+          },
+          {
+            title: "Customer Notification",
+            description: "Sends delivery updates"
+          },
+          {
+            title: "Delivery Confirmation",
+            description: "Records completion"
+          },
+          {
+            title: "Performance Analysis",
+            description: "Tracks metrics"
+          }
+        ]
+      }}
     />
   );
 }

@@ -39,6 +39,43 @@ export default function Case5Page() {
           label: "Annual savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Policy Rule Configuration",
+            description: "Sets up monitoring rules for all policies"
+          },
+          {
+            title: "Transaction Monitoring",
+            description: "Tracks all transactions in real-time"
+          },
+          {
+            title: "Anomaly Detection",
+            description: "Identifies unusual patterns and behaviors"
+          },
+          {
+            title: "Violation Identification",
+            description: "Flags policy breaches immediately"
+          },
+          {
+            title: "Alert Generation",
+            description: "Notifies compliance team instantly"
+          },
+          {
+            title: "Investigation Workflow",
+            description: "Automates investigation process"
+          },
+          {
+            title: "Remediation Tracking",
+            description: "Monitors corrective actions"
+          },
+          {
+            title: "Policy Optimization",
+            description: "Improves policies based on data"
+          }
+        ]
+      }}
     />
   );
 }

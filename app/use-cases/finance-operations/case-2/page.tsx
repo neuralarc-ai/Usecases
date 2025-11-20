@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Annual fraud loss prevention"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Transaction Initiation",
+            description: "Customer initiates transaction"
+          },
+          {
+            title: "Real-Time Feature Extraction",
+            description: "Analyzes 200+ features instantly"
+          },
+          {
+            title: "ML Model Scoring",
+            description: "Calculates fraud probability"
+          },
+          {
+            title: "Risk Assessment",
+            description: "Determines action (approve/review/block)"
+          },
+          {
+            title: "Automated Decision",
+            description: "Executes decision in milliseconds"
+          },
+          {
+            title: "Alert Generation",
+            description: "Notifies fraud team if review needed"
+          },
+          {
+            title: "Investigation Workflow",
+            description: "Guides investigation process"
+          },
+          {
+            title: "Model Retraining",
+            description: "Learns from outcomes to improve accuracy"
+          }
+        ]
+      }}
     />
   );
 }

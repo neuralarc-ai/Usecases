@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Annual margin improvement"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Data Collection",
+            description: "Gathers sales, cost, and inventory data"
+          },
+          {
+            title: "Performance Calculation",
+            description: "Computes all metrics"
+          },
+          {
+            title: "Profitability Analysis",
+            description: "Determines true profitability"
+          },
+          {
+            title: "Trend Detection",
+            description: "Identifies patterns"
+          },
+          {
+            title: "Optimization Recommendations",
+            description: "Suggests actions"
+          },
+          {
+            title: "Markdown Planning",
+            description: "Optimizes clearance strategy"
+          },
+          {
+            title: "Assortment Adjustment",
+            description: "Modifies product mix"
+          },
+          {
+            title: "Performance Tracking",
+            description: "Monitors results"
+          }
+        ]
+      }}
     />
   );
 }

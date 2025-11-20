@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Annual productivity gain"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Template Creation",
+            description: "Develops new template"
+          },
+          {
+            title: "Quality Review",
+            description: "Validates quality and compliance"
+          },
+          {
+            title: "Repository Storage",
+            description: "Stores in central library"
+          },
+          {
+            title: "Template Selection",
+            description: "Chooses appropriate template"
+          },
+          {
+            title: "Automated Assembly",
+            description: "Populates with content"
+          },
+          {
+            title: "Customization",
+            description: "Tailors to specific opportunity"
+          },
+          {
+            title: "Quality Validation",
+            description: "Checks final proposal"
+          },
+          {
+            title: "Usage Tracking",
+            description: "Monitors effectiveness"
+          }
+        ]
+      }}
     />
   );
 }

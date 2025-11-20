@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Annual savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Maintenance Needs Assessment",
+            description: "Identifies required maintenance activities"
+          },
+          {
+            title: "Optimal Timing Calculation",
+            description: "Determines best maintenance windows"
+          },
+          {
+            title: "Production Schedule Integration",
+            description: "Considers production impact"
+          },
+          {
+            title: "Resource Availability Check",
+            description: "Verifies technician and parts availability"
+          },
+          {
+            title: "Schedule Optimization",
+            description: "Creates optimal maintenance schedule"
+          },
+          {
+            title: "Resource Assignment",
+            description: "Assigns technicians and coordinates parts"
+          },
+          {
+            title: "Execution Tracking",
+            description: "Monitors maintenance completion"
+          },
+          {
+            title: "Effectiveness Measurement",
+            description: "Validates schedule optimization"
+          }
+        ]
+      }}
     />
   );
 }

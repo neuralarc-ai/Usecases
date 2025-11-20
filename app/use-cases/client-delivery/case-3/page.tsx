@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Annual savings per 20 projects"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Milestone Completion",
+            description: "Project reaches key stage"
+          },
+          {
+            title: "Automated Update Generation",
+            description: "Creates status update"
+          },
+          {
+            title: "Client Notification",
+            description: "Sends via preferred channel"
+          },
+          {
+            title: "Portal Update",
+            description: "Refreshes client dashboard"
+          },
+          {
+            title: "Engagement Tracking",
+            description: "Monitors client interaction"
+          },
+          {
+            title: "Issue Detection",
+            description: "Identifies concerns"
+          },
+          {
+            title: "Proactive Outreach",
+            description: "Addresses issues"
+          },
+          {
+            title: "Satisfaction Measurement",
+            description: "Tracks client satisfaction"
+          }
+        ]
+      }}
     />
   );
 }

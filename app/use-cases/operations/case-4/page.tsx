@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Annual labor cost savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Historical Analysis",
+            description: "Analyzes past demand patterns"
+          },
+          {
+            title: "Demand Forecasting",
+            description: "Predicts future requirements"
+          },
+          {
+            title: "Capacity Calculation",
+            description: "Determines staffing needs"
+          },
+          {
+            title: "Schedule Optimization",
+            description: "Creates optimal schedules"
+          },
+          {
+            title: "Real-Time Monitoring",
+            description: "Tracks actual vs forecast"
+          },
+          {
+            title: "Dynamic Adjustment",
+            description: "Reallocates resources as needed"
+          },
+          {
+            title: "Performance Tracking",
+            description: "Measures outcomes"
+          },
+          {
+            title: "Continuous Improvement",
+            description: "Refines forecasts"
+          }
+        ]
+      }}
     />
   );
 }

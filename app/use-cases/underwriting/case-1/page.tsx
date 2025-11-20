@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Annual revenue increase"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Application Submission",
+            description: "Customer applies for insurance"
+          },
+          {
+            title: "Data Aggregation",
+            description: "Collects data from 500+ sources"
+          },
+          {
+            title: "AI Risk Analysis",
+            description: "Analyzes all data points"
+          },
+          {
+            title: "Alternative Data Integration",
+            description: "Incorporates IoT, satellite, public records"
+          },
+          {
+            title: "Risk Score Calculation",
+            description: "Computes comprehensive risk score"
+          },
+          {
+            title: "Pricing Optimization",
+            description: "Determines optimal premium"
+          },
+          {
+            title: "Automated Decision",
+            description: "Approves, reviews, or declines"
+          },
+          {
+            title: "Underwriter Review",
+            description: "Human review if needed"
+          }
+        ]
+      }}
     />
   );
 }

@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Annual value"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Training Assignment",
+            description: "Automatically assigns required training"
+          },
+          {
+            title: "Personalized Content",
+            description: "Delivers role-specific training"
+          },
+          {
+            title: "Progress Tracking",
+            description: "Monitors completion and comprehension"
+          },
+          {
+            title: "Assessment & Certification",
+            description: "Tests knowledge and issues certifications"
+          },
+          {
+            title: "Renewal Tracking",
+            description: "Monitors certification expiration"
+          },
+          {
+            title: "Compliance Validation",
+            description: "Ensures all certifications current"
+          },
+          {
+            title: "Automated Reporting",
+            description: "Generates compliance reports"
+          },
+          {
+            title: "Continuous Improvement",
+            description: "Optimizes training effectiveness"
+          }
+        ]
+      }}
     />
   );
 }

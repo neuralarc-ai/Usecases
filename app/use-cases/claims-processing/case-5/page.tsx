@@ -39,6 +39,43 @@ export default function Case5Page() {
           label: "Annual cost savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Claim Milestone",
+            description: "Claim reaches key stage (received, assigned, assessed, approved, paid)"
+          },
+          {
+            title: "Trigger Detection",
+            description: "System identifies communication trigger"
+          },
+          {
+            title: "Message Generation",
+            description: "AI creates personalized message"
+          },
+          {
+            title: "Channel Selection",
+            description: "Chooses customer's preferred channel"
+          },
+          {
+            title: "Customer Notification",
+            description: "Delivers update via selected channel"
+          },
+          {
+            title: "Response Handling",
+            description: "Chatbot handles follow-up questions"
+          },
+          {
+            title: "Escalation",
+            description: "Routes complex inquiries to adjuster if needed"
+          },
+          {
+            title: "Satisfaction Tracking",
+            description: "Measures customer satisfaction"
+          }
+        ]
+      }}
     />
   );
 }

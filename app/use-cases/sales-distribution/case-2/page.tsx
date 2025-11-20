@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Timing"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Customer Analysis",
+            description: "Analyzes current coverage and needs"
+          },
+          {
+            title: "Opportunity Identification",
+            description: "Identifies cross-sell opportunities"
+          },
+          {
+            title: "Propensity Scoring",
+            description: "Calculates likelihood of purchase"
+          },
+          {
+            title: "Timing Optimization",
+            description: "Determines best time to offer"
+          },
+          {
+            title: "Personalized Offer",
+            description: "Creates customized recommendation"
+          },
+          {
+            title: "Multi-Channel Delivery",
+            description: "Presents via optimal channel"
+          },
+          {
+            title: "Conversion Tracking",
+            description: "Monitors acceptance"
+          },
+          {
+            title: "Performance Analysis",
+            description: "Measures effectiveness"
+          }
+        ]
+      }}
     />
   );
 }

@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Annual savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Product Inspection",
+            description: "Automated visual inspection"
+          },
+          {
+            title: "Defect Detection",
+            description: "Identifies quality issues"
+          },
+          {
+            title: "Classification",
+            description: "Categorizes defect types"
+          },
+          {
+            title: "Root Cause Analysis",
+            description: "Determines cause"
+          },
+          {
+            title: "Alert Generation",
+            description: "Notifies quality team"
+          },
+          {
+            title: "Supplier Notification",
+            description: "Informs supplier of issues"
+          },
+          {
+            title: "Corrective Action",
+            description: "Implements fixes"
+          },
+          {
+            title: "Effectiveness Validation",
+            description: "Verifies improvement"
+          }
+        ]
+      }}
     />
   );
 }

@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Annual cost savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Regulatory Document Ingestion",
+            description: "Collects from all regulatory sources daily"
+          },
+          {
+            title: "AI Classification",
+            description: "Categorizes by topic, urgency, and impact"
+          },
+          {
+            title: "Change Detection",
+            description: "Identifies new requirements and modifications"
+          },
+          {
+            title: "Impact Analysis",
+            description: "Assesses effect on current policies and operations"
+          },
+          {
+            title: "Policy Mapping",
+            description: "Links to existing compliance framework"
+          },
+          {
+            title: "Priority Scoring",
+            description: "Ranks by urgency and business impact"
+          },
+          {
+            title: "Legal Team Alerts",
+            description: "Notifies of critical changes requiring action"
+          },
+          {
+            title: "Action Tracking",
+            description: "Monitors policy updates and implementation"
+          }
+        ]
+      }}
     />
   );
 }

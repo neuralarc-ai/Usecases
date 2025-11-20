@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Annual value"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Data Integration",
+            description: "Consolidates from all sources"
+          },
+          {
+            title: "Data Quality Validation",
+            description: "Ensures accuracy"
+          },
+          {
+            title: "Metric Calculation",
+            description: "Computes KPIs"
+          },
+          {
+            title: "Dashboard Update",
+            description: "Refreshes visualizations"
+          },
+          {
+            title: "Alert Generation",
+            description: "Notifies of significant changes"
+          },
+          {
+            title: "Report Generation",
+            description: "Creates scheduled reports"
+          },
+          {
+            title: "User Access",
+            description: "Provides self-service access"
+          },
+          {
+            title: "Performance Tracking",
+            description: "Monitors usage and value"
+          }
+        ]
+      }}
     />
   );
 }

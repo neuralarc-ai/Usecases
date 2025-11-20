@@ -39,6 +39,43 @@ export default function Case5Page() {
           label: "Annual savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Data Aggregation",
+            description: "Collects maintenance data from all sources"
+          },
+          {
+            title: "Real-Time Dashboard",
+            description: "Displays current maintenance performance"
+          },
+          {
+            title: "Performance Analytics",
+            description: "Analyzes efficiency and cost metrics"
+          },
+          {
+            title: "Predictive Analytics",
+            description: "Forecasts maintenance needs and costs"
+          },
+          {
+            title: "Insight Generation",
+            description: "Extracts actionable recommendations"
+          },
+          {
+            title: "Priority Ranking",
+            description: "Ranks improvements by impact"
+          },
+          {
+            title: "Implementation Guidance",
+            description: "Provides specific action plans"
+          },
+          {
+            title: "Continuous Monitoring",
+            description: "Tracks improvement progress"
+          }
+        ]
+      }}
     />
   );
 }

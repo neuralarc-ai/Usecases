@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Annual value per 10 proposals"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "RFP Receipt",
+            description: "RFP document received"
+          },
+          {
+            title: "AI Analysis",
+            description: "Extracts requirements and questions"
+          },
+          {
+            title: "Content Matching",
+            description: "Finds relevant existing content"
+          },
+          {
+            title: "Response Generation",
+            description: "Creates initial draft"
+          },
+          {
+            title: "Team Collaboration",
+            description: "Refines and customizes"
+          },
+          {
+            title: "Quality Validation",
+            description: "Checks completeness and quality"
+          },
+          {
+            title: "Approval",
+            description: "Partner review and sign-off"
+          },
+          {
+            title: "Submission",
+            description: "Delivers proposal"
+          }
+        ]
+      }}
     />
   );
 }

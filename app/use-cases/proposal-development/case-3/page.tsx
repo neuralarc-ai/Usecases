@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Annual revenue increase"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Scope Definition",
+            description: "Defines project scope"
+          },
+          {
+            title: "Cost Estimation",
+            description: "Calculates resource costs"
+          },
+          {
+            title: "Market Analysis",
+            description: "Analyzes competitive pricing"
+          },
+          {
+            title: "Win Probability Calculation",
+            description: "Predicts win likelihood at various prices"
+          },
+          {
+            title: "Pricing Optimization",
+            description: "Determines optimal price"
+          },
+          {
+            title: "Scenario Analysis",
+            description: "Models different pricing strategies"
+          },
+          {
+            title: "Recommendation",
+            description: "Suggests final pricing"
+          },
+          {
+            title: "Tracking",
+            description: "Monitors win/loss outcomes"
+          }
+        ]
+      }}
     />
   );
 }

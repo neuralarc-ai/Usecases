@@ -39,6 +39,43 @@ export default function Case5Page() {
           label: "Annual revenue increase"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Customer Behavior Analysis",
+            description: "Analyzes purchase and engagement patterns"
+          },
+          {
+            title: "Preference Identification",
+            description: "Determines reward preferences"
+          },
+          {
+            title: "Reward Personalization",
+            description: "Customizes offers and rewards"
+          },
+          {
+            title: "Timing Optimization",
+            description: "Determines best time to engage"
+          },
+          {
+            title: "Offer Delivery",
+            description: "Sends personalized offers"
+          },
+          {
+            title: "Engagement Tracking",
+            description: "Monitors participation"
+          },
+          {
+            title: "Redemption Facilitation",
+            description: "Makes redemption easy"
+          },
+          {
+            title: "Program Optimization",
+            description: "Continuously improves"
+          }
+        ]
+      }}
     />
   );
 }

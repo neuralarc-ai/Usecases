@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Annual value per project"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Deliverable Submission",
+            description: "Team submits for review"
+          },
+          {
+            title: "Automated Quality Checks",
+            description: "Validates completeness and quality"
+          },
+          {
+            title: "Content Analysis",
+            description: "Analyzes logic and arguments"
+          },
+          {
+            title: "Issue Detection",
+            description: "Identifies problems"
+          },
+          {
+            title: "Review Routing",
+            description: "Assigns to appropriate reviewer"
+          },
+          {
+            title: "Collaborative Review",
+            description: "Team addresses issues"
+          },
+          {
+            title: "Approval",
+            description: "Partner sign-off"
+          },
+          {
+            title: "Quality Tracking",
+            description: "Monitors quality metrics"
+          }
+        ]
+      }}
     />
   );
 }

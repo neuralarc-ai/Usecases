@@ -39,6 +39,43 @@ export default function Case5Page() {
           label: "Annual value protection"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Critical Role Identification",
+            description: "Identifies key positions"
+          },
+          {
+            title: "Knowledge Assessment",
+            description: "Evaluates knowledge concentration"
+          },
+          {
+            title: "Successor Identification",
+            description: "Finds potential successors"
+          },
+          {
+            title: "Knowledge Capture",
+            description: "Documents expertise"
+          },
+          {
+            title: "Transfer Planning",
+            description: "Develops transfer plan"
+          },
+          {
+            title: "Execution",
+            description: "Implements knowledge transfer"
+          },
+          {
+            title: "Validation",
+            description: "Verifies transfer success"
+          },
+          {
+            title: "Continuous Monitoring",
+            description: "Tracks knowledge retention"
+          }
+        ]
+      }}
     />
   );
 }

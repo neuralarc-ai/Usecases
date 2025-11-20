@@ -39,6 +39,39 @@ export default function Case5Page() {
           label: "Annual savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Regulatory Requirement Analysis",
+            description: "Identifies training needs by role"
+          },
+          {
+            title: "Role-Based Assignment",
+            description: "Assigns training to employees automatically"
+          },
+          {
+            title: "Adaptive Training Delivery",
+            description: "Personalizes learning path and pace"
+          },
+          {
+            title: "Knowledge Assessment",
+            description: "Tests understanding with scenario-based questions"
+          },
+          {
+            title: "Certification Issuance",
+            description: "Awards certifications upon successful completion"
+          },
+          {
+            title: "Renewal Tracking",
+            description: "Monitors expiration dates and triggers renewals"
+          },
+          {
+            title: "Audit Report Generation",
+            description: "Creates compliance documentation on demand"
+          }
+        ]
+      }}
     />
   );
 }

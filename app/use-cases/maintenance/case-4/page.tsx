@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Annual savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Usage Pattern Analysis",
+            description: "Analyzes historical parts consumption"
+          },
+          {
+            title: "Failure Prediction",
+            description: "Forecasts parts needs based on equipment health"
+          },
+          {
+            title: "Demand Forecasting",
+            description: "Predicts future parts requirements"
+          },
+          {
+            title: "Optimal Stock Calculation",
+            description: "Determines ideal inventory levels"
+          },
+          {
+            title: "Automated Replenishment",
+            description: "Generates purchase orders automatically"
+          },
+          {
+            title: "Supplier Coordination",
+            description: "Coordinates delivery schedules"
+          },
+          {
+            title: "Real-Time Tracking",
+            description: "Monitors inventory levels and locations"
+          },
+          {
+            title: "Continuous Optimization",
+            description: "Refines inventory based on performance"
+          }
+        ]
+      }}
     />
   );
 }

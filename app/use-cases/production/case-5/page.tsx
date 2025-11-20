@@ -39,6 +39,43 @@ export default function Case5Page() {
           label: "ESG metrics"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Energy Monitoring",
+            description: "Tracks all energy consumption"
+          },
+          {
+            title: "Pattern Analysis",
+            description: "Identifies usage patterns"
+          },
+          {
+            title: "Optimization Analysis",
+            description: "Finds efficiency opportunities"
+          },
+          {
+            title: "Automated Control",
+            description: "Adjusts equipment and processes"
+          },
+          {
+            title: "Cost Optimization",
+            description: "Manages demand and rates"
+          },
+          {
+            title: "Performance Tracking",
+            description: "Monitors savings"
+          },
+          {
+            title: "Sustainability Reporting",
+            description: "Tracks environmental impact"
+          },
+          {
+            title: "Continuous Improvement",
+            description: "Optimizes ongoing"
+          }
+        ]
+      }}
     />
   );
 }

@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Annual value per 5 projects"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Template Selection",
+            description: "Chooses appropriate template"
+          },
+          {
+            title: "AI Content Generation",
+            description: "Creates initial draft"
+          },
+          {
+            title: "Consultant Refinement",
+            description: "Adds expertise and customization"
+          },
+          {
+            title: "Quality Validation",
+            description: "Checks completeness and quality"
+          },
+          {
+            title: "Collaboration",
+            description: "Team review and input"
+          },
+          {
+            title: "Approval Workflow",
+            description: "Routes for partner approval"
+          },
+          {
+            title: "Client Delivery",
+            description: "Presents final deliverable"
+          },
+          {
+            title: "Knowledge Capture",
+            description: "Stores for future reuse"
+          }
+        ]
+      }}
     />
   );
 }

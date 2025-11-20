@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Annual value"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Project Completion",
+            description: "Engagement concludes"
+          },
+          {
+            title: "Learning Capture",
+            description: "Documents key learnings"
+          },
+          {
+            title: "AI Processing",
+            description: "Extracts best practices"
+          },
+          {
+            title: "Organization",
+            description: "Categorizes and tags"
+          },
+          {
+            title: "Expert Identification",
+            description: "Links to subject matter experts"
+          },
+          {
+            title: "Recommendation",
+            description: "Suggests to relevant users"
+          },
+          {
+            title: "Usage Tracking",
+            description: "Monitors application"
+          },
+          {
+            title: "Value Measurement",
+            description: "Quantifies impact"
+          }
+        ]
+      }}
     />
   );
 }

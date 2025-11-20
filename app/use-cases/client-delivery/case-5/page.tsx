@@ -39,6 +39,43 @@ export default function Case5Page() {
           label: "Annual revenue increase"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Engagement Completion",
+            description: "Project concludes"
+          },
+          {
+            title: "Automated Follow-Up",
+            description: "Schedules check-ins"
+          },
+          {
+            title: "Value Tracking",
+            description: "Monitors implementation and outcomes"
+          },
+          {
+            title: "Satisfaction Survey",
+            description: "Collects feedback"
+          },
+          {
+            title: "Opportunity Identification",
+            description: "Identifies additional needs"
+          },
+          {
+            title: "Relationship Building",
+            description: "Maintains engagement"
+          },
+          {
+            title: "Referral Request",
+            description: "Asks for referrals"
+          },
+          {
+            title: "Cross-Sell",
+            description: "Presents additional services"
+          }
+        ]
+      }}
     />
   );
 }

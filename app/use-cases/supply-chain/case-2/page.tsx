@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Annual cost savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Data Collection",
+            description: "Gathers supplier performance data"
+          },
+          {
+            title: "Performance Calculation",
+            description: "Computes metrics"
+          },
+          {
+            title: "Scoring",
+            description: "Assigns performance scores"
+          },
+          {
+            title: "Issue Detection",
+            description: "Identifies problems"
+          },
+          {
+            title: "Alert Generation",
+            description: "Notifies procurement team"
+          },
+          {
+            title: "Resolution Workflow",
+            description: "Manages issue resolution"
+          },
+          {
+            title: "Optimization Analysis",
+            description: "Identifies improvement opportunities"
+          },
+          {
+            title: "Supplier Communication",
+            description: "Shares feedback and plans"
+          }
+        ]
+      }}
     />
   );
 }

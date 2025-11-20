@@ -39,6 +39,43 @@ export default function Case5Page() {
           label: "Annual value"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Continuous Tracking",
+            description: "Monitors all inventory movements"
+          },
+          {
+            title: "Variance Detection",
+            description: "Identifies discrepancies"
+          },
+          {
+            title: "Cycle Count Scheduling",
+            description: "Prioritizes items for counting"
+          },
+          {
+            title: "Mobile Counting",
+            description: "Enables efficient counting"
+          },
+          {
+            title: "Variance Investigation",
+            description: "Analyzes discrepancies"
+          },
+          {
+            title: "Adjustment Processing",
+            description: "Corrects inventory records"
+          },
+          {
+            title: "Root Cause Analysis",
+            description: "Determines cause"
+          },
+          {
+            title: "Prevention",
+            description: "Implements controls"
+          }
+        ]
+      }}
     />
   );
 }

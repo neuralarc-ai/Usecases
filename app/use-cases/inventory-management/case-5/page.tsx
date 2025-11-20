@@ -39,6 +39,43 @@ export default function Case5Page() {
           label: "Annual revenue protection"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Transaction Capture",
+            description: "Records sale, return, or adjustment"
+          },
+          {
+            title: "Real-Time Update",
+            description: "Updates inventory instantly"
+          },
+          {
+            title: "Channel Synchronization",
+            description: "Pushes to all channels"
+          },
+          {
+            title: "Allocation Management",
+            description: "Manages channel-specific inventory"
+          },
+          {
+            title: "Availability Calculation",
+            description: "Determines product availability"
+          },
+          {
+            title: "Reservation Handling",
+            description: "Manages cart reservations"
+          },
+          {
+            title: "Reconciliation",
+            description: "Validates consistency"
+          },
+          {
+            title: "Reporting",
+            description: "Provides inventory analytics"
+          }
+        ]
+      }}
     />
   );
 }

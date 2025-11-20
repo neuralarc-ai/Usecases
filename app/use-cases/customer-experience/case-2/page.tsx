@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Annual value (revenue + savings)"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Customer Query",
+            description: "Customer asks product question"
+          },
+          {
+            title: "Intent Recognition",
+            description: "Understands what customer needs"
+          },
+          {
+            title: "Product Search",
+            description: "Finds relevant products"
+          },
+          {
+            title: "Recommendation Generation",
+            description: "Suggests best options"
+          },
+          {
+            title: "Personalization",
+            description: "Customizes based on preferences"
+          },
+          {
+            title: "Response Delivery",
+            description: "Provides answer with visuals"
+          },
+          {
+            title: "Follow-up Questions",
+            description: "Handles additional queries"
+          },
+          {
+            title: "Purchase Assistance",
+            description: "Guides to checkout"
+          }
+        ]
+      }}
     />
   );
 }

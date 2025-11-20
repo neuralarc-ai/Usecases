@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Annual productivity gain"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Content Creation",
+            description: "New proposal content developed"
+          },
+          {
+            title: "AI Tagging",
+            description: "Automatically categorized and tagged"
+          },
+          {
+            title: "Quality Review",
+            description: "Validated for accuracy and quality"
+          },
+          {
+            title: "Repository Storage",
+            description: "Stored in central library"
+          },
+          {
+            title: "Search",
+            description: "Users find relevant content"
+          },
+          {
+            title: "Reuse",
+            description: "Content incorporated into new proposals"
+          },
+          {
+            title: "Usage Tracking",
+            description: "Monitors reuse and value"
+          },
+          {
+            title: "Content Refresh",
+            description: "Updates outdated content"
+          }
+        ]
+      }}
     />
   );
 }

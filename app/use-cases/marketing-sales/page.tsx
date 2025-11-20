@@ -1,8 +1,10 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import DetailCard from "@/components/detail-card";
 import { RiTimeLine, RiBarChartLine, RiCheckboxCircleLine, RiMoneyDollarCircleLine, RiFocus3Line, RiArrowLeftLine } from "react-icons/ri";
+import { getIndustryFromPath } from "@/lib/industry-mapping";
 
 interface Metric {
   icon: React.ComponentType<{ className?: string }>;
@@ -65,13 +67,17 @@ const solutions: Solution[] = [
 ];
 
 export default function MarketingSalesPage() {
+  const pathname = usePathname();
+  const industry = getIndustryFromPath(pathname) || "banking";
+  const backHref = `/use-cases?industry=${industry}`;
+
   return (
     <main>
       <section className="relative pt-24 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 pb-20">
         <div className="relative z-10 mx-auto max-w-6xl">
           {/* Back Button */}
           <Link 
-            href="/use-cases"
+            href={backHref}
             className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors mb-6 text-sm font-medium"
             style={{ fontFamily: "var(--font-manrope)" }}
           >

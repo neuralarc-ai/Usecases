@@ -39,6 +39,43 @@ export default function Case5Page() {
           label: "Annual cost savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Data Integration",
+            description: "Consolidates from all systems"
+          },
+          {
+            title: "Data Quality Validation",
+            description: "Ensures accuracy"
+          },
+          {
+            title: "Report Generation",
+            description: "Creates all required reports"
+          },
+          {
+            title: "Analytics Processing",
+            description: "Performs trend and scenario analysis"
+          },
+          {
+            title: "Dashboard Update",
+            description: "Refreshes executive views"
+          },
+          {
+            title: "Distribution",
+            description: "Delivers reports to stakeholders"
+          },
+          {
+            title: "Regulatory Submission",
+            description: "Files required reports"
+          },
+          {
+            title: "Audit Trail",
+            description: "Documents all activities"
+          }
+        ]
+      }}
     />
   );
 }

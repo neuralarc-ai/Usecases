@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Annual savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Contract Upload",
+            description: "Submit contract for review"
+          },
+          {
+            title: "AI Parsing & Analysis",
+            description: "Extracts all terms and clauses"
+          },
+          {
+            title: "Clause Extraction",
+            description: "Identifies key provisions"
+          },
+          {
+            title: "Risk Assessment",
+            description: "Scores risk level (low/medium/high)"
+          },
+          {
+            title: "Deviation Identification",
+            description: "Flags non-standard terms"
+          },
+          {
+            title: "Redline Generation",
+            description: "Suggests modifications"
+          },
+          {
+            title: "Legal Review",
+            description: "Attorney reviews AI analysis and recommendations"
+          },
+          {
+            title: "Approval Workflow",
+            description: "Routes for appropriate signatures"
+          }
+        ]
+      }}
     />
   );
 }

@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Annual revenue increase"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Quote Request",
+            description: "Customer requests quote"
+          },
+          {
+            title: "Data Collection",
+            description: "Gathers information from multiple sources"
+          },
+          {
+            title: "Risk Assessment",
+            description: "Calculates risk score"
+          },
+          {
+            title: "Pricing Calculation",
+            description: "Determines premium for each coverage option"
+          },
+          {
+            title: "Market Analysis",
+            description: "Compares to competitive rates"
+          },
+          {
+            title: "Quote Generation",
+            description: "Creates multiple coverage options"
+          },
+          {
+            title: "Coverage Options",
+            description: "Presents side-by-side comparison"
+          },
+          {
+            title: "Customer Delivery",
+            description: "Sends via preferred channel"
+          }
+        ]
+      }}
     />
   );
 }

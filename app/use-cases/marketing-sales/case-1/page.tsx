@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Annual marketing efficiency gain"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Campaign Brief",
+            description: "Defines objectives and audience"
+          },
+          {
+            title: "AI Content Generation",
+            description: "Creates multiple content variations"
+          },
+          {
+            title: "Variation Creation",
+            description: "Generates 100+ versions"
+          },
+          {
+            title: "Performance Prediction",
+            description: "Scores expected performance"
+          },
+          {
+            title: "A/B Test Setup",
+            description: "Configures testing parameters"
+          },
+          {
+            title: "Automated Launch",
+            description: "Deploys across channels"
+          },
+          {
+            title: "Real-Time Optimization",
+            description: "Adjusts based on performance"
+          },
+          {
+            title: "Performance Analysis",
+            description: "Measures results and learns"
+          }
+        ]
+      }}
     />
   );
 }

@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Risk management"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Portfolio Data Aggregation",
+            description: "Collects all loan data"
+          },
+          {
+            title: "Risk Calculation",
+            description: "Computes portfolio metrics"
+          },
+          {
+            title: "Concentration Analysis",
+            description: "Identifies concentration risks"
+          },
+          {
+            title: "Stress Testing",
+            description: "Models adverse scenarios"
+          },
+          {
+            title: "Optimization Recommendations",
+            description: "Suggests portfolio adjustments"
+          },
+          {
+            title: "Capital Calculation",
+            description: "Determines regulatory capital"
+          },
+          {
+            title: "Monitoring",
+            description: "Tracks ongoing portfolio performance"
+          },
+          {
+            title: "Reporting",
+            description: "Generates regulatory and management reports"
+          }
+        ]
+      }}
     />
   );
 }

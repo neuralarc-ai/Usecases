@@ -39,6 +39,43 @@ export default function Case5Page() {
           label: "Customer treatment"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Transaction Capture",
+            description: "Records all customer interactions"
+          },
+          {
+            title: "Pattern Analysis",
+            description: "Identifies potential violations"
+          },
+          {
+            title: "Complaint Monitoring",
+            description: "Tracks and analyzes complaints"
+          },
+          {
+            title: "Issue Detection",
+            description: "Flags potential violations"
+          },
+          {
+            title: "Alert Generation",
+            description: "Notifies compliance team"
+          },
+          {
+            title: "Investigation",
+            description: "Analyzes issues"
+          },
+          {
+            title: "Remediation",
+            description: "Implements corrections"
+          },
+          {
+            title: "Reporting",
+            description: "Documents for regulators"
+          }
+        ]
+      }}
     />
   );
 }

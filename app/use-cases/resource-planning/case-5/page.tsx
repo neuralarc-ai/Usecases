@@ -39,6 +39,43 @@ export default function Case5Page() {
           label: "Annual value"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Data Aggregation",
+            description: "Collects resource data from all sources"
+          },
+          {
+            title: "Real-Time Dashboard",
+            description: "Displays current utilization and metrics"
+          },
+          {
+            title: "Performance Analytics",
+            description: "Analyzes individual and team performance"
+          },
+          {
+            title: "Trend Analysis",
+            description: "Identifies patterns and trends"
+          },
+          {
+            title: "Predictive Analytics",
+            description: "Forecasts demand and capacity needs"
+          },
+          {
+            title: "Insight Generation",
+            description: "Extracts actionable recommendations"
+          },
+          {
+            title: "Priority Ranking",
+            description: "Ranks improvements by impact"
+          },
+          {
+            title: "Continuous Monitoring",
+            description: "Tracks optimization progress"
+          }
+        ]
+      }}
     />
   );
 }

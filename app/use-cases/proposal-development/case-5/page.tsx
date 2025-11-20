@@ -39,6 +39,43 @@ export default function Case5Page() {
           label: "Annual revenue increase"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Outcome Capture",
+            description: "Records win or loss"
+          },
+          {
+            title: "Data Collection",
+            description: "Gathers all relevant data"
+          },
+          {
+            title: "Analysis",
+            description: "Analyzes factors contributing to outcome"
+          },
+          {
+            title: "Pattern Identification",
+            description: "Identifies success patterns"
+          },
+          {
+            title: "Insight Generation",
+            description: "Extracts key learnings"
+          },
+          {
+            title: "Recommendation Development",
+            description: "Suggests improvements"
+          },
+          {
+            title: "Action Planning",
+            description: "Develops implementation plans"
+          },
+          {
+            title: "Tracking",
+            description: "Monitors improvement initiatives"
+          }
+        ]
+      }}
     />
   );
 }

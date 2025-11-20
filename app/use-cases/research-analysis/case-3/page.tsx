@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Cost savings per project"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Data Receipt",
+            description: "Receives client data"
+          },
+          {
+            title: "Automated Cleaning",
+            description: "Validates and cleans data"
+          },
+          {
+            title: "Exploratory Analysis",
+            description: "Identifies patterns"
+          },
+          {
+            title: "Advanced Analytics",
+            description: "Performs statistical analysis"
+          },
+          {
+            title: "Visualization Creation",
+            description: "Generates charts and dashboards"
+          },
+          {
+            title: "Insight Extraction",
+            description: "Identifies key findings"
+          },
+          {
+            title: "Report Generation",
+            description: "Creates comprehensive reports"
+          },
+          {
+            title: "Client Delivery",
+            description: "Presents findings"
+          }
+        ]
+      }}
     />
   );
 }

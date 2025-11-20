@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Annual revenue retention"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Interaction Capture",
+            description: "Records all customer interactions"
+          },
+          {
+            title: "Sentiment Analysis",
+            description: "Analyzes sentiment in real-time"
+          },
+          {
+            title: "Issue Detection",
+            description: "Identifies problems and dissatisfaction"
+          },
+          {
+            title: "Severity Scoring",
+            description: "Prioritizes by impact"
+          },
+          {
+            title: "Alert Generation",
+            description: "Notifies appropriate team"
+          },
+          {
+            title: "Recovery Workflow",
+            description: "Initiates resolution process"
+          },
+          {
+            title: "Resolution Tracking",
+            description: "Monitors progress"
+          },
+          {
+            title: "Satisfaction Verification",
+            description: "Confirms issue resolved"
+          }
+        ]
+      }}
     />
   );
 }

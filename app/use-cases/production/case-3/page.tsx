@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Returns and complaints"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Quality Monitoring",
+            description: "Tracks all production quality"
+          },
+          {
+            title: "Defect Detection",
+            description: "Identifies quality issues"
+          },
+          {
+            title: "Root Cause Analysis",
+            description: "Determines defect causes"
+          },
+          {
+            title: "Predictive Analysis",
+            description: "Forecasts potential issues"
+          },
+          {
+            title: "Process Adjustment",
+            description: "Optimizes parameters"
+          },
+          {
+            title: "Validation",
+            description: "Verifies improvements"
+          },
+          {
+            title: "Continuous Monitoring",
+            description: "Tracks ongoing quality"
+          },
+          {
+            title: "Improvement Tracking",
+            description: "Measures yield gains"
+          }
+        ]
+      }}
     />
   );
 }

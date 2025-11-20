@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Annual revenue increase"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Data Collection",
+            description: "Gathers agent activity and results"
+          },
+          {
+            title: "Performance Calculation",
+            description: "Computes metrics"
+          },
+          {
+            title: "Comparative Analysis",
+            description: "Benchmarks against peers"
+          },
+          {
+            title: "Gap Identification",
+            description: "Identifies improvement areas"
+          },
+          {
+            title: "Coaching Recommendations",
+            description: "Suggests specific actions"
+          },
+          {
+            title: "Training Assignment",
+            description: "Assigns relevant training"
+          },
+          {
+            title: "Progress Tracking",
+            description: "Monitors improvement"
+          },
+          {
+            title: "Recognition",
+            description: "Celebrates achievements"
+          }
+        ]
+      }}
     />
   );
 }

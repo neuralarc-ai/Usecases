@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Annual value"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Data Collection",
+            description: "Gathers historical and external data"
+          },
+          {
+            title: "ML Model Analysis",
+            description: "Analyzes 500+ factors for forecasting"
+          },
+          {
+            title: "Demand Forecasting",
+            description: "Generates accurate demand predictions"
+          },
+          {
+            title: "Real-Time Demand Sensing",
+            description: "Adjusts forecasts with current signals"
+          },
+          {
+            title: "Production Planning",
+            description: "Creates demand-driven production schedules"
+          },
+          {
+            title: "Inventory Planning",
+            description: "Determines optimal stock levels"
+          },
+          {
+            title: "Continuous Refinement",
+            description: "Improves forecast accuracy over time"
+          },
+          {
+            title: "Performance Tracking",
+            description: "Monitors forecast accuracy and planning effectiveness"
+          }
+        ]
+      }}
     />
   );
 }

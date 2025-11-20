@@ -39,6 +39,39 @@ export default function Case3Page() {
           label: "Improvement in retention intervention success"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Data Collection",
+            description: "Gathers performance, engagement, compensation, and market data"
+          },
+          {
+            title: "ML Model Analysis",
+            description: "Analyzes patterns and identifies risk factors"
+          },
+          {
+            title: "Risk Score Calculation",
+            description: "Assigns flight risk score (0-100) to each employee"
+          },
+          {
+            title: "Alert Generation",
+            description: "Notifies HR and managers of high-risk employees (score > 70)"
+          },
+          {
+            title: "Manager Dashboard",
+            description: "Provides insights into risk factors and trends"
+          },
+          {
+            title: "Intervention Recommendations",
+            description: "Suggests specific retention actions (compensation review, development plan, role change, etc.)"
+          },
+          {
+            title: "Outcome Tracking",
+            description: "Measures intervention effectiveness and retention success"
+          }
+        ]
+      }}
     />
   );
 }

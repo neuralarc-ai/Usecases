@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Annual value"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Issue Identification",
+            description: "Quality issue detected"
+          },
+          {
+            title: "Data Aggregation",
+            description: "Collects all relevant data and context"
+          },
+          {
+            title: "AI-Powered Analysis",
+            description: "Analyzes patterns and correlates factors"
+          },
+          {
+            title: "Root Cause Identification",
+            description: "Determines primary and contributing causes"
+          },
+          {
+            title: "Timeline Reconstruction",
+            description: "Builds sequence of events"
+          },
+          {
+            title: "Corrective Action Recommendation",
+            description: "Suggests specific solutions"
+          },
+          {
+            title: "Implementation Tracking",
+            description: "Monitors action execution"
+          },
+          {
+            title: "Validation & Knowledge Capture",
+            description: "Verifies effectiveness and documents learnings"
+          }
+        ]
+      }}
     />
   );
 }

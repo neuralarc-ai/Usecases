@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Annual revenue increase"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Application Initiation",
+            description: "Customer starts application online or in-branch"
+          },
+          {
+            title: "Document Collection",
+            description: "Captures ID, proof of address, financial info"
+          },
+          {
+            title: "AI Verification",
+            description: "Validates documents and identity"
+          },
+          {
+            title: "Automated Screening",
+            description: "Checks sanctions, PEP, adverse media"
+          },
+          {
+            title: "Risk Assessment",
+            description: "Calculates customer risk score"
+          },
+          {
+            title: "Account Provisioning",
+            description: "Creates accounts and enrolls in products"
+          },
+          {
+            title: "Compliance Documentation",
+            description: "Generates KYC file"
+          },
+          {
+            title: "Customer Notification",
+            description: "Confirms account opening"
+          }
+        ]
+      }}
     />
   );
 }

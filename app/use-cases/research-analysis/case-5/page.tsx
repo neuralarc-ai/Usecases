@@ -39,6 +39,43 @@ export default function Case5Page() {
           label: "Cost savings per project"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Client Profile",
+            description: "Defines client characteristics"
+          },
+          {
+            title: "Peer Group Identification",
+            description: "Identifies comparable companies"
+          },
+          {
+            title: "Data Collection",
+            description: "Gathers benchmarking data"
+          },
+          {
+            title: "Metric Calculation",
+            description: "Computes performance metrics"
+          },
+          {
+            title: "Gap Analysis",
+            description: "Identifies performance gaps"
+          },
+          {
+            title: "Best Practice Identification",
+            description: "Finds leading practices"
+          },
+          {
+            title: "Recommendation Development",
+            description: "Suggests improvements"
+          },
+          {
+            title: "Report Generation",
+            description: "Creates comprehensive analysis"
+          }
+        ]
+      }}
     />
   );
 }

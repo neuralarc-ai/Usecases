@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Agent satisfaction"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Policy Transaction",
+            description: "New business, renewal, or change"
+          },
+          {
+            title: "Commission Calculation",
+            description: "Calculates all commission components"
+          },
+          {
+            title: "Validation",
+            description: "Verifies accuracy"
+          },
+          {
+            title: "Aggregation",
+            description: "Sums by agent and period"
+          },
+          {
+            title: "Reconciliation",
+            description: "Matches to policy data"
+          },
+          {
+            title: "Approval",
+            description: "Routes for management approval"
+          },
+          {
+            title: "Payment Generation",
+            description: "Creates payment files"
+          },
+          {
+            title: "Agent Notification",
+            description: "Sends commission statements"
+          }
+        ]
+      }}
     />
   );
 }

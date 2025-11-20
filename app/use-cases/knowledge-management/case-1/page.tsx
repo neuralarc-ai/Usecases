@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Annual productivity gain"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Document Upload",
+            description: "New document added"
+          },
+          {
+            title: "AI Classification",
+            description: "Categorizes automatically"
+          },
+          {
+            title: "Tagging",
+            description: "Applies relevant tags"
+          },
+          {
+            title: "Indexing",
+            description: "Makes searchable"
+          },
+          {
+            title: "Relationship Mapping",
+            description: "Links to related content"
+          },
+          {
+            title: "Access Control",
+            description: "Sets permissions"
+          },
+          {
+            title: "Search",
+            description: "Users find documents easily"
+          },
+          {
+            title: "Usage Tracking",
+            description: "Monitors document value"
+          }
+        ]
+      }}
     />
   );
 }

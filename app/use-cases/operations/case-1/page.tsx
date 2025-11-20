@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Annual operational savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Trade Capture",
+            description: "Receives trade data from all sources"
+          },
+          {
+            title: "Data Normalization",
+            description: "Standardizes formats across systems"
+          },
+          {
+            title: "Automated Matching",
+            description: "Matches trades using AI algorithms"
+          },
+          {
+            title: "Exception Detection",
+            description: "Identifies breaks and discrepancies"
+          },
+          {
+            title: "Root Cause Analysis",
+            description: "Determines source of issue"
+          },
+          {
+            title: "Automated Resolution",
+            description: "Resolves breaks when possible"
+          },
+          {
+            title: "Investigation Routing",
+            description: "Assigns complex breaks to operations team"
+          },
+          {
+            title: "Regulatory Reporting",
+            description: "Generates required reports"
+          }
+        ]
+      }}
     />
   );
 }

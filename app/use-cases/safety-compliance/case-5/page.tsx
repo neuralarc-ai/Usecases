@@ -39,6 +39,43 @@ export default function Case5Page() {
           label: "Annual value"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Data Collection",
+            description: "Gathers safety data from all sources"
+          },
+          {
+            title: "Real-Time Dashboard",
+            description: "Displays current safety metrics"
+          },
+          {
+            title: "Incident Trend Analysis",
+            description: "Identifies patterns and trends"
+          },
+          {
+            title: "Predictive Analytics",
+            description: "Forecasts safety risks"
+          },
+          {
+            title: "Insight Generation",
+            description: "Extracts actionable recommendations"
+          },
+          {
+            title: "Priority Ranking",
+            description: "Ranks improvements by impact"
+          },
+          {
+            title: "Automated Reporting",
+            description: "Generates compliance and safety reports"
+          },
+          {
+            title: "Continuous Monitoring",
+            description: "Tracks improvement progress"
+          }
+        ]
+      }}
     />
   );
 }

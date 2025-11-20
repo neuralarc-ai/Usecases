@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Annual savings per 100 new hires"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Offer Acceptance",
+            description: "Candidate accepts offer in system"
+          },
+          {
+            title: "Automated Workflow Trigger",
+            description: "Initiates all department-specific tasks"
+          },
+          {
+            title: "Document Generation",
+            description: "Creates personalized employment documents"
+          },
+          {
+            title: "IT Provisioning",
+            description: "Sets up email, systems access, equipment orders"
+          },
+          {
+            title: "Training Assignment",
+            description: "Assigns role-specific and compliance training"
+          },
+          {
+            title: "Compliance Verification",
+            description: "Ensures all regulatory requirements met"
+          },
+          {
+            title: "Manager Notification",
+            description: "Alerts manager when new hire is ready"
+          },
+          {
+            title: "Progress Dashboard",
+            description: "Tracks completion across all steps in real-time"
+          }
+        ]
+      }}
     />
   );
 }

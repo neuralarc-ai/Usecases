@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Annual audit cost savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Activity Logging",
+            description: "Captures all activities automatically"
+          },
+          {
+            title: "Document Capture",
+            description: "Collects supporting documentation"
+          },
+          {
+            title: "AI Classification",
+            description: "Categorizes and tags"
+          },
+          {
+            title: "Audit Trail Linking",
+            description: "Connects activities to evidence"
+          },
+          {
+            title: "Evidence Packaging",
+            description: "Assembles audit packages"
+          },
+          {
+            title: "Readiness Scoring",
+            description: "Calculates audit readiness"
+          },
+          {
+            title: "Report Generation",
+            description: "Creates audit documentation"
+          },
+          {
+            title: "Auditor Portal",
+            description: "Provides secure access"
+          }
+        ]
+      }}
     />
   );
 }

@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Annual savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Activity Logging",
+            description: "Captures all system activities automatically"
+          },
+          {
+            title: "Document Capture",
+            description: "Collects supporting evidence in real-time"
+          },
+          {
+            title: "AI Classification",
+            description: "Categorizes and tags documents"
+          },
+          {
+            title: "Audit Trail Linking",
+            description: "Connects activities to evidence"
+          },
+          {
+            title: "Evidence Packaging",
+            description: "Assembles audit packages by requirement"
+          },
+          {
+            title: "Readiness Scoring",
+            description: "Calculates audit readiness percentage"
+          },
+          {
+            title: "Report Generation",
+            description: "Creates audit documentation on demand"
+          },
+          {
+            title: "Auditor Portal",
+            description: "Provides secure access for external auditors"
+          }
+        ]
+      }}
     />
   );
 }

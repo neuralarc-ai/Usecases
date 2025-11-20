@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Annual savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Control Framework Setup",
+            description: "Defines monitoring requirements for all regulations"
+          },
+          {
+            title: "Continuous Data Collection",
+            description: "Gathers compliance data from all systems"
+          },
+          {
+            title: "Automated Testing",
+            description: "Validates controls according to schedule"
+          },
+          {
+            title: "Risk Calculation",
+            description: "Scores compliance risk by area"
+          },
+          {
+            title: "Violation Prediction",
+            description: "Identifies potential issues using ML"
+          },
+          {
+            title: "Alert Generation",
+            description: "Notifies compliance team of risks"
+          },
+          {
+            title: "Remediation Tracking",
+            description: "Monitors corrective actions"
+          },
+          {
+            title: "Audit Reporting",
+            description: "Generates documentation for auditors"
+          }
+        ]
+      }}
     />
   );
 }

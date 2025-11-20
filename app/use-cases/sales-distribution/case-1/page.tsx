@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Annual revenue increase"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Lead Capture",
+            description: "Lead enters system from any source"
+          },
+          {
+            title: "Data Enrichment",
+            description: "Adds third-party data"
+          },
+          {
+            title: "AI Scoring",
+            description: "Calculates conversion probability and value"
+          },
+          {
+            title: "Prioritization",
+            description: "Ranks leads by score"
+          },
+          {
+            title: "Agent Assignment",
+            description: "Routes to best-fit agent"
+          },
+          {
+            title: "Automated Outreach",
+            description: "Initiates contact"
+          },
+          {
+            title: "Follow-Up Management",
+            description: "Tracks and reminds"
+          },
+          {
+            title: "Conversion Tracking",
+            description: "Measures outcomes"
+          }
+        ]
+      }}
     />
   );
 }

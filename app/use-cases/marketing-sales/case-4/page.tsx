@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Annual efficiency gain"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Touchpoint Tracking",
+            description: "Captures all customer interactions"
+          },
+          {
+            title: "Journey Mapping",
+            description: "Constructs complete paths to conversion"
+          },
+          {
+            title: "Attribution Modeling",
+            description: "Assigns credit to touchpoints"
+          },
+          {
+            title: "Channel Analysis",
+            description: "Evaluates channel effectiveness"
+          },
+          {
+            title: "Budget Optimization",
+            description: "Recommends allocation"
+          },
+          {
+            title: "Scenario Modeling",
+            description: "Models various strategies"
+          },
+          {
+            title: "Implementation",
+            description: "Adjusts budget and tactics"
+          },
+          {
+            title: "Performance Tracking",
+            description: "Monitors results"
+          }
+        ]
+      }}
     />
   );
 }

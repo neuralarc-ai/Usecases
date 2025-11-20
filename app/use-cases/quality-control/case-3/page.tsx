@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Annual value"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Test Plan Generation",
+            description: "Creates comprehensive test plans automatically"
+          },
+          {
+            title: "Automated Test Execution",
+            description: "Runs all required tests"
+          },
+          {
+            title: "Result Collection",
+            description: "Gathers all test data and measurements"
+          },
+          {
+            title: "Intelligent Analysis",
+            description: "Interprets results and determines pass/fail"
+          },
+          {
+            title: "Standard Compliance",
+            description: "Validates against regulatory and customer standards"
+          },
+          {
+            title: "Anomaly Detection",
+            description: "Identifies trends and exceptions"
+          },
+          {
+            title: "Report Generation",
+            description: "Creates compliance certificates and reports"
+          },
+          {
+            title: "Continuous Improvement",
+            description: "Optimizes test processes"
+          }
+        ]
+      }}
     />
   );
 }

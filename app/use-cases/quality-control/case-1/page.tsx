@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Annual value"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Production Output",
+            description: "Products move through production line"
+          },
+          {
+            title: "Computer Vision Scanning",
+            description: "Automated visual inspection of all products"
+          },
+          {
+            title: "Defect Detection",
+            description: "AI identifies defects and categorizes severity"
+          },
+          {
+            title: "Pattern Recognition",
+            description: "Analyzes defect patterns and trends"
+          },
+          {
+            title: "Real-Time Alert",
+            description: "Immediately notifies quality team"
+          },
+          {
+            title: "Priority Routing",
+            description: "Routes critical defects for immediate action"
+          },
+          {
+            title: "Corrective Action",
+            description: "Triggers process adjustments"
+          },
+          {
+            title: "Quality Analytics",
+            description: "Tracks trends and improvement opportunities"
+          }
+        ]
+      }}
     />
   );
 }

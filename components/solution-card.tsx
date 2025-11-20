@@ -12,11 +12,16 @@ export default function SolutionCard({ icon: Icon, title, description, href }: S
     <div className="flex flex-col h-full">
       {/* Icon and Title Row */}
       <div className="flex items-center gap-3 mb-3">
-        <Icon className="w-6 h-6 text-gray-900 shrink-0" />
+        <div className="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center shrink-0">
+          <Icon className="w-5 h-5 text-gray-900" />
+        </div>
         <h5 className="text-xl font-bold text-gray-900" style={{ fontFamily: "var(--font-sora)" }}>
           {title}
         </h5>
       </div>
+      
+      {/* Horizontal Divider */}
+      <hr className="border-gray-200 mb-4 w-full" />
       
       {/* Description */}
       <p className="text-base text-gray-600 leading-relaxed mb-4 flex-1" style={{ fontFamily: "var(--font-manrope)" }}>

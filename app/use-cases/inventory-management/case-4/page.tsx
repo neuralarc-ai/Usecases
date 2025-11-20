@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Annual loss prevention"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Continuous Inventory Monitoring",
+            description: "Tracks all inventory movements"
+          },
+          {
+            title: "Discrepancy Detection",
+            description: "Identifies variances in real-time"
+          },
+          {
+            title: "Pattern Analysis",
+            description: "Analyzes for suspicious patterns"
+          },
+          {
+            title: "Risk Scoring",
+            description: "Prioritizes high-risk items and locations"
+          },
+          {
+            title: "Alert Generation",
+            description: "Notifies loss prevention team"
+          },
+          {
+            title: "Investigation Workflow",
+            description: "Guides investigation process"
+          },
+          {
+            title: "Resolution Tracking",
+            description: "Monitors corrective actions"
+          },
+          {
+            title: "Prevention Optimization",
+            description: "Improves controls based on data"
+          }
+        ]
+      }}
     />
   );
 }

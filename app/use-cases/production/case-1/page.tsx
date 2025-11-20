@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Annual productivity gain"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Demand Input",
+            description: "Receives production requirements"
+          },
+          {
+            title: "Constraint Analysis",
+            description: "Evaluates all constraints"
+          },
+          {
+            title: "AI Optimization",
+            description: "Generates optimal schedule"
+          },
+          {
+            title: "Validation",
+            description: "Checks feasibility"
+          },
+          {
+            title: "Schedule Publication",
+            description: "Distributes to production"
+          },
+          {
+            title: "Real-Time Monitoring",
+            description: "Tracks execution"
+          },
+          {
+            title: "Dynamic Adjustment",
+            description: "Responds to changes"
+          },
+          {
+            title: "Performance Analysis",
+            description: "Measures effectiveness"
+          }
+        ]
+      }}
     />
   );
 }

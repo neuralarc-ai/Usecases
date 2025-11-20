@@ -39,6 +39,43 @@ export default function Case5Page() {
           label: "Retention campaign success rate"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Data Collection",
+            description: "Gathers customer interaction and behavior data"
+          },
+          {
+            title: "Churn Risk Scoring",
+            description: "Calculates likelihood of cancellation"
+          },
+          {
+            title: "Driver Identification",
+            description: "Determines reasons for risk"
+          },
+          {
+            title: "Alert Generation",
+            description: "Notifies retention team"
+          },
+          {
+            title: "Retention Strategy",
+            description: "Recommends personalized approach"
+          },
+          {
+            title: "Campaign Execution",
+            description: "Delivers retention offer"
+          },
+          {
+            title: "Outcome Tracking",
+            description: "Monitors retention success"
+          },
+          {
+            title: "Model Refinement",
+            description: "Improves predictions"
+          }
+        ]
+      }}
     />
   );
 }

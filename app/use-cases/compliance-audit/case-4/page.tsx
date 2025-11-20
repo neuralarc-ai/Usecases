@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Compliance"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Data Discovery",
+            description: "Identifies all PII"
+          },
+          {
+            title: "Classification",
+            description: "Categorizes by sensitivity"
+          },
+          {
+            title: "Access Control",
+            description: "Implements permissions"
+          },
+          {
+            title: "Monitoring",
+            description: "Tracks all access"
+          },
+          {
+            title: "Anomaly Detection",
+            description: "Identifies unusual patterns"
+          },
+          {
+            title: "Alert Generation",
+            description: "Notifies security team"
+          },
+          {
+            title: "Investigation",
+            description: "Analyzes potential breaches"
+          },
+          {
+            title: "Compliance Reporting",
+            description: "Documents activities"
+          }
+        ]
+      }}
     />
   );
 }

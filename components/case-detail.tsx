@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { RiArrowLeftLine } from "react-icons/ri";
+import ProcessFlowDiagram from "@/components/process-flow-diagram";
 
 interface Metric {
   icon: React.ComponentType<{ className?: string }>;
@@ -20,6 +21,11 @@ interface HeliumSolution {
   description: string;
 }
 
+interface ProcessStep {
+  title: string;
+  description: string;
+}
+
 interface CaseDetailProps {
   title: string;
   backHref: string;
@@ -29,6 +35,10 @@ interface CaseDetailProps {
   metrics: Metric[];
   imageUrl?: string;
   imageAlt?: string;
+  processFlow?: {
+    title?: string;
+    steps: ProcessStep[];
+  };
 }
 
 export default function CaseDetail({
@@ -39,7 +49,8 @@ export default function CaseDetail({
   heliumSolution,
   metrics,
   imageUrl,
-  imageAlt = "Case illustration"
+  imageAlt = "Case illustration",
+  processFlow
 }: CaseDetailProps) {
   return (
     <main>
@@ -126,6 +137,16 @@ export default function CaseDetail({
           )}
         </div>
       </section>
+
+      {/* Process Flow Section */}
+      {processFlow && processFlow.steps.length > 0 && (
+        <section className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 pb-20">
+          <ProcessFlowDiagram 
+            title={processFlow.title || "Process Flow"}
+            steps={processFlow.steps}
+          />
+        </section>
+      )}
     </main>
   );
 }

@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Annual value"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Real-Time Workload Tracking",
+            description: "Monitors current assignments and utilization"
+          },
+          {
+            title: "Burnout Indicator Detection",
+            description: "Identifies risk factors for burnout"
+          },
+          {
+            title: "Workload Analysis",
+            description: "Analyzes distribution across resources"
+          },
+          {
+            title: "Balance Optimization",
+            description: "Optimizes workload distribution"
+          },
+          {
+            title: "Early Warning",
+            description: "Alerts on overallocation risks"
+          },
+          {
+            title: "Proactive Adjustment",
+            description: "Reallocates work to prevent burnout"
+          },
+          {
+            title: "Wellness Monitoring",
+            description: "Tracks employee satisfaction and wellness"
+          },
+          {
+            title: "Continuous Improvement",
+            description: "Refines balancing algorithms"
+          }
+        ]
+      }}
     />
   );
 }

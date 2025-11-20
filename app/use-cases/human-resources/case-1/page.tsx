@@ -6,7 +6,7 @@ import { RiTimeLine, RiFocus3Line, RiShieldLine, RiMoneyDollarCircleLine } from 
 export default function Case1Page() {
   return (
     <CaseDetail
-      title="Automated Claims Triage & Routing"
+      title="AI-Powered Resume Screening & Candidate Matching"
       backHref="/use-cases/human-resources"
       backLabel="Back to Human Resources"
       businessChallenge={{
@@ -20,25 +20,58 @@ export default function Case1Page() {
       metrics={[
         {
           icon: RiTimeLine,
-          value: "90%",
-          label: "Reduction in triage time"
+          value: "85%",
+          label: "Reduction in screening time"
         },
         {
           icon: RiFocus3Line,
-          value: "95%",
-          label: "Routing accuracy"
+          value: "40%",
+          label: "Increase in qualified candidate identification"
         },
         {
           icon: RiShieldLine,
-          value: "85%",
-          label: "Fraud indicator detection"
+          value: "60%",
+          label: "Faster time-to-hire"
         },
         {
           icon: RiMoneyDollarCircleLine,
-          value: "$2.8M",
-          label: "Annual savings per 10K claims"
+          value: "$125K",
+          label: "Annual cost savings per recruiter"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Resume Upload",
+            description: "Candidates submit resumes through career portal, email, or ATS"
+          },
+          {
+            title: "AI Analysis & Parsing",
+            description: "NLP extracts all relevant information (education, experience, skills, certifications)"
+          },
+          {
+            title: "Skill Extraction",
+            description: "Identifies technical skills, soft skills, domain expertise, and certifications"
+          },
+          {
+            title: "Job Matching Algorithm",
+            description: "Scores candidates against job requirements using ML models"
+          },
+          {
+            title: "Bias Check",
+            description: "Analyzes for potential bias factors and adjusts scoring"
+          },
+          {
+            title: "Ranked Candidate List",
+            description: "Generates prioritized shortlist with confidence scores"
+          },
+          {
+            title: "HR Review Dashboard",
+            description: "Presents top candidates with AI insights and recommendations"
+          }
+        ]
+      }}
     />
   );
 }

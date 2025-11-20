@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Annual value"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Pipeline Analysis",
+            description: "Analyzes sales pipeline and opportunities"
+          },
+          {
+            title: "Probability Assessment",
+            description: "Evaluates win probability for each opportunity"
+          },
+          {
+            title: "Resource Requirement Calculation",
+            description: "Determines resources needed for each project"
+          },
+          {
+            title: "Historical Pattern Analysis",
+            description: "Identifies demand patterns from past data"
+          },
+          {
+            title: "Demand Forecasting",
+            description: "Predicts future resource requirements"
+          },
+          {
+            title: "Scenario Planning",
+            description: "Models different demand scenarios"
+          },
+          {
+            title: "Capacity Planning",
+            description: "Plans resource capacity accordingly"
+          },
+          {
+            title: "Continuous Refinement",
+            description: "Improves forecast accuracy over time"
+          }
+        ]
+      }}
     />
   );
 }

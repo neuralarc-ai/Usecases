@@ -39,6 +39,43 @@ export default function Case4Page() {
           label: "Cost savings per project"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Industry Definition",
+            description: "Defines scope and focus"
+          },
+          {
+            title: "Automated Monitoring",
+            description: "Collects relevant information"
+          },
+          {
+            title: "Trend Detection",
+            description: "Identifies emerging patterns"
+          },
+          {
+            title: "Impact Analysis",
+            description: "Assesses implications"
+          },
+          {
+            title: "Forecasting",
+            description: "Projects future developments"
+          },
+          {
+            title: "Synthesis",
+            description: "Generates insights"
+          },
+          {
+            title: "Report Creation",
+            description: "Produces comprehensive analysis"
+          },
+          {
+            title: "Continuous Updates",
+            description: "Monitors ongoing trends"
+          }
+        ]
+      }}
     />
   );
 }

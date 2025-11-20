@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Annual operational savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Order Receipt",
+            description: "Order enters warehouse system"
+          },
+          {
+            title: "Route Optimization",
+            description: "Calculates optimal picking path"
+          },
+          {
+            title: "Pick List Generation",
+            description: "Creates prioritized pick list"
+          },
+          {
+            title: "Real-Time Tracking",
+            description: "Monitors picking progress"
+          },
+          {
+            title: "Quality Verification",
+            description: "Validates picked items"
+          },
+          {
+            title: "Packing Optimization",
+            description: "Determines optimal packaging"
+          },
+          {
+            title: "Shipping Coordination",
+            description: "Schedules carrier pickup"
+          },
+          {
+            title: "Performance Analytics",
+            description: "Tracks efficiency metrics"
+          }
+        ]
+      }}
     />
   );
 }

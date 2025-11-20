@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Annual operational savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Inventory Trigger",
+            description: "Stock level reaches reorder point"
+          },
+          {
+            title: "Demand Validation",
+            description: "Confirms need based on forecast"
+          },
+          {
+            title: "Supplier Selection",
+            description: "Chooses optimal supplier"
+          },
+          {
+            title: "PO Generation",
+            description: "Creates purchase order automatically"
+          },
+          {
+            title: "Automated Approval",
+            description: "Routes for approval based on amount"
+          },
+          {
+            title: "Order Transmission",
+            description: "Sends to supplier via EDI or portal"
+          },
+          {
+            title: "Delivery Tracking",
+            description: "Monitors shipment status"
+          },
+          {
+            title: "Quality Verification",
+            description: "Validates receipt and quality"
+          }
+        ]
+      }}
     />
   );
 }

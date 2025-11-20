@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Annual revenue increase"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Market Data Collection",
+            description: "Gathers demand, competition, inventory data"
+          },
+          {
+            title: "Demand Analysis",
+            description: "Forecasts demand at various price points"
+          },
+          {
+            title: "Competitive Monitoring",
+            description: "Tracks competitor pricing"
+          },
+          {
+            title: "Price Optimization",
+            description: "Calculates optimal price"
+          },
+          {
+            title: "Margin Validation",
+            description: "Ensures profitability"
+          },
+          {
+            title: "Automated Price Update",
+            description: "Updates across all channels"
+          },
+          {
+            title: "Performance Tracking",
+            description: "Monitors sales and margin"
+          },
+          {
+            title: "Continuous Optimization",
+            description: "Refines pricing strategy"
+          }
+        ]
+      }}
     />
   );
 }

@@ -1,19 +1,8 @@
 "use client"
 
 import React from 'react'
-import { 
-  Briefcase, 
-  Users, 
-  TrendingUp, 
-  Megaphone, 
-  Calculator, 
-  Settings, 
-  Scale, 
-  Headphones, 
-  Code 
-} from 'lucide-react'
+import { Bot, Globe, Database, PenTool, Code2, Workflow } from 'lucide-react'
 import { Sora } from 'next/font/google'
-import Link from 'next/link'
 
 const sora = Sora({
   subsets: ['latin'],
@@ -21,111 +10,158 @@ const sora = Sora({
   variable: '--font-sora',
 })
 
-interface BusinessFunctionCard {
-  icon: React.ReactNode
+interface FeatureCard {
+  icon: React.ComponentType<{ className?: string }>
+  iconBgColor: string
   title: string
   description: string
+  borderColor?: string
 }
 
-const businessFunctions: BusinessFunctionCard[] = [
+const topFeatures: FeatureCard[] = [
   {
-    icon: <Users className="w-6 h-6" />,
-    title: "HR & Talent",
-    description: "Recruitment automation, candidate screening, onboarding workflows"
+    icon: Bot,
+    iconBgColor: '#E0693D',
+    title: "Autonomous AI Agents",
+    description: "Deploy intelligent agents that work 24/7, handling complex workflows from customer service to data analysis without human intervention. Each agent learns, adapts, and improves over time."
   },
   {
-    icon: <TrendingUp className="w-6 h-6" />,
-    title: "Sales",
-    description: "Lead research, proposal generation, CRM automation"
+    icon: Globe,
+    iconBgColor: '#A6C8D5',
+    title: "Web Automation at Scale",
+    description: "Automate any web-based task across thousands of sites simultaneously. From data extraction to form filling, Helium handles it all with precision and speed that manual processes cannot match."
+  }
+]
+
+const bottomFeatures: FeatureCard[] = [
+  {
+    icon: Database,
+    iconBgColor: '#A69CBE',
+    title: "Enterprise Data Processing",
+    description: "Process millions of records in minutes. Clean, transform, analyze, and visualize data from any source with AI-powered insights that drive strategic decisions across your organization."
   },
   {
-    icon: <Megaphone className="w-6 h-6" />,
-    title: "Marketing",
-    description: "Content creation, campaign automation, analytics"
+    icon: PenTool,
+    iconBgColor: '#D0EF5E',
+    title: "Content Creation Engine",
+    description: "Generate marketing copy, reports, presentations, and documentation at scale. Helium maintains your brand voice while producing content that converts and engages your audience."
   },
   {
-    icon: <Calculator className="w-6 h-6" />,
-    title: "Finance",
-    description: "Report generation, data analysis, forecasting"
+    icon: Code2,
+    iconBgColor: '#27584F',
+    title: "Software Development",
+    description: "Build applications, APIs, and integrations with AI assistance. From prototyping to production deployment, Helium accelerates your development cycle while maintaining code quality."
   },
   {
-    icon: <Settings className="w-6 h-6" />,
-    title: "Operations",
-    description: "Process automation, workflow optimization, documentation"
-  },
-  {
-    icon: <Scale className="w-6 h-6" />,
-    title: "Legal",
-    description: "Contract analysis, compliance checks, document generation"
-  },
-  {
-    icon: <Headphones className="w-6 h-6" />,
-    title: "Customer Success",
-    description: "Support automation, knowledge base creation, response generation"
-  },
-  {
-    icon: <Code className="w-6 h-6" />,
-    title: "IT & Development",
-    description: "App development, system integration, technical documentation"
+    icon: Workflow,
+    iconBgColor: '#E7B31B',
+    title: "Workflow Orchestration",
+    description: "Connect every system in your tech stack. Helium orchestrates complex workflows across departments, ensuring seamless data flow and process automation throughout your enterprise."
   }
 ]
 
 export default function BusinessFunctions() {
   return (
-    <section className={`relative flex flex-col items-center justify-center bg-white py-16 sm:py-20 md:py-24 px-4 sm:px-6 ${sora.variable}`}>
-      {/* Briefcase Icon */}
-      <div className="mb-6">
-        <Briefcase className="w-8 h-8 text-black stroke-2" />
+    <section 
+      className={`relative flex flex-col items-center justify-center py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 ${sora.variable}`}
+      style={{ backgroundColor: '#ececec' }}
+    >
+      <div className="w-full max-w-7xl mx-auto">
+        {/* Title */}
+        <h2 
+          className={`${sora.variable} text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 text-center`}
+          style={{ fontFamily: 'Sora, sans-serif' }}
+        >
+          The AI Platform Built for Enterprise Scale
+        </h2>
+
+        {/* Subtitle */}
+        <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-12 sm:mb-16 text-center max-w-4xl mx-auto">
+          Helium replaces your entire AI tool stack with one powerful platform that grows with your business, horizontally and vertically.
+        </p>
+
+        {/* Top Two Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
+          {topFeatures.map((feature, index) => {
+            const Icon = feature.icon
+            return (
+              <div
+                key={index}
+                className="bg-white rounded-lg shadow-md border-2 border-transparent transition-all duration-200 h-full"
+                style={{ padding: '3rem' }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = '#E0693D'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = 'transparent'
+                }}
+              >
+                {/* Icon */}
+                <div 
+                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center mb-4"
+                  style={{ backgroundColor: feature.iconBgColor }}
+                >
+                  <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
+                </div>
+
+                {/* Title */}
+                <h3 
+                  className={`${sora.variable} font-bold text-gray-900 mb-4`}
+                  style={{ fontFamily: 'Sora, sans-serif', fontSize: '24px' }}
+                >
+                  {feature.title}
+                </h3>
+
+                {/* Description */}
+                <p className="text-gray-700 leading-relaxed" style={{ fontSize: '18px' }}>
+                  {feature.description}
+                </p>
+              </div>
+            )
+          })}
+        </div>
+
+        {/* Bottom Four Cards - 2x2 Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+          {bottomFeatures.map((feature, index) => {
+            const Icon = feature.icon
+            return (
+              <div
+                key={index}
+                className="bg-white rounded-lg shadow-md border-2 border-transparent transition-all duration-200 h-full"
+                style={{ padding: '3rem' }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = '#E0693D'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = 'transparent'
+                }}
+              >
+                {/* Icon */}
+                <div 
+                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg flex items-center justify-center mb-4"
+                  style={{ backgroundColor: feature.iconBgColor }}
+                >
+                  <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
+                </div>
+
+                {/* Title */}
+                <h3 
+                  className={`${sora.variable} font-bold text-gray-900 mb-4`}
+                  style={{ fontFamily: 'Sora, sans-serif', fontSize: '24px' }}
+                >
+                  {feature.title}
+                </h3>
+
+                {/* Description */}
+                <p className="text-gray-700 leading-relaxed" style={{ fontSize: '18px' }}>
+                  {feature.description}
+                </p>
+              </div>
+            )
+          })}
+        </div>
       </div>
-
-      {/* Title */}
-      <h2 
-        className={`${sora.variable} text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-center`}
-        style={{ fontFamily: 'Sora, sans-serif' }}
-      >
-        Built for Every Business Function
-      </h2>
-
-      {/* Subtitle */}
-      <p className="text-base sm:text-lg md:text-xl text-gray-700 mb-12 text-center max-w-3xl">
-        From HR to Finance, Marketing to Operations — Helium adapts to your needs
-      </p>
-
-      {/* Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 w-full max-w-7xl mb-12">
-        {businessFunctions.map((func, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-lg p-6 shadow-sm border border-transparent hover:border-black hover:shadow-md transition-all duration-200"
-          >
-            {/* Icon */}
-            <div className="mb-4 text-black">
-              {func.icon}
-            </div>
-
-            {/* Title */}
-            <h3 
-              className={`${sora.variable} text-lg font-semibold text-gray-900 mb-2`}
-              style={{ fontFamily: 'Sora, sans-serif' }}
-            >
-              {func.title}
-            </h3>
-
-            {/* Description */}
-            <p className="text-sm text-gray-600 leading-relaxed">
-              {func.description}
-            </p>
-          </div>
-        ))}
-      </div>
-
-      {/* Explore Button */}
-      <Link
-        href="/usecases"
-        className="inline-flex items-center justify-center px-6 py-3 border-2 border-black rounded-lg font-medium text-black hover:bg-black hover:text-white transition-colors duration-200"
-      >
-        Explore All Use Cases
-      </Link>
     </section>
   )
 }

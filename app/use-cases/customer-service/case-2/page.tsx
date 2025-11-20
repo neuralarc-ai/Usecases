@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Annual cost savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Customer Query",
+            description: "Customer asks question via portal or app"
+          },
+          {
+            title: "Policy Identification",
+            description: "Identifies relevant policy"
+          },
+          {
+            title: "Information Retrieval",
+            description: "Pulls requested information"
+          },
+          {
+            title: "Response Formatting",
+            description: "Presents in user-friendly format"
+          },
+          {
+            title: "Document Generation",
+            description: "Creates documents if needed"
+          },
+          {
+            title: "Delivery",
+            description: "Provides information instantly"
+          },
+          {
+            title: "Confirmation",
+            description: "Verifies customer satisfaction"
+          },
+          {
+            title: "Follow-up Recommendations",
+            description: "Suggests related actions"
+          }
+        ]
+      }}
     />
   );
 }

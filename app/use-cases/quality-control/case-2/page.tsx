@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Annual value"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Process Monitoring",
+            description: "Continuously tracks all process parameters"
+          },
+          {
+            title: "Anomaly Detection",
+            description: "Identifies unusual patterns and drift"
+          },
+          {
+            title: "Defect Prediction",
+            description: "ML models forecast potential quality issues"
+          },
+          {
+            title: "Early Warning",
+            description: "Alerts before defects occur"
+          },
+          {
+            title: "Preventive Action",
+            description: "Recommends specific corrective measures"
+          },
+          {
+            title: "Process Adjustment",
+            description: "Automatically optimizes parameters"
+          },
+          {
+            title: "Validation",
+            description: "Verifies prevention effectiveness"
+          },
+          {
+            title: "Continuous Learning",
+            description: "Improves prediction models"
+          }
+        ]
+      }}
     />
   );
 }

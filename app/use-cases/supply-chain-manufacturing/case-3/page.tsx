@@ -39,6 +39,43 @@ export default function Case3Page() {
           label: "Annual savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Network Analysis",
+            description: "Analyzes current logistics network"
+          },
+          {
+            title: "Demand Forecasting",
+            description: "Forecasts demand by location"
+          },
+          {
+            title: "Facility Optimization",
+            description: "Determines optimal facility locations"
+          },
+          {
+            title: "Flow Optimization",
+            description: "Optimizes material and product flows"
+          },
+          {
+            title: "Transportation Optimization",
+            description: "Optimizes routes and modes"
+          },
+          {
+            title: "Scenario Modeling",
+            description: "Tests various network configurations"
+          },
+          {
+            title: "Implementation Planning",
+            description: "Develops rollout strategy"
+          },
+          {
+            title: "Performance Tracking",
+            description: "Monitors network effectiveness"
+          }
+        ]
+      }}
     />
   );
 }

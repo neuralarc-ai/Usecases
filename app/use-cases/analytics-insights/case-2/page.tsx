@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Annual revenue increase"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Data Collection",
+            description: "Captures all customer interactions"
+          },
+          {
+            title: "Behavior Analysis",
+            description: "Analyzes patterns and preferences"
+          },
+          {
+            title: "Segmentation",
+            description: "Groups customers by behavior"
+          },
+          {
+            title: "Predictive Modeling",
+            description: "Forecasts future behavior"
+          },
+          {
+            title: "Insight Generation",
+            description: "Identifies opportunities"
+          },
+          {
+            title: "Action Recommendations",
+            description: "Suggests specific actions"
+          },
+          {
+            title: "Execution",
+            description: "Implements recommendations"
+          },
+          {
+            title: "Performance Tracking",
+            description: "Measures impact"
+          }
+        ]
+      }}
     />
   );
 }

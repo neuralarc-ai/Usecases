@@ -39,6 +39,43 @@ export default function Case2Page() {
           label: "Annual savings"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Demand Integration",
+            description: "Receives production demand requirements"
+          },
+          {
+            title: "Material Requirement Calculation",
+            description: "Calculates material needs based on demand"
+          },
+          {
+            title: "Inventory Optimization",
+            description: "Determines optimal stock levels"
+          },
+          {
+            title: "Safety Stock Calculation",
+            description: "Calculates appropriate buffer inventory"
+          },
+          {
+            title: "Automated Replenishment",
+            description: "Generates purchase orders automatically"
+          },
+          {
+            title: "Supplier Coordination",
+            description: "Coordinates delivery schedules"
+          },
+          {
+            title: "Real-Time Visibility",
+            description: "Tracks inventory and material flow"
+          },
+          {
+            title: "Continuous Optimization",
+            description: "Refines planning based on performance"
+          }
+        ]
+      }}
     />
   );
 }

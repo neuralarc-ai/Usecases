@@ -39,6 +39,43 @@ export default function Case1Page() {
           label: "Annual savings per 20 projects"
         }
       ]}
+      processFlow={{
+        title: "Process Flow",
+        steps: [
+          {
+            title: "Project Setup",
+            description: "Configures project parameters"
+          },
+          {
+            title: "Automated Tracking",
+            description: "Monitors all project activities"
+          },
+          {
+            title: "Data Aggregation",
+            description: "Consolidates from all sources"
+          },
+          {
+            title: "Status Calculation",
+            description: "Computes project health"
+          },
+          {
+            title: "Risk Detection",
+            description: "Identifies potential issues"
+          },
+          {
+            title: "Alert Generation",
+            description: "Notifies project team"
+          },
+          {
+            title: "Report Generation",
+            description: "Creates status reports"
+          },
+          {
+            title: "Client Communication",
+            description: "Delivers updates"
+          }
+        ]
+      }}
     />
   );
 }
