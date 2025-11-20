@@ -4,7 +4,7 @@ import HeliumReplacementCards from "@/components/helium-replacement-cards";
 
 export default function WhyHelium() {
   return (
-    <main className="min-h-screen bg-white pt-20">
+    <main className="min-h-screen pt-20">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
           <h1 
