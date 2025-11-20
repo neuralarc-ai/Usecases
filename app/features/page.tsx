@@ -8,7 +8,8 @@ export default function FeaturesPage() {
       <section className="bg-white  pt-16 pb-12 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
         <div className="max-w-7xl mx-auto min-h-[500px] flex flex-col items-center justify-center">
           <h1 
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight text-center font-sora"
+            className="text-5xl md:text-7xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight text-center mt-15"
+              style={{ fontFamily: "var(--font-sora)" }}
             >
               Every AI Capability Your Enterprise Needs
             </h1>

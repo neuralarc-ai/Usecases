@@ -73,6 +73,10 @@ export default function Case2Page() {
           {
             title: "Approval Workflow",
             description: "Routes for appropriate signatures"
+          },
+          {
+            title: "Contract Execution & Storage",
+            description: "Executes signed contract and archives in repository for future reference"
           }
         ]
       }}

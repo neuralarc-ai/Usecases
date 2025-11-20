@@ -43,8 +43,8 @@ const solutions: Solution[] = [
 
 export default function InsuranceSection() {
   return (
-    <div className="mt-8 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
-      <h4 className="text-3xl font-bold text-gray-900 mb-4 font-sora">
+    <div className="mt-8">
+      <h4 className="text-3xl font-bold text-gray-900 mb-4" style={{ fontFamily: "var(--font-sora)" }}>
         Insurance
       </h4>
       <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mb-8">
@@ -57,12 +57,9 @@ export default function InsuranceSection() {
         ))}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-        <div className="md:col-start-1 md:col-end-2">
-          <SolutionCard icon={solutions[3].icon} title={solutions[3].title} description={solutions[3].description} href={solutions[3].href} />
-        </div>
-        <div className="md:col-start-2 md:col-end-3">
-          <SolutionCard icon={solutions[4].icon} title={solutions[4].title} description={solutions[4].description} href={solutions[4].href} />
-        </div>
+        {solutions.slice(3, 5).map((solution, index) => (
+          <SolutionCard key={index} icon={solution.icon} title={solution.title} description={solution.description} href={solution.href} />
+        ))}
       </div>
     </div>
   );
