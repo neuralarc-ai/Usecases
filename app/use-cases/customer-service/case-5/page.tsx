@@ -11,8 +11,50 @@ export default function Case5Page() {
       backLabel="Back to Customer Service"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Insurance carriers lose 15-20% of customers annually, with replacement costs of $200-$400 per customer, limited understanding of churn drivers, reactive retention efforts, $8M+ annual revenue loss, and poor satisfaction visibility. Churn drivers include price increases, claims experience, service quality, competitive offers, and life changes."
+        challenges: [
+          "Insurance carriers lose 15-20% of customers annually, with replacement costs of $200-$400 per customer",
+          "Limited understanding of churn drivers, reactive retention efforts, and $8M+ annual revenue loss",
+          "Poor satisfaction visibility and inability to predict customer churn",
+          "Churn drivers include price increases, claims experience, service quality, competitive offers, and life changes"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Customer Data Platform",
+          tools: ["Segment", "mParticle", "Tealium"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Churn Prediction",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Customer Data Integration",
+          popularTools: "Segment, mParticle, Tealium",
+          helium: true
+        },
+        {
+          capability: "Satisfaction Monitoring",
+          popularTools: "Reactive surveys only",
+          helium: true
+        },
+        {
+          capability: "Retention Campaigns",
+          popularTools: "Limited in most tools",
+          helium: true
+        },
+        {
+          capability: "Proactive Retention",
+          popularTools: "Reactive approach",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium predicts and prevents customer churn. The system provides churn prediction with ML models analyzing 100+ factors, 6-month advance warning, risk scoring, and driver identification. It includes satisfaction monitoring with real-time sentiment analysis, interaction quality scoring, issue detection, and trend tracking. The system enables retention campaigns with personalized offers, proactive outreach, win-back strategies, and loyalty rewards. It performs root cause analysis with churn driver identification, segment analysis, competitive intelligence, and improvement opportunities. The system optimizes lifetime value with customer value scoring, retention investment optimization, cross-sell targeting, and loyalty program design."

@@ -11,8 +11,54 @@ export default function Case5Page() {
       backLabel="Back to Client Delivery"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Post-engagement activities are manual and inconsistent, limited value tracking, poor follow-up, missed opportunities, and low repeat business (30%). Follow-up challenges include time constraints, lack of automation, no value measurement, limited relationship building, and missed cross-sell."
+        challenges: [
+          "Post-engagement activities are manual and inconsistent with limited value tracking",
+          "Poor follow-up and missed opportunities leading to low repeat business (30%)",
+          "Follow-up challenges include time constraints and lack of automation",
+          "No value measurement, limited relationship building, and missed cross-sell"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Email & Communication",
+          tools: ["Superhuman", "Front", "Intercom"]
+        },
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        },
+        {
+          category: "Customer Data Platform",
+          tools: ["Segment", "mParticle", "Tealium"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Automated Follow-Up",
+          popularTools: "Manual activities",
+          helium: true
+        },
+        {
+          capability: "Value Tracking",
+          popularTools: "Superhuman, Front, Intercom",
+          helium: true
+        },
+        {
+          capability: "Opportunity Identification",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "Relationship Management",
+          popularTools: "Segment, mParticle, Tealium",
+          helium: true
+        },
+        {
+          capability: "End-to-End Automation",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium automates follow-up with automated follow-up including scheduled check-ins, value validation, satisfaction surveys, and relationship building. The system provides value tracking with implementation monitoring, outcome measurement, ROI calculation, and success stories. It includes opportunity identification with additional needs, cross-sell opportunities, referral potential, and expansion possibilities. The system enables relationship management with engagement tracking, touchpoint management, executive relationships, and account planning, plus referral generation with satisfaction-based requests, testimonial collection, case study development, and reference management."

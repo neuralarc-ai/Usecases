@@ -11,8 +11,54 @@ export default function Case4Page() {
       backLabel="Back to Resource Planning"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Workload management involves overallocation causing burnout, underutilization wasting capacity, limited visibility, poor balance, and high turnover. Workload challenges include manual tracking, no optimization, burnout risk, capacity waste, and retention issues."
+        challenges: [
+          "Workload management involves overallocation causing burnout and underutilization wasting capacity",
+          "Limited visibility and poor balance leading to high turnover",
+          "Workload challenges include manual tracking and no optimization",
+          "Burnout risk, capacity waste, and retention issues"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Task & Project Management",
+          tools: ["Asana", "Linear", "Monday.com"]
+        },
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Real-Time Workload Tracking",
+          popularTools: "Manual tracking",
+          helium: true
+        },
+        {
+          capability: "Workload Optimization",
+          popularTools: "Asana, Linear, Monday.com",
+          helium: true
+        },
+        {
+          capability: "Burnout Prevention",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Performance Analytics",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "End-to-End Management",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium balances workloads intelligently with real-time workload tracking including current assignments, utilization rates, capacity limits, and burnout indicators. The system provides workload optimization with balanced distribution, capacity consideration, skill matching, and development opportunities. It includes burnout prevention with workload limits, early warning indicators, proactive adjustments, and wellness monitoring. The system enables performance analytics with utilization tracking, balance measurement, outcome analysis, and improvement recommendations, plus continuous adjustment with real-time rebalancing, proactive management, and optimal distribution."

@@ -11,8 +11,54 @@ export default function Case3Page() {
       backLabel="Back to Production"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Manufacturing yield averages 85-90% (10-15% defect rate), $20M+ annual scrap costs, limited root cause analysis, reactive quality management, and customer returns and complaints. Yield challenges include multiple defect sources, limited visibility, delayed detection, manual analysis, and slow improvement."
+        challenges: [
+          "Manufacturing yield averages 85-90% (10-15% defect rate) with $20M+ annual scrap costs",
+          "Limited root cause analysis and reactive quality management",
+          "Customer returns and complaints from multiple defect sources",
+          "Yield challenges include limited visibility, delayed detection, manual analysis, and slow improvement"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "RPA & Process Automation",
+          tools: ["UiPath", "Automation Anywhere", "Blue Prism"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Yield Optimization",
+          popularTools: "Reactive management",
+          helium: true
+        },
+        {
+          capability: "Root Cause Analysis",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Real-Time Detection",
+          popularTools: "UiPath, Automation Anywhere",
+          helium: true
+        },
+        {
+          capability: "Predictive Quality",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "End-to-End Optimization",
+          popularTools: "Blue Prism",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium improves yield systematically with real-time quality monitoring including in-line inspection, defect detection, pattern recognition, and trend analysis. The system provides root cause analysis with AI-powered investigation, factor correlation, process parameter analysis, and equipment performance. It includes predictive quality with defect prediction, process drift detection, preventive actions, and quality forecasting. The system enables process control with automated adjustments, parameter optimization, alert generation, and corrective actions, plus continuous improvement with yield tracking, improvement initiatives, best practice capture, and knowledge sharing."

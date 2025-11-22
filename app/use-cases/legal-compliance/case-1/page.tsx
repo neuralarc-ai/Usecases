@@ -11,8 +11,50 @@ export default function Case1Page() {
       backLabel="Back to Legal & Compliance"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Legal teams in banking institutions review 10,000+ pages of regulatory updates monthly from multiple regulators (SEC, FINRA, OCC, Federal Reserve, State banking regulators, CFPB). Manual review process takes 200+ hours per month (5+ full-time employees), misses 15-20% of critical updates, creates compliance risks and potential violations, delays policy updates by 30-60 days, causes audit findings, and costs $350K+ annually in legal time."
+        challenges: [
+          "Legal teams review 10,000+ pages of regulatory updates monthly from multiple regulators (SEC, FINRA, OCC, Federal Reserve, State banking regulators, CFPB)",
+          "Manual review process takes 200+ hours per month (5+ full-time employees) and misses 15-20% of critical updates",
+          "Creates compliance risks and potential violations, delays policy updates by 30-60 days, and causes audit findings",
+          "Costs $350K+ annually in legal time and creates significant compliance exposure"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Web Research & Analysis",
+          tools: ["Perplexity", "ChatGPT", "Claude"]
+        },
+        {
+          category: "Document Generation",
+          tools: ["Jasper", "Copy.ai", "Writesonic"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Automated Document Monitoring",
+          popularTools: "Perplexity, ChatGPT, Claude",
+          helium: true
+        },
+        {
+          capability: "AI Classification & Analysis",
+          popularTools: "Manual review",
+          helium: true
+        },
+        {
+          capability: "Change Detection",
+          popularTools: "Jasper, Copy.ai, Writesonic",
+          helium: true
+        },
+        {
+          capability: "Impact Assessment",
+          popularTools: "Limited in most tools",
+          helium: true
+        },
+        {
+          capability: "Real-Time Alerts",
+          popularTools: "Manual monitoring",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium automates regulatory document monitoring and analysis. The system automatically collects updates from all regulatory sources, uses AI to classify documents by regulatory topic, urgency level, and business impact, detects changes (new requirements, modifications, repealed rules), assesses effect on current policies and operations, cross-references with existing compliance framework, ranks changes by urgency and business impact, and notifies legal team through multiple channels."

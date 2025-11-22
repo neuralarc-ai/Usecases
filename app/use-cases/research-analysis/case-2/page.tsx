@@ -11,8 +11,54 @@ export default function Case2Page() {
       backLabel="Back to Research & Analysis"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Competitive analysis for clients requires 30-40 hours per competitor, manual data gathering, limited real-time updates, inconsistent frameworks, and high costs. Competitive intelligence needs include strategy analysis, financial performance, market positioning, product/service analysis, and SWOT assessment."
+        challenges: [
+          "Competitive analysis for clients requires 30-40 hours per competitor with manual data gathering",
+          "Limited real-time updates and inconsistent frameworks leading to high costs",
+          "Competitive intelligence needs include strategy analysis, financial performance, and market positioning",
+          "Product/service analysis and SWOT assessment require extensive manual work"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Competitive Intelligence",
+          tools: ["Crayon", "Klue", "Kompyte"]
+        },
+        {
+          category: "Web Research & Analysis",
+          tools: ["Perplexity", "ChatGPT", "Claude"]
+        },
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Automated Monitoring",
+          popularTools: "Manual data gathering",
+          helium: true
+        },
+        {
+          capability: "Analysis Framework",
+          popularTools: "Crayon, Klue, Kompyte",
+          helium: true
+        },
+        {
+          capability: "Real-Time Updates",
+          popularTools: "Perplexity, ChatGPT, Claude",
+          helium: true
+        },
+        {
+          capability: "Visualization",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "End-to-End Intelligence",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium automates competitive intelligence with automated monitoring including company websites, financial filings, news and press releases, social media, and job postings. The system provides analysis framework with strategy assessment, financial analysis, market positioning, capability evaluation, and threat assessment. It includes insight generation with strength identification, weakness detection, opportunity assessment, and threat analysis. The system enables visualization with competitive matrices, positioning maps, trend charts, and comparison tables, plus continuous updates with real-time monitoring, change alerts, trend tracking, and report refreshing."

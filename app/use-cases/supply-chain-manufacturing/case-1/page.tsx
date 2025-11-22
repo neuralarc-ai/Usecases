@@ -11,8 +11,54 @@ export default function Case1Page() {
       backLabel="Back to Supply Chain"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Supplier management involves 200+ suppliers, manual performance tracking, quarterly reviews (too infrequent), 25% of suppliers underperforming, and $8M+ in supplier-related costs. Supplier challenges include quality issues, delivery delays, pricing problems, limited visibility, and poor communication."
+        challenges: [
+          "Supplier management involves 200+ suppliers with manual performance tracking",
+          "Quarterly reviews (too infrequent) and 25% of suppliers underperforming",
+          "$8M+ in supplier-related costs from quality issues and delivery delays",
+          "Supplier challenges include pricing problems, limited visibility, and poor communication"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        },
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Performance Monitoring",
+          popularTools: "Quarterly reviews",
+          helium: true
+        },
+        {
+          capability: "Automated Tracking",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "Issue Detection",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "Optimization Recommendations",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "End-to-End Management",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium optimizes supplier relationships with performance monitoring including real-time metrics, quality tracking, delivery performance, pricing compliance, and responsiveness. The system provides automated scoring with composite performance score, category-specific metrics, trend analysis, and risk assessment. It includes issue detection with quality problems, delivery delays, pricing variances, and communication gaps. The system enables optimization recommendations with supplier consolidation, alternative sourcing, negotiation opportunities, and risk mitigation, plus collaboration tools with supplier portal, performance dashboards, issue resolution, and improvement planning."

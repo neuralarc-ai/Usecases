@@ -11,8 +11,50 @@ export default function Case2Page() {
       backLabel="Back to Sales & Distribution"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Cross-sell penetration averages 1.3 products per customer (industry potential: 2.5+), resulting in $20M+ in missed revenue annually, limited customer wallet share, competitive vulnerability, generic recommendations, and poor timing. Cross-sell challenges include limited customer insights, no predictive analytics, manual identification, generic offers, and poor execution."
+        challenges: [
+          "Cross-sell penetration averages 1.3 products per customer (industry potential: 2.5+), resulting in $20M+ in missed revenue annually",
+          "Limited customer wallet share, competitive vulnerability, and generic recommendations",
+          "Poor timing and inability to identify optimal cross-sell opportunities",
+          "Cross-sell challenges include limited customer insights, no predictive analytics, manual identification, generic offers, and poor execution"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Customer Data Platform",
+          tools: ["Segment", "mParticle", "Tealium"]
+        },
+        {
+          category: "Competitive Intelligence",
+          tools: ["Crayon", "Klue", "Kompyte"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Opportunity Identification",
+          popularTools: "Segment, mParticle, Tealium",
+          helium: true
+        },
+        {
+          capability: "Personalized Recommendations",
+          popularTools: "Generic offers",
+          helium: true
+        },
+        {
+          capability: "Optimal Timing",
+          popularTools: "Poor timing",
+          helium: true
+        },
+        {
+          capability: "Multi-Channel Execution",
+          popularTools: "Limited channels",
+          helium: true
+        },
+        {
+          capability: "Performance Tracking",
+          popularTools: "Limited in most tools",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium identifies and executes cross-sell opportunities. The system provides opportunity identification with coverage gap analysis, life event detection, behavioral signals, propensity modeling, and timing optimization. It includes personalized recommendations with product matching, bundle optimization, pricing personalization, and offer customization. The system enables optimal timing with life event triggers, renewal timing, claim resolution, policy changes, and seasonal factors. It supports multi-channel execution through agent prompts, customer portal, email campaigns, mobile app, and call center scripts. The system tracks performance with conversion rates, revenue impact, customer satisfaction, and agent effectiveness."

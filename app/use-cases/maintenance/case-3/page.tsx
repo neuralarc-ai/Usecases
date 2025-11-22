@@ -11,8 +11,54 @@ export default function Case3Page() {
       backLabel="Back to Maintenance"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Maintenance scheduling involves manual planning, suboptimal timing, limited resource coordination, high costs, and production disruptions. Scheduling challenges include manual processes, poor optimization, limited coordination, high costs, and production impact."
+        challenges: [
+          "Maintenance scheduling involves manual planning with suboptimal timing",
+          "Limited resource coordination and high costs leading to production disruptions",
+          "Scheduling challenges include manual processes and poor optimization",
+          "Limited coordination, high costs, and production impact"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "RPA & Process Automation",
+          tools: ["UiPath", "Automation Anywhere", "Blue Prism"]
+        },
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Intelligent Scheduling",
+          popularTools: "Manual planning",
+          helium: true
+        },
+        {
+          capability: "Resource Coordination",
+          popularTools: "UiPath, Automation Anywhere",
+          helium: true
+        },
+        {
+          capability: "Production Integration",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Cost Optimization",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "End-to-End Optimization",
+          popularTools: "Blue Prism",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium optimizes maintenance scheduling with intelligent scheduling including optimal timing calculation, resource availability, production impact minimization, and cost optimization. The system provides resource coordination with technician assignment, skill matching, tool availability, and spare parts coordination. It includes production integration with production schedule consideration, downtime minimization, capacity planning, and impact assessment. The system enables cost optimization with maintenance cost minimization, resource efficiency, spare parts optimization, and total cost reduction, plus continuous improvement with schedule effectiveness, optimization, and refinement."

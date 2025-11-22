@@ -11,8 +11,50 @@ export default function Case2Page() {
       backLabel="Back to Claims Processing"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Physical damage assessment requires on-site inspections taking 3-5 days to schedule and complete, costing $200-$400 per claim, with inconsistent assessments (15% variance between adjusters), disputes in 15% of claims, customer frustration with delays, and high operational costs ($10M+ annually for 50K claims). Traditional process involves scheduling inspection, adjuster travels to site, manual damage assessment, photo documentation, repair estimate, and report writing."
+        challenges: [
+          "Physical damage assessment requires on-site inspections taking 3-5 days to schedule and complete, costing $200-$400 per claim",
+          "Inconsistent assessments (15% variance between adjusters) and disputes in 15% of claims",
+          "Customer frustration with delays and high operational costs ($10M+ annually for 50K claims)",
+          "Traditional process involves scheduling inspection, adjuster travels to site, manual damage assessment, photo documentation, repair estimate, and report writing"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Image & Video Creation",
+          tools: ["Midjourney", "Runway", "Synthesia"]
+        },
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Computer Vision Analysis",
+          popularTools: "Midjourney, Runway, Synthesia",
+          helium: true
+        },
+        {
+          capability: "Automated Cost Estimation",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Real-Time Assessment",
+          popularTools: "3-5 day inspection process",
+          helium: true
+        },
+        {
+          capability: "Damage Classification",
+          popularTools: "Manual assessment",
+          helium: true
+        },
+        {
+          capability: "Historical Comparison",
+          popularTools: "Limited in most tools",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium uses computer vision for instant damage assessment. The system provides AI-powered image analysis to identify damage type, assess severity, identify affected components, determine repair requirements, and detect safety hazards. It automates cost estimation with parts pricing, labor costs, material costs, total repair estimate, and confidence intervals. The system performs comparative analysis with historical claim comparison, similar damage patterns, repair cost validation, and fraud detection. It enables real-time assessment through mobile app submission, instant analysis, immediate estimate, and fast approval. The system also integrates with repair network for preferred vendor pricing, shop availability, quality ratings, and appointment scheduling."

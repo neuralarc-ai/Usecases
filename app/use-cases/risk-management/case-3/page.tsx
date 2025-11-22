@@ -11,8 +11,50 @@ export default function Case3Page() {
       backLabel="Back to Risk Management"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Operational risk events (fraud, errors, system failures, compliance violations) cost banks $25M+ annually in direct losses, regulatory fines and penalties, reputational damage, customer attrition, and remediation costs. Reactive approach means issues discovered after occurrence, limited predictive capability, incomplete risk assessment, inadequate controls, and poor risk culture."
+        challenges: [
+          "Operational risk events (fraud, errors, system failures, compliance violations) cost banks $25M+ annually in direct losses, regulatory fines, penalties, and reputational damage",
+          "Customer attrition and remediation costs from operational risk events",
+          "Reactive approach means issues discovered after occurrence, with limited predictive capability",
+          "Incomplete risk assessment, inadequate controls, and poor risk culture contribute to ongoing exposure"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Market Research",
+          tools: ["Gartner", "Forrester", "IDC"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Predictive Risk Analytics",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Early Warning System",
+          popularTools: "Gartner, Forrester, IDC",
+          helium: true
+        },
+        {
+          capability: "Continuous Control Testing",
+          popularTools: "Annual testing only",
+          helium: true
+        },
+        {
+          capability: "Risk Event Prediction",
+          popularTools: "Reactive monitoring",
+          helium: true
+        },
+        {
+          capability: "Proactive Risk Management",
+          popularTools: "Limited in most tools",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium predicts and prevents operational risk events. The system uses ML models analyzing leading indicators for risk event prediction, performs continuous control testing with gap identification, remediation tracking, and effectiveness measurement, provides risk assessment (inherent risk scoring, residual risk calculation, control adequacy, risk appetite alignment), enables scenario analysis (what-if modeling, stress testing, impact assessment, mitigation planning), and generates risk reporting (risk dashboards, heat maps, trend analysis, executive summaries)."

@@ -11,8 +11,54 @@ export default function Case2Page() {
       backLabel="Back to Marketing & Sales"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Static pricing updated weekly, missing 90% of optimization opportunities, manual promotion planning leading to 30% margin erosion, 25% stockouts during promotions, $15M+ in lost margin annually, and poor competitive positioning. Pricing challenges include infrequent updates, limited data analysis, no real-time adjustment, poor promotion planning, and competitive disadvantage."
+        challenges: [
+          "Static pricing updated weekly missing 90% of optimization opportunities",
+          "Manual promotion planning leading to 30% margin erosion and 25% stockouts during promotions",
+          "$15M+ in lost margin annually and poor competitive positioning",
+          "Pricing challenges include infrequent updates, limited data analysis, no real-time adjustment, and poor promotion planning"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Real-Time Dynamic Pricing",
+          popularTools: "Weekly static pricing",
+          helium: true
+        },
+        {
+          capability: "Promotion Optimization",
+          popularTools: "Manual planning",
+          helium: true
+        },
+        {
+          capability: "Competitive Monitoring",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Margin Protection",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "End-to-End Optimization",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium optimizes pricing dynamically with real-time dynamic pricing including demand-based pricing, competitive monitoring, inventory consideration, margin protection, and customer segmentation. The system provides promotion optimization with discount optimization, product selection, timing optimization, channel allocation, and margin protection. It includes personalized pricing with customer-specific offers, loyalty discounts, cart abandonment recovery, and win-back pricing. The system enables competitive monitoring with real-time price tracking, market positioning, price matching rules, and competitive response, plus margin protection with minimum margin rules, profitability analysis, discount limits, and approval workflows."

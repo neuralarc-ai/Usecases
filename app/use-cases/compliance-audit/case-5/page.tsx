@@ -11,8 +11,50 @@ export default function Case5Page() {
       backLabel="Back to Compliance & Audit"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Market conduct examinations result in $3M+ annual fines, remediation costs, reputational damage, regulatory scrutiny, and business restrictions. Common violations include unfair claims practices, improper sales practices, inadequate disclosures, discriminatory pricing, and privacy violations."
+        challenges: [
+          "Market conduct examinations result in $3M+ annual fines, remediation costs, and reputational damage",
+          "Regulatory scrutiny and business restrictions from compliance violations",
+          "Reactive approach means violations discovered during examinations, not proactively",
+          "Common violations include unfair claims practices, improper sales practices, inadequate disclosures, discriminatory pricing, and privacy violations"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "RPA & Process Automation",
+          tools: ["UiPath", "Automation Anywhere", "Blue Prism"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Transaction Monitoring",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Pattern Detection",
+          popularTools: "UiPath, Automation Anywhere, Blue Prism",
+          helium: true
+        },
+        {
+          capability: "Complaint Analysis",
+          popularTools: "Manual review",
+          helium: true
+        },
+        {
+          capability: "Proactive Compliance",
+          popularTools: "Reactive approach",
+          helium: true
+        },
+        {
+          capability: "Automated Reporting",
+          popularTools: "Limited in most tools",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium monitors market conduct continuously. The system provides transaction monitoring for sales practices, claims handling, pricing decisions, customer communications, and complaint handling. It includes pattern detection for unusual practices, discriminatory patterns, unfair treatment, and regulatory violations. The system performs complaint analysis with complaint categorization, trend identification, root cause analysis, and resolution tracking. It includes training and coaching with issue identification, training recommendations, performance tracking, and improvement monitoring. The system generates regulatory reporting with market conduct reports, complaint statistics, corrective actions, and examination support."

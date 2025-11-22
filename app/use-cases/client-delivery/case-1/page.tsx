@@ -11,8 +11,54 @@ export default function Case1Page() {
       backLabel="Back to Client Delivery"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Project management for consulting engagements involves manual status tracking across 20+ projects, weekly status reports taking 10+ hours, limited real-time visibility, inconsistent project execution, and budget overruns (15% average). PM challenges include manual tracking, delayed updates, poor visibility, inconsistent processes, and high administrative burden."
+        challenges: [
+          "Project management for consulting engagements involves manual status tracking across 20+ projects",
+          "Weekly status reports taking 10+ hours with limited real-time visibility",
+          "Inconsistent project execution and budget overruns (15% average)",
+          "PM challenges include manual tracking, delayed updates, poor visibility, and inconsistent processes"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Task & Project Management",
+          tools: ["Asana", "Linear", "Monday.com"]
+        },
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Automated Tracking",
+          popularTools: "Manual status tracking",
+          helium: true
+        },
+        {
+          capability: "Real-Time Dashboards",
+          popularTools: "Asana, Linear, Monday.com",
+          helium: true
+        },
+        {
+          capability: "Automated Reporting",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "Risk Detection",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "End-to-End Automation",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium automates project management with automated tracking including task completion, time tracking, budget monitoring, resource utilization, and milestone tracking. The system provides real-time dashboards with project status, budget vs actual, timeline tracking, risk indicators, and team performance. It includes automated reporting with status reports, executive summaries, client updates, and team communications. The system enables risk detection with budget overrun prediction, timeline risk, resource constraints, and quality issues, plus resource optimization with capacity planning, skill matching, workload balancing, and utilization tracking."

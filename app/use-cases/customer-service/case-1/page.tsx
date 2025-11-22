@@ -11,8 +11,50 @@ export default function Case1Page() {
       backLabel="Back to Customer Service"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Customer service centers handle 50,000+ inquiries monthly, with 60% being routine questions (policy details, payment status, coverage questions), average wait time of 8 minutes, 25% call abandonment rate, $3.5M annual call center costs, limited after-hours support, and inconsistent service quality. Common inquiries include policy coverage questions, payment status and methods, claims status, document requests, address changes, and coverage modifications."
+        challenges: [
+          "Customer service centers handle 50,000+ inquiries monthly, with 60% being routine questions (policy details, payment status, coverage questions)",
+          "Average wait time of 8 minutes, 25% call abandonment rate, and $3.5M annual call center costs",
+          "Limited after-hours support and inconsistent service quality",
+          "Common inquiries include policy coverage questions, payment status and methods, claims status, document requests, address changes, and coverage modifications"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Email & Communication",
+          tools: ["Superhuman", "Front", "Intercom"]
+        },
+        {
+          category: "Social Media Management",
+          tools: ["Hootsuite", "Buffer", "Sprout Social"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "24/7 AI Chatbot Support",
+          popularTools: "Superhuman, Front, Intercom",
+          helium: true
+        },
+        {
+          capability: "Natural Language Processing",
+          popularTools: "Hootsuite, Buffer, Sprout Social",
+          helium: true
+        },
+        {
+          capability: "Automated Response Handling",
+          popularTools: "Manual responses",
+          helium: true
+        },
+        {
+          capability: "Multi-Channel Support",
+          popularTools: "Limited channels",
+          helium: true
+        },
+        {
+          capability: "Seamless Escalation",
+          popularTools: "Limited in most tools",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium provides intelligent 24/7 customer support. The system includes natural language processing with intent recognition, entity extraction, context understanding, multi-turn conversations, and sentiment analysis. It enables automated response handling 80% of routine inquiries automatically, policy information retrieval, payment status lookup, document generation, and simple transactions. The system provides seamless escalation with complex issues routed to agents, context preservation, priority routing, and warm handoff. It supports multi-channel support through web chat, mobile app, SMS, voice (IVR integration), and email. The system continuously learns from interactions, improves responses, identifies new patterns, and updates knowledge base."

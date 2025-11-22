@@ -11,8 +11,54 @@ export default function Case3Page() {
       backLabel="Back to Client Delivery"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Client communication involves manual status updates, inconsistent communication, limited proactive engagement, poor visibility for clients, and relationship management challenges. Communication challenges include time-consuming updates, inconsistent frequency, generic messaging, limited automation, and poor tracking."
+        challenges: [
+          "Client communication involves manual status updates with inconsistent communication",
+          "Limited proactive engagement and poor visibility for clients",
+          "Relationship management challenges from time-consuming updates",
+          "Communication challenges include inconsistent frequency, generic messaging, limited automation, and poor tracking"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Email & Communication",
+          tools: ["Superhuman", "Front", "Intercom"]
+        },
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        },
+        {
+          category: "Task & Project Management",
+          tools: ["Asana", "Linear", "Monday.com"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Automated Status Updates",
+          popularTools: "Manual updates",
+          helium: true
+        },
+        {
+          capability: "Proactive Engagement",
+          popularTools: "Superhuman, Front, Intercom",
+          helium: true
+        },
+        {
+          capability: "Client Visibility",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "Relationship Management",
+          popularTools: "Asana, Linear, Monday.com",
+          helium: true
+        },
+        {
+          capability: "End-to-End Automation",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium automates client engagement with automated updates including project status, milestone completion, issue alerts, and next steps. The system provides client portal with real-time project visibility, document access, communication log, and feedback submission. It includes proactive engagement with scheduled check-ins, issue escalation, opportunity identification, and relationship building. The system enables communication analytics with engagement tracking, satisfaction monitoring, issue detection, and improvement opportunities, plus multi-channel communication with email, portal, mobile app, video conferencing, and collaboration tools."

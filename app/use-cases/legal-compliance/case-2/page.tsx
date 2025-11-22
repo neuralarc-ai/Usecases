@@ -11,8 +11,50 @@ export default function Case2Page() {
       backLabel="Back to Legal & Compliance"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Contract review in banking takes 4-6 hours per document, with legal teams handling 500+ contracts monthly (vendor agreements, customer contracts, employment agreements, NDAs, partnership agreements). Manual review process misses 25% of non-standard clauses, creates financial exposure ($2M+ annually from unfavorable terms), delays business deals (average 2-3 week turnaround), provides inconsistent risk assessment across attorneys, has limited obligation tracking (missed deadlines, renewals), and costs $600K+ annually."
+        challenges: [
+          "Contract review takes 4-6 hours per document, with legal teams handling 500+ contracts monthly (vendor agreements, customer contracts, employment agreements, NDAs, partnerships)",
+          "Manual review process misses 25% of non-standard clauses and creates financial exposure ($2M+ annually from unfavorable terms)",
+          "Delays business deals (average 2-3 week turnaround) and provides inconsistent risk assessment across attorneys",
+          "Limited obligation tracking (missed deadlines, renewals) and costs $600K+ annually"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Web Research & Analysis",
+          tools: ["Perplexity", "ChatGPT", "Claude"]
+        },
+        {
+          category: "Document Generation",
+          tools: ["Jasper", "Copy.ai", "Writesonic"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "AI-Powered Contract Analysis",
+          popularTools: "Perplexity, ChatGPT, Claude",
+          helium: true
+        },
+        {
+          capability: "Automated Clause Extraction",
+          popularTools: "Manual review",
+          helium: true
+        },
+        {
+          capability: "Risk Assessment",
+          popularTools: "Jasper, Copy.ai, Writesonic",
+          helium: true
+        },
+        {
+          capability: "Obligation Tracking",
+          popularTools: "Limited in most tools",
+          helium: true
+        },
+        {
+          capability: "Intelligent Search",
+          popularTools: "Basic keyword search",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium accelerates contract review with AI-powered analysis. The system extracts all clauses and terms automatically from any format, identifies key provisions (liability, termination, payment terms, IP, confidentiality, dispute resolution, renewals, warranties), assesses deviation from standard terms, suggests modifications to reduce risk, monitors payment deadlines, renewal dates, deliverable requirements, and reporting obligations, and enables intelligent search across contract repository."

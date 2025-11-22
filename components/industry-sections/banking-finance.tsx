@@ -69,12 +69,14 @@ const solutions: Solution[] = [
 export default function BankingFinanceSection() {
   return (
     <div className="mt-8">
-      <h4 className="text-3xl font-bold text-gray-900 mb-4" style={{ fontFamily: "var(--font-sora)" }}>
-        Banking & Finance
-      </h4>
-      <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mb-8">
-        Transform financial operations with AI-powered automation, risk management, and compliance solutions that scale across your entire organization.
-      </p>
+      <div className="text-center mb-8">
+        <h4 className="text-3xl font-bold text-gray-900 mb-4" style={{ fontFamily: "var(--font-sora)" }}>
+          Banking & Finance
+        </h4>
+        <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+          Transform financial operations with AI-powered automation, risk management, and compliance solutions that scale across your entire organization.
+        </p>
+      </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {solutions.slice(0, 3).map((solution, index) => (

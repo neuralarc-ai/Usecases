@@ -11,8 +11,54 @@ export default function Case4Page() {
       backLabel="Back to Inventory Management"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Inventory shrinkage averages 2.5% of revenue ($8M annually for $320M retailer), with 70% going undetected until annual physical counts, manual audits covering only 15% of inventory, limited real-time visibility, reactive loss prevention, and high theft and fraud losses. Shrinkage sources include employee theft (45%), shoplifting (35%), administrative errors (15%), and vendor fraud (5%)."
+        challenges: [
+          "Inventory shrinkage averages 2.5% of revenue ($8M annually for $320M retailer) with 70% going undetected until annual physical counts",
+          "Manual audits cover only 15% of inventory with limited real-time visibility",
+          "Reactive loss prevention leads to high theft and fraud losses",
+          "Shrinkage sources include employee theft (45%), shoplifting (35%), administrative errors (15%), and vendor fraud (5%)"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        },
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Real-Time Detection",
+          popularTools: "Annual physical counts",
+          helium: true
+        },
+        {
+          capability: "Pattern Recognition",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Automated Auditing",
+          popularTools: "Manual audits",
+          helium: true
+        },
+        {
+          capability: "Predictive Analytics",
+          popularTools: "Reactive monitoring",
+          helium: true
+        },
+        {
+          capability: "End-to-End Prevention",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium detects shrinkage in real-time with real-time monitoring including perpetual inventory tracking, transaction analysis, discrepancy detection, and pattern recognition. The system uses computer vision for theft detection, suspicious behavior, self-checkout monitoring, and stockroom surveillance. It includes predictive analytics for high-risk item identification, high-risk location analysis, high-risk time periods, and employee risk scoring. The system enables automated auditing with cycle counting, variance investigation, root cause analysis, and corrective actions, plus security integration with camera systems, access control, alarm systems, and incident management."

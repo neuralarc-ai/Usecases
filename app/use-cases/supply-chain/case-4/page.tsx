@@ -11,8 +11,54 @@ export default function Case4Page() {
       backLabel="Back to Supply Chain"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Quality issues result in 5% return rate, $12M annual return costs, customer dissatisfaction, brand damage, and limited defect detection. Quality challenges include manual inspection (sampling only), delayed detection, inconsistent standards, poor root cause analysis, and reactive approach."
+        challenges: [
+          "Quality issues result in 5% return rate with $12M annual return costs",
+          "Customer dissatisfaction and brand damage from limited defect detection",
+          "Quality challenges include manual inspection (sampling only) and delayed detection",
+          "Inconsistent standards, poor root cause analysis, and reactive approach"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        },
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Computer Vision Inspection",
+          popularTools: "Manual sampling",
+          helium: true
+        },
+        {
+          capability: "Predictive Quality",
+          popularTools: "Reactive detection",
+          helium: true
+        },
+        {
+          capability: "Root Cause Analysis",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Supplier Quality Management",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "End-to-End Quality Control",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium automates quality control with computer vision inspection including automated defect detection, 100% inspection coverage, real-time analysis, and consistent standards. The system provides predictive quality with defect prediction, supplier risk scoring, process monitoring, and early warning. It includes root cause analysis with pattern identification, supplier correlation, process issues, and corrective actions. The system enables supplier quality management with performance tracking, quality scoring, issue resolution, and improvement plans, plus continuous improvement with trend analysis, best practice identification, process optimization, and quality culture."

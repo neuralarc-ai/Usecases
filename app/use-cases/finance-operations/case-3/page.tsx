@@ -11,8 +11,50 @@ export default function Case3Page() {
       backLabel="Back to Finance Operations"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Static credit models update quarterly, missing 30% of early warning signals. Manual underwriting takes 5-7 days with only 65% approval rate (35% of good customers declined), incomplete risk assessment (limited data sources), loss of good customers to competitors who move faster, higher default rates (8-12% vs industry best of 3-5%), limited use of alternative data, inconsistent underwriting decisions, and regulatory compliance challenges."
+        challenges: [
+          "Static credit models update quarterly, missing 30% of early warning signals",
+          "Manual underwriting takes 5-7 days with only 65% approval rate (35% of good customers declined)",
+          "Incomplete risk assessment with limited data sources leads to loss of good customers to competitors",
+          "Higher default rates (8-12% vs industry best of 3-5%), limited use of alternative data, inconsistent underwriting decisions, and regulatory compliance challenges"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Market Research",
+          tools: ["Gartner", "Forrester", "IDC"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Real-Time Risk Scoring",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Alternative Data Integration",
+          popularTools: "Gartner, Forrester, IDC",
+          helium: true
+        },
+        {
+          capability: "Automated Decision Making",
+          popularTools: "Manual processes",
+          helium: true
+        },
+        {
+          capability: "Continuous Monitoring",
+          popularTools: "Tableau, Power BI",
+          helium: true
+        },
+        {
+          capability: "Explainable AI",
+          popularTools: "Black box models",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium provides real-time, comprehensive credit risk assessment. The system uses 500+ data points including traditional credit data, bank account behavior, payment history patterns, cash flow analysis, social media signals, employment stability, education and skills, geographic factors, economic indicators, and alternative data (utility payments, rent payments, mobile phone payments, subscription services, gig economy income). It continuously monitors and updates scores as new information arrives, automatically approves low-risk applications instantly, provides explainable AI with clear reasoning for decisions, and tracks borrower risk throughout loan lifecycle."

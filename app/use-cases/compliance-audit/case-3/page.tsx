@@ -11,8 +11,50 @@ export default function Case3Page() {
       backLabel="Back to Compliance & Audit"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Policy compliance testing covers only 15% of policies annually, with manual sampling and review, limited test coverage, delayed issue identification, compliance gaps, and regulatory findings. Testing requirements include rate compliance, form compliance, underwriting guidelines, coverage provisions, and regulatory requirements."
+        challenges: [
+          "Policy compliance testing covers only 15% of policies annually, with manual sampling and review",
+          "Limited test coverage, delayed issue identification, and compliance gaps",
+          "Regulatory findings from incomplete testing and reactive approach",
+          "Testing requirements include rate compliance, form compliance, underwriting guidelines, coverage provisions, and regulatory requirements"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "RPA & Process Automation",
+          tools: ["UiPath", "Automation Anywhere", "Blue Prism"]
+        },
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Automated Compliance Testing",
+          popularTools: "UiPath, Automation Anywhere, Blue Prism",
+          helium: true
+        },
+        {
+          capability: "100% Policy Coverage",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Real-Time Issue Detection",
+          popularTools: "Manual sampling only",
+          helium: true
+        },
+        {
+          capability: "Root Cause Analysis",
+          popularTools: "Limited in most tools",
+          helium: true
+        },
+        {
+          capability: "Automated Remediation",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium automates compliance testing. The system enables automated testing with 100% policy coverage, rate verification, form compliance, underwriting adherence, and coverage validation. It includes exception detection for non-compliant policies, pricing errors, coverage gaps, and documentation issues. The system performs root cause analysis with issue identification, pattern recognition, system problems, and process gaps. It includes remediation workflow with issue assignment, correction tracking, validation, and documentation. The system generates reporting with compliance metrics, exception reports, trend analysis, and regulatory submissions."

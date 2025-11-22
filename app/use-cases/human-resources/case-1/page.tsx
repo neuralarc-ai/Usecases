@@ -11,8 +11,50 @@ export default function Case1Page() {
       backLabel="Back to Human Resources"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Claims adjusters spend 45 minutes per claim on initial assessment and routing. Manual triage misses 30% of fraud indicators and routes 25% of claims incorrectly."
+        challenges: [
+          "HR teams receive 500-1000 applications per role, spending 23 hours per hire on manual resume screening",
+          "Traditional ATS rely on keyword-only matching, resulting in 40% of qualified candidates being overlooked",
+          "Unconscious bias in manual screening processes and extended time-to-hire averaging 45+ days",
+          "Loss of top talent to competitors, high recruiter burnout, and $125K+ cost per unfilled critical role"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Task & Project Management",
+          tools: ["Asana", "Linear", "Monday.com"]
+        },
+        {
+          category: "Knowledge Management",
+          tools: ["Confluence", "Notion", "SharePoint"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Semantic Resume Analysis",
+          popularTools: "Asana, Linear, Monday.com",
+          helium: true
+        },
+        {
+          capability: "AI-Powered Candidate Matching",
+          popularTools: "Confluence, Notion, SharePoint",
+          helium: true
+        },
+        {
+          capability: "Bias Detection & Mitigation",
+          popularTools: "Limited in most tools",
+          helium: true
+        },
+        {
+          capability: "Automated Screening",
+          popularTools: "Manual processes",
+          helium: true
+        },
+        {
+          capability: "Real-Time Candidate Scoring",
+          popularTools: "Static keyword matching",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium classifies claims and assesses severity using AI, detecting fraud indicators automatically. Intelligent routing to appropriate adjusters based on expertise, priority scoring for urgent claims, and automated customer communication streamline the entire process."

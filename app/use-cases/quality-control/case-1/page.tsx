@@ -11,8 +11,54 @@ export default function Case1Page() {
       backLabel="Back to Quality Control"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Quality inspection involves manual sampling covering only 10% of production, delayed defect detection, inconsistent standards, high inspection costs, and customer complaints. Inspection challenges include limited coverage, human error, subjective standards, time-consuming processes, and reactive quality management."
+        challenges: [
+          "Quality inspection involves manual sampling covering only 10% of production",
+          "Delayed defect detection and inconsistent standards leading to high inspection costs",
+          "Customer complaints from limited coverage and human error",
+          "Inspection challenges include subjective standards, time-consuming processes, and reactive quality management"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "RPA & Process Automation",
+          tools: ["UiPath", "Automation Anywhere", "Blue Prism"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Computer Vision Inspection",
+          popularTools: "Manual sampling (10% coverage)",
+          helium: true
+        },
+        {
+          capability: "100% Coverage",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Real-Time Alerts",
+          popularTools: "UiPath, Automation Anywhere",
+          helium: true
+        },
+        {
+          capability: "Quality Analytics",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "End-to-End Automation",
+          popularTools: "Blue Prism",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium automates quality inspection with computer vision including automated defect detection, 100% inspection coverage, real-time analysis, and consistent standards. The system provides intelligent classification with defect categorization, severity assessment, pattern recognition, and trend analysis. It includes real-time alerts with immediate notification, priority routing, corrective action triggers, and escalation workflows. The system enables quality analytics with defect rates, trend tracking, root cause identification, and improvement recommendations, plus integration with production systems, quality management, and reporting platforms."

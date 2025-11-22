@@ -11,8 +11,54 @@ export default function Case2Page() {
       backLabel="Back to Client Delivery"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Deliverable creation takes 80-120 hours per engagement, manual document creation, inconsistent quality, limited reuse, and high costs. Deliverable challenges include starting from scratch, inconsistent formats, quality variations, limited templates, and time-consuming work."
+        challenges: [
+          "Deliverable creation takes 80-120 hours per engagement with manual document creation",
+          "Inconsistent quality and limited reuse leading to high costs",
+          "Deliverable challenges include starting from scratch and inconsistent formats",
+          "Quality variations, limited templates, and time-consuming work"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Document Generation",
+          tools: ["Jasper", "Copy.ai", "Writesonic"]
+        },
+        {
+          category: "Presentation Creation",
+          tools: ["Gamma", "Beautiful.ai", "Canva"]
+        },
+        {
+          category: "Task & Project Management",
+          tools: ["Asana", "Linear", "Monday.com"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Template Library",
+          popularTools: "Starting from scratch",
+          helium: true
+        },
+        {
+          capability: "AI-Powered Content Generation",
+          popularTools: "Jasper, Copy.ai, Writesonic",
+          helium: true
+        },
+        {
+          capability: "Automated Quality Checks",
+          popularTools: "Gamma, Beautiful.ai, Canva",
+          helium: true
+        },
+        {
+          capability: "Knowledge Reuse",
+          popularTools: "Asana, Linear, Monday.com",
+          helium: true
+        },
+        {
+          capability: "End-to-End Automation",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium accelerates deliverable creation with template library including 500+ pre-built templates, industry-specific formats, best practice content, and customizable frameworks. The system provides AI-powered content generation with executive summaries, analysis sections, recommendations, and appendices. It includes automated quality checks with completeness validation, consistency checking, brand compliance, and error detection. The system enables collaboration tools with real-time co-editing, version control, comment management, and approval workflows, plus knowledge reuse with content library, best practice capture, similar project identification, and automated suggestions."

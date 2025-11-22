@@ -11,8 +11,54 @@ export default function Case5Page() {
       backLabel="Back to Proposal Development"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Win/loss analysis is manual and infrequent, limited to basic metrics, poor root cause analysis, delayed insights, and limited action. Analysis challenges include time-consuming work, inconsistent methodology, limited data, poor insights, and no continuous improvement."
+        challenges: [
+          "Win/loss analysis is manual and infrequent with limited basic metrics",
+          "Poor root cause analysis and delayed insights leading to limited action",
+          "Analysis challenges include time-consuming work and inconsistent methodology",
+          "Limited data, poor insights, and no continuous improvement"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        },
+        {
+          category: "Competitive Intelligence",
+          tools: ["Crayon", "Klue", "Kompyte"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Automated Data Collection",
+          popularTools: "Manual analysis",
+          helium: true
+        },
+        {
+          capability: "Root Cause Analysis",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Predictive Analytics",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "Competitive Intelligence",
+          popularTools: "Crayon, Klue, Kompyte",
+          helium: true
+        },
+        {
+          capability: "End-to-End Analysis",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium automates win/loss analysis with automated data collection including proposal details, pricing information, competitor intelligence, client feedback, and outcome tracking. The system provides root cause analysis with win factor identification, loss reason analysis, pattern recognition, and competitive assessment. It includes predictive analytics with win probability modeling, success factor identification, risk assessment, and improvement opportunities. The system enables continuous improvement with best practice identification, process optimization, training recommendations, and strategy refinement, plus competitive intelligence with competitor strengths, competitive positioning, differentiation opportunities, and response strategies."

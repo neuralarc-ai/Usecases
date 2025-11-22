@@ -11,8 +11,50 @@ export default function Case1Page() {
       backLabel="Back to Underwriting"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Manual underwriting takes 3-5 days per application, analyzing only 20-30 data points. This leads to 40% of applications declined or priced incorrectly, loss of good customers to competitors, adverse selection (accepting bad risks), $15M+ in underwriting losses annually, limited use of alternative data, and inconsistent underwriting decisions. Traditional underwriting data includes application information, credit reports, motor vehicle records, claims history, and property inspections."
+        challenges: [
+          "Manual underwriting takes 3-5 days per application, analyzing only 20-30 data points",
+          "40% of applications declined or priced incorrectly, leading to loss of good customers to competitors",
+          "Adverse selection (accepting bad risks) and $15M+ in underwriting losses annually",
+          "Limited use of alternative data and inconsistent underwriting decisions. Traditional underwriting data includes application information, credit reports, motor vehicle records, claims history, and property inspections"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Market Research",
+          tools: ["Gartner", "Forrester", "IDC"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Comprehensive Data Integration",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Real-Time Risk Scoring",
+          popularTools: "Gartner, Forrester, IDC",
+          helium: true
+        },
+        {
+          capability: "Alternative Data Analysis",
+          popularTools: "Limited data sources",
+          helium: true
+        },
+        {
+          capability: "Automated Underwriting",
+          popularTools: "Manual processes",
+          helium: true
+        },
+        {
+          capability: "Explainable AI",
+          popularTools: "Black box models",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium analyzes 500+ data points for accurate risk assessment. The system provides comprehensive data integration including traditional underwriting data, IoT devices (telematics, smart home), satellite imagery (property condition), public records (liens, violations), social media signals, weather and climate data, crime statistics, and economic indicators. It provides real-time risk scoring with ML models analyzing all data points, risk score (0-1000), contributing factors, confidence intervals, and pricing recommendations. The system enables automated underwriting with standard risks auto-approved, borderline cases flagged for review, high risks declined with explanation, and straight-through processing. It includes explainable AI with clear reasoning for decisions, regulatory compliance (adverse action), underwriter guidance, and customer communication. The system continuously learns from model updates from outcomes, loss ratio optimization, pricing refinement, and risk selection improvement."

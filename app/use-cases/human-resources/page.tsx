@@ -86,11 +86,11 @@ export default function HumanResourcesPage() {
           </Link>
           
           {/* Header */}
-          <div className="mb-8">
+          <div className="mb-8 text-center">
             <h1 className="text-2xl font-bold text-gray-900 mb-2 md:text-3xl" style={{ fontFamily: "var(--font-sora)" }}>
               Human Resources
             </h1>
-            <p className="text-base text-gray-700 leading-relaxed max-w-3xl" style={{ fontFamily: "var(--font-manrope)" }}>
+            <p className="text-base text-gray-700 leading-relaxed max-w-3xl mx-auto" style={{ fontFamily: "var(--font-manrope)" }}>
               Transform talent management with AI-powered recruitment, onboarding, and retention solutions
             </p>
           </div>
