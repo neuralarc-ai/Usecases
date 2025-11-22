@@ -11,8 +11,54 @@ export default function Case2Page() {
       backLabel="Back to Maintenance"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Equipment monitoring involves manual checks, limited visibility, delayed issue detection, poor performance tracking, and reactive maintenance. Monitoring challenges include manual processes, limited data, delayed insights, poor visibility, and reactive approach."
+        challenges: [
+          "Equipment monitoring involves manual checks with limited visibility",
+          "Delayed issue detection and poor performance tracking leading to reactive maintenance",
+          "Monitoring challenges include manual processes and limited data",
+          "Delayed insights, poor visibility, and reactive approach"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "RPA & Process Automation",
+          tools: ["UiPath", "Automation Anywhere", "Blue Prism"]
+        },
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Real-Time Monitoring",
+          popularTools: "Manual checks",
+          helium: true
+        },
+        {
+          capability: "Performance Analytics",
+          popularTools: "UiPath, Automation Anywhere",
+          helium: true
+        },
+        {
+          capability: "Predictive Insights",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Automated Alerts",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "End-to-End Monitoring",
+          popularTools: "Blue Prism",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium monitors equipment continuously with real-time monitoring including equipment status, performance metrics, efficiency tracking, and health indicators. The system provides performance analytics with efficiency calculation, trend analysis, benchmark comparison, and optimization opportunities. It includes predictive insights with performance forecasting, degradation prediction, maintenance needs, and optimization recommendations. The system enables automated alerts with anomaly detection, threshold monitoring, priority routing, and escalation workflows, plus integration with CMMS, production systems, and analytics platforms."

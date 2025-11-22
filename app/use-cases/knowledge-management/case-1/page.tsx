@@ -11,8 +11,54 @@ export default function Case1Page() {
       backLabel="Back to Knowledge Management"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Consulting firms have 100,000+ documents, poor organization, 30+ minutes to find relevant documents, limited search capability, and knowledge loss when employees leave. Knowledge challenges include information overload, poor categorization, limited search, version control issues, and access problems."
+        challenges: [
+          "Consulting firms have 100,000+ documents with poor organization taking 30+ minutes to find relevant documents",
+          "Limited search capability and knowledge loss when employees leave",
+          "Knowledge challenges include information overload and poor categorization",
+          "Limited search, version control issues, and access problems"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Knowledge Management",
+          tools: ["Confluence", "Notion", "SharePoint"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        },
+        {
+          category: "Web Research & Analysis",
+          tools: ["Perplexity", "ChatGPT", "Claude"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "AI-Powered Classification",
+          popularTools: "Manual organization",
+          helium: true
+        },
+        {
+          capability: "Intelligent Search",
+          popularTools: "Confluence, Notion, SharePoint",
+          helium: true
+        },
+        {
+          capability: "Knowledge Graph",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "Version Control",
+          popularTools: "Perplexity, ChatGPT, Claude",
+          helium: true
+        },
+        {
+          capability: "End-to-End Management",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium organizes knowledge intelligently with AI-powered classification including automatic categorization, tagging and indexing, relationship mapping, and duplicate detection. The system provides intelligent search with natural language queries, semantic understanding, relevance ranking, and similar document finding. It includes knowledge graph with relationship visualization, connected insights, expert identification, and topic clustering. The system enables version control with automated versioning, change tracking, approval workflows, and audit trail, plus access control with role-based permissions, client confidentiality, data security, and compliance."

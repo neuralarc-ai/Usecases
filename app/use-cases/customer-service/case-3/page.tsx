@@ -11,8 +11,50 @@ export default function Case3Page() {
       backLabel="Back to Customer Service"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Manual renewal processing costs $45 per policy, with 18% lapse rate due to missed reminders, renewal cycle taking 30-45 days, cash flow gaps, customer attrition, and lost revenue ($12M+ annually). Renewal challenges include manual reminder generation, inconsistent timing, generic messaging, complex renewal process, and limited payment options."
+        challenges: [
+          "Manual renewal processing costs $45 per policy, with 18% lapse rate due to missed reminders",
+          "Renewal cycle taking 30-45 days, cash flow gaps, customer attrition, and lost revenue ($12M+ annually)",
+          "Renewal challenges include manual reminder generation, inconsistent timing, and generic messaging",
+          "Complex renewal process and limited payment options contribute to customer dissatisfaction"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Email & Communication",
+          tools: ["Superhuman", "Front", "Intercom"]
+        },
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Automated Renewal Reminders",
+          popularTools: "Superhuman, Front, Intercom",
+          helium: true
+        },
+        {
+          capability: "One-Click Renewal",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "Personalized Renewal Offers",
+          popularTools: "Generic messaging",
+          helium: true
+        },
+        {
+          capability: "Dynamic Pricing",
+          popularTools: "Fixed pricing",
+          helium: true
+        },
+        {
+          capability: "Lapse Prevention",
+          popularTools: "Reactive approach",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium automates renewal management. The system enables automated reminder campaigns with 90-day, 60-day, 30-day, 15-day reminders, multi-channel delivery, personalized messaging, and preferred channel selection. It provides personalized renewal offers with usage-based pricing, loyalty discounts, bundle opportunities, and coverage recommendations. The system enables one-click renewal with simplified process, saved payment methods, instant confirmation, and digital policy delivery. It includes dynamic pricing with risk-based adjustments, market competitive rates, retention pricing, and win-back offers. The system includes lapse prevention with at-risk identification, proactive outreach, flexible payment options, and grace period management."

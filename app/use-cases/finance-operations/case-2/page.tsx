@@ -11,8 +11,50 @@ export default function Case2Page() {
       backLabel="Back to Finance Operations"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Traditional rule-based fraud detection in banking catches only 60% of fraudulent transactions, with false positive rates of 30%. This results in $5M+ annual fraud losses (wire fraud, check fraud, card fraud, ACH fraud), customer friction from false positives (30% of legitimate transactions flagged), 45-day average detection lag (fraud discovered weeks after occurrence), limited ability to detect new fraud patterns, high investigation costs ($200K+ annually), and reputational damage from fraud incidents."
+        challenges: [
+          "Traditional rule-based fraud detection catches only 60% of fraudulent transactions with false positive rates of 30%",
+          "$5M+ annual fraud losses from wire fraud, check fraud, card fraud, and ACH fraud",
+          "Customer friction from false positives (30% of legitimate transactions flagged) and 45-day average detection lag",
+          "Limited ability to detect new fraud patterns, high investigation costs ($200K+ annually), and reputational damage from fraud incidents"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Market Research",
+          tools: ["Gartner", "Forrester", "IDC"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Real-Time Fraud Detection",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "AI-Powered Pattern Recognition",
+          popularTools: "Rule-based systems",
+          helium: true
+        },
+        {
+          capability: "False Positive Reduction",
+          popularTools: "Tableau, Power BI",
+          helium: true
+        },
+        {
+          capability: "Continuous Learning",
+          popularTools: "Static rule sets",
+          helium: true
+        },
+        {
+          capability: "Network Analysis",
+          popularTools: "Limited tools",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium uses advanced machine learning for real-time fraud detection. The system analyzes 200+ transaction features (amount, time, location, customer behavior, device, IP, velocity, relationships, historical patterns), scores every transaction instantly with fraud probability, detects anomalies in customer transaction patterns and account usage behavior, identifies fraud rings through network analysis, continuously learns from confirmed fraud cases and false positives, automatically blocks fraudulent transactions, and streamlines fraud investigation with automated evidence collection."

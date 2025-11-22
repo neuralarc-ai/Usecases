@@ -11,8 +11,50 @@ export default function Case5Page() {
       backLabel="Back to Claims Processing"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Customers call 3-4 times per claim for status updates, consuming 30% of adjuster time, $2.5M annually in call center costs. Lack of proactive communication leads to 35% dissatisfaction with claims experience, 20% of customers considering switching, negative reviews and reputation damage, and lost cross-sell opportunities. Communication gaps include no automated status updates, reactive vs proactive communication, inconsistent messaging, limited self-service options, and poor mobile experience."
+        challenges: [
+          "Customers call 3-4 times per claim for status updates, consuming 30% of adjuster time and $2.5M annually in call center costs",
+          "Lack of proactive communication leads to 35% dissatisfaction with claims experience and 20% of customers considering switching",
+          "Negative reviews and reputation damage, and lost cross-sell opportunities",
+          "Communication gaps include no automated status updates, reactive vs proactive communication, inconsistent messaging, limited self-service options, and poor mobile experience"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Email & Communication",
+          tools: ["Superhuman", "Front", "Intercom"]
+        },
+        {
+          category: "Social Media Management",
+          tools: ["Hootsuite", "Buffer", "Sprout Social"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Proactive Status Updates",
+          popularTools: "Superhuman, Front, Intercom",
+          helium: true
+        },
+        {
+          capability: "AI-Powered Chatbot",
+          popularTools: "Hootsuite, Buffer, Sprout Social",
+          helium: true
+        },
+        {
+          capability: "Multi-Channel Communication",
+          popularTools: "Limited channels",
+          helium: true
+        },
+        {
+          capability: "Predictive Communication",
+          popularTools: "Reactive only",
+          helium: true
+        },
+        {
+          capability: "24/7 Availability",
+          popularTools: "Business hours only",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium provides proactive, personalized communication. The system enables automated status updates with claim milestones triggering notifications, personalized messages, multi-channel delivery (SMS, email, app, voice), preferred channel selection, and language preferences. It includes an AI-powered chatbot with 24/7 availability, natural language understanding, claim status inquiries, document submission, payment status, and seamless escalation to human. The system provides predictive communication that anticipates customer questions, proactive updates before customers ask, timeline expectations, and next steps guidance. It includes personalized explanations for settlement calculations, coverage details, deductible application, payment breakdown, and plain language explanations. The system supports multi-channel notifications with SMS for urgent updates, email for detailed information, app push notifications, voice calls for complex issues, and portal updates."

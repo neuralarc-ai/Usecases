@@ -11,8 +11,54 @@ export default function Case2Page() {
       backLabel="Back to Safety & Compliance"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Safety monitoring involves manual checks, limited coverage, delayed issue detection, inconsistent compliance, and regulatory risks. Monitoring challenges include manual processes, limited visibility, delayed insights, inconsistent standards, and compliance gaps."
+        challenges: [
+          "Safety monitoring involves manual checks with limited coverage",
+          "Delayed issue detection and inconsistent compliance leading to regulatory risks",
+          "Monitoring challenges include manual processes and limited visibility",
+          "Delayed insights, inconsistent standards, and compliance gaps"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        },
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Real-Time Monitoring",
+          popularTools: "Manual checks",
+          helium: true
+        },
+        {
+          capability: "Compliance Tracking",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Automated Alerts",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "Reporting Automation",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "End-to-End Safety Management",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium monitors safety continuously with real-time monitoring including safety condition tracking, hazard detection, behavior monitoring, and environment monitoring. The system provides compliance tracking with regulatory requirement monitoring, standard adherence, certification tracking, and audit preparation. It includes automated alerts with safety violation detection, compliance gap identification, priority routing, and escalation workflows. The system enables reporting automation with compliance reports, safety dashboards, trend analysis, and exception reporting, plus continuous improvement with trend monitoring, gap analysis, and improvement recommendations."

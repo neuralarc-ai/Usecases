@@ -11,8 +11,54 @@ export default function Case5Page() {
       backLabel="Back to Supply Chain"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Supply chain risks include supplier failures, material shortages, logistics disruptions, quality issues, and $5M+ annual impact. Risk challenges include limited visibility, reactive management, poor prediction, delayed response, and high costs."
+        challenges: [
+          "Supply chain risks include supplier failures and material shortages",
+          "Logistics disruptions and quality issues leading to $5M+ annual impact",
+          "Risk challenges include limited visibility and reactive management",
+          "Poor prediction, delayed response, and high costs"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Risk Identification",
+          popularTools: "Reactive management",
+          helium: true
+        },
+        {
+          capability: "Predictive Analytics",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Risk Mitigation",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "Monitoring and Alerts",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "End-to-End Risk Management",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium manages supply chain risks proactively with risk identification including supplier risk assessment, material risk analysis, logistics risk evaluation, and quality risk monitoring. The system provides predictive analytics with risk prediction, impact assessment, probability calculation, and timeline estimation. It includes risk mitigation with alternative sourcing, inventory buffers, logistics alternatives, and quality controls. The system enables monitoring and alerts with real-time risk tracking, early warning systems, alert generation, and escalation workflows, plus continuous improvement with risk trend analysis, mitigation effectiveness, and strategy refinement."

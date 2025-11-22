@@ -11,8 +11,54 @@ export default function Case2Page() {
       backLabel="Back to Production"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Manufacturing processes have 20-30% efficiency gaps, limited optimization, manual improvement efforts, $15M+ in waste, and slow improvement cycles. Process challenges include no systematic optimization, limited data analysis, manual identification, slow implementation, and inconsistent results."
+        challenges: [
+          "Manufacturing processes have 20-30% efficiency gaps with limited optimization",
+          "Manual improvement efforts and $15M+ in waste from slow improvement cycles",
+          "Process challenges include no systematic optimization and limited data analysis",
+          "Manual identification, slow implementation, and inconsistent results"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "RPA & Process Automation",
+          tools: ["UiPath", "Automation Anywhere", "Blue Prism"]
+        },
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Process Monitoring",
+          popularTools: "Manual tracking",
+          helium: true
+        },
+        {
+          capability: "AI-Powered Analysis",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Optimization Recommendations",
+          popularTools: "UiPath, Automation Anywhere",
+          helium: true
+        },
+        {
+          capability: "Simulation",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "End-to-End Optimization",
+          popularTools: "Blue Prism",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium optimizes processes continuously with process monitoring including real-time data collection, performance tracking, bottleneck detection, and waste identification. The system provides AI-powered analysis with efficiency calculation, root cause analysis, optimization opportunities, and impact assessment. It includes optimization recommendations with specific improvements, implementation plans, ROI estimation, and priority ranking. The system enables simulation with process modeling, what-if analysis, impact prediction, and risk assessment, plus continuous improvement with automated monitoring, trend tracking, best practice identification, and knowledge capture."

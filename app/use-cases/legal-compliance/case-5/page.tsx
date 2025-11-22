@@ -11,8 +11,50 @@ export default function Case5Page() {
       backLabel="Back to Legal & Compliance"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Internal policy violations go undetected for months, with manual monitoring covering only 10% of transactions. This results in $150K+ per major violation in investigation costs, regulatory fines when violations involve regulations, reputational damage, employee misconduct, operational losses, and customer harm. Banking policies cover transaction limits, approval requirements, segregation of duties, conflict of interest, gift and entertainment, outside business activities, personal trading, information barriers, and 50+ more policies."
+        challenges: [
+          "Internal policy violations go undetected for months, with manual monitoring covering only 10% of transactions",
+          "$150K+ per major violation in investigation costs, regulatory fines when violations involve regulations, and reputational damage",
+          "Employee misconduct, operational losses, and customer harm from undetected violations",
+          "Banking policies cover transaction limits, approval requirements, segregation of duties, conflict of interest, gift and entertainment, outside business activities, personal trading, information barriers, and 50+ more policies"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "RPA & Process Automation",
+          tools: ["UiPath", "Automation Anywhere", "Blue Prism"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Real-Time Transaction Monitoring",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Policy Violation Detection",
+          popularTools: "UiPath, Automation Anywhere, Blue Prism",
+          helium: true
+        },
+        {
+          capability: "Anomaly Pattern Recognition",
+          popularTools: "Limited in most tools",
+          helium: true
+        },
+        {
+          capability: "Automated Investigation",
+          popularTools: "Manual processes",
+          helium: true
+        },
+        {
+          capability: "Comprehensive Coverage",
+          popularTools: "10% transaction coverage",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium monitors all transactions in real-time against policies. The system defines monitoring rules for all policies (transaction limits by role, approval requirements, segregation of duties matrices, prohibited activities, disclosure requirements), tracks all transactions in real-time (financial transactions, system access, customer interactions, trading activities, expense submissions), identifies unusual patterns and anomalies, flags policy breaches immediately, notifies compliance team instantly, automates investigation process with evidence collection, and monitors corrective actions."

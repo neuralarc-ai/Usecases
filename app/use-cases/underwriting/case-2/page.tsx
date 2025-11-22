@@ -11,8 +11,50 @@ export default function Case2Page() {
       backLabel="Back to Underwriting"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Quote generation takes 2-3 hours with manual data entry and calculation. This results in 30% quote abandonment (customers go elsewhere), inconsistent pricing across agents, competitive disadvantage (slow response), lost revenue ($10M+ annually), poor customer experience, and high operational costs. Manual quoting process involves customer information entry, coverage selection, manual calculations, discount application, quote generation, and follow-up required."
+        challenges: [
+          "Quote generation takes 2-3 hours with manual data entry and calculation, resulting in 30% quote abandonment (customers go elsewhere)",
+          "Inconsistent pricing across agents, competitive disadvantage (slow response), and lost revenue ($10M+ annually)",
+          "Poor customer experience and high operational costs",
+          "Manual quoting process involves customer information entry, coverage selection, manual calculations, discount application, quote generation, and follow-up required"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Instant Quote Generation",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Automated Data Collection",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "Real-Time Pricing",
+          popularTools: "Manual calculations",
+          helium: true
+        },
+        {
+          capability: "Competitive Analysis",
+          popularTools: "Limited in most tools",
+          helium: true
+        },
+        {
+          capability: "Multi-Channel Delivery",
+          popularTools: "Single channel",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium generates instant, optimized quotes. The system enables automated data collection with pre-fill from existing data, third-party data sources, vehicle/property databases, credit information, and claims history. It provides real-time pricing with risk-based pricing, market conditions, competitive analysis, discount optimization, and bundle pricing. The system includes competitive analysis with market rate comparison, win/loss analysis, price positioning, and competitive intelligence. It enables instant quote generation with multiple coverage options, side-by-side comparison, personalized recommendations, and bundle opportunities. The system supports multi-channel delivery through agent portal, customer self-service, mobile app, email, and SMS."

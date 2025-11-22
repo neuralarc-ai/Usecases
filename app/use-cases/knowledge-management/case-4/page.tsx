@@ -11,8 +11,54 @@ export default function Case4Page() {
       backLabel="Back to Knowledge Management"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Consultants spend 5-10 hours per project finding relevant content, limited awareness of available resources, duplicated research, missed insights, and inefficiency. Content discovery challenges include information overload, poor search, limited recommendations, no personalization, and time waste."
+        challenges: [
+          "Consultants spend 5-10 hours per project finding relevant content",
+          "Limited awareness of available resources and duplicated research",
+          "Missed insights and inefficiency from information overload",
+          "Content discovery challenges include poor search, limited recommendations, no personalization, and time waste"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Knowledge Management",
+          tools: ["Confluence", "Notion", "SharePoint"]
+        },
+        {
+          category: "Web Research & Analysis",
+          tools: ["Perplexity", "ChatGPT", "Claude"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Context-Aware Recommendations",
+          popularTools: "Limited recommendations",
+          helium: true
+        },
+        {
+          capability: "Personalization",
+          popularTools: "Confluence, Notion, SharePoint",
+          helium: true
+        },
+        {
+          capability: "Intelligent Search",
+          popularTools: "Perplexity, ChatGPT, Claude",
+          helium: true
+        },
+        {
+          capability: "Content Curation",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "End-to-End Discovery",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium recommends relevant content with context-aware recommendations including project-based suggestions, role-specific content, industry relevance, and timing optimization. The system provides personalization with individual preferences, usage history, expertise level, and learning style. It includes intelligent search with natural language, semantic understanding, relevance ranking, and similar content. The system enables content curation with quality scoring, freshness tracking, usage analytics, and expert validation, plus learning paths with skill development, topic mastery, certification prep, and career advancement."

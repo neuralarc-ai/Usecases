@@ -11,8 +11,54 @@ export default function Case3Page() {
       backLabel="Back to Proposal Development"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Proposal pricing involves manual cost estimation, limited competitive intelligence, inconsistent pricing strategies, 30% of proposals overpriced, and 20% underpriced. Pricing challenges include no data-driven approach, limited market intelligence, inconsistent margins, poor win rate prediction, and suboptimal pricing."
+        challenges: [
+          "Proposal pricing involves manual cost estimation with limited competitive intelligence",
+          "Inconsistent pricing strategies with 30% of proposals overpriced and 20% underpriced",
+          "Pricing challenges include no data-driven approach and limited market intelligence",
+          "Inconsistent margins, poor win rate prediction, and suboptimal pricing"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Competitive Intelligence",
+          tools: ["Crayon", "Klue", "Kompyte"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Cost Estimation",
+          popularTools: "Manual estimation",
+          helium: true
+        },
+        {
+          capability: "Competitive Intelligence",
+          popularTools: "Crayon, Klue, Kompyte",
+          helium: true
+        },
+        {
+          capability: "Win Probability Prediction",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Pricing Optimization",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "End-to-End Optimization",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium optimizes proposal pricing with cost estimation including resource requirements, labor costs, expense projections, and risk contingency. The system provides competitive intelligence with market rate analysis, competitor pricing, win/loss data, and price positioning. It includes win probability prediction with ML models analyzing 100+ factors, price sensitivity analysis, competitive assessment, and client relationship strength. The system enables pricing optimization with optimal price calculation, margin optimization, discount strategy, and value-based pricing, plus scenario analysis with multiple pricing scenarios, win probability by price, margin impact, and risk assessment."

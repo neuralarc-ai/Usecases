@@ -11,8 +11,50 @@ export default function Case1Page() {
       backLabel="Back to Risk Management"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Market risk assessment updates daily at best, missing intraday market movements that can cause $10M+ in unexpected losses, limit breaches, regulatory violations, poor risk-adjusted returns, and inadequate hedging. Traditional Value-at-Risk (VaR) calculations use end-of-day positions, historical simulation methods, limited scenario analysis, no real-time updates, and miss intraday volatility."
+        challenges: [
+          "Market risk assessment updates daily at best, missing intraday market movements that can cause $10M+ in unexpected losses",
+          "Limit breaches, regulatory violations, poor risk-adjusted returns, and inadequate hedging from delayed risk assessment",
+          "Traditional Value-at-Risk (VaR) calculations use end-of-day positions, historical simulation methods, and limited scenario analysis",
+          "No real-time updates and miss intraday volatility, creating significant exposure to market movements"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Market Research",
+          tools: ["Gartner", "Forrester", "IDC"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Real-Time Risk Monitoring",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Intraday Position Tracking",
+          popularTools: "End-of-day positions only",
+          helium: true
+        },
+        {
+          capability: "Advanced Risk Metrics",
+          popularTools: "Gartner, Forrester, IDC",
+          helium: true
+        },
+        {
+          capability: "Real-Time Limit Monitoring",
+          popularTools: "Daily limit checks",
+          helium: true
+        },
+        {
+          capability: "Hedging Recommendations",
+          popularTools: "Limited in most tools",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium provides real-time market risk analytics. The system tracks positions in real-time with intraday position updates, mark-to-market valuation, P&L calculation, and exposure analysis, calculates advanced risk metrics (Value-at-Risk, Expected Shortfall, stress testing, scenario analysis, Greeks for options), integrates market data (real-time prices, volatility surfaces, correlation matrices, interest rate curves), monitors limits (position limits, loss limits, concentration limits, counterparty limits), generates alerts for limit breaches, unusual movements, correlation breaks, and stress scenarios, and provides hedging recommendations with optimal hedge ratios, hedge effectiveness, cost-benefit analysis, and execution strategies."

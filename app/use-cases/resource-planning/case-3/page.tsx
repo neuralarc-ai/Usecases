@@ -11,8 +11,54 @@ export default function Case3Page() {
       backLabel="Back to Resource Planning"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Demand forecasting involves manual pipeline analysis, limited accuracy, poor visibility into future needs, reactive resource planning, and missed opportunities. Forecasting challenges include manual processes, limited data, poor accuracy, delayed insights, and suboptimal planning."
+        challenges: [
+          "Demand forecasting involves manual pipeline analysis with limited accuracy",
+          "Poor visibility into future needs and reactive resource planning",
+          "Missed opportunities from manual processes and limited data",
+          "Forecasting challenges include poor accuracy, delayed insights, and suboptimal planning"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        },
+        {
+          category: "Task & Project Management",
+          tools: ["Asana", "Linear", "Monday.com"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Pipeline Analysis",
+          popularTools: "Manual analysis",
+          helium: true
+        },
+        {
+          capability: "Predictive Analytics",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Scenario Planning",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "Resource Planning",
+          popularTools: "Asana, Linear, Monday.com",
+          helium: true
+        },
+        {
+          capability: "End-to-End Forecasting",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium improves demand forecasting with pipeline analysis including opportunity tracking, probability assessment, timeline estimation, and resource requirements. The system provides predictive analytics with historical pattern analysis, seasonal trend identification, growth projections, and demand forecasting. It includes scenario planning with multiple scenarios, what-if analysis, capacity planning, and risk assessment. The system enables resource planning with demand-based allocation, hiring planning, skill development, and investment priorities, plus continuous monitoring with real-time updates, trend tracking, accuracy measurement, and plan adjustment."

@@ -11,8 +11,54 @@ export default function Case4Page() {
       backLabel="Back to Analytics & Insights"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Store performance varies widely, with top 20% producing 50% of profit, bottom 30% underperforming, limited performance visibility, generic improvement plans, and $10M+ in lost productivity. Store challenges include inconsistent metrics, limited benchmarking, poor root cause analysis, generic solutions, and delayed insights."
+        challenges: [
+          "Store performance varies widely with top 20% producing 50% of profit and bottom 30% underperforming",
+          "Limited performance visibility and generic improvement plans leading to $10M+ in lost productivity",
+          "Store challenges include inconsistent metrics and limited benchmarking",
+          "Poor root cause analysis, generic solutions, and delayed insights"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        },
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Performance Analytics",
+          popularTools: "Limited visibility",
+          helium: true
+        },
+        {
+          capability: "Benchmarking",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Root Cause Analysis",
+          popularTools: "Generic solutions",
+          helium: true
+        },
+        {
+          capability: "Predictive Analytics",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "End-to-End Optimization",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium optimizes store performance with performance analytics including sales per square foot, conversion rates, average transaction value, labor productivity, and profitability. The system provides benchmarking with peer comparison, best practice identification, performance gaps, and improvement potential. It includes root cause analysis with performance drivers, issue identification, opportunity assessment, and action recommendations. The system enables predictive analytics with performance forecasting, risk identification, opportunity detection, and investment prioritization, plus action tracking with improvement initiatives, implementation monitoring, effectiveness measurement, and best practice sharing."

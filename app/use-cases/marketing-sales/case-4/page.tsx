@@ -11,8 +11,54 @@ export default function Case4Page() {
       backLabel="Back to Marketing & Sales"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Marketing attribution uses last-click model, missing 80% of customer journey touchpoints, true channel effectiveness, optimal budget allocation, $5M+ in wasted marketing spend, and poor ROI visibility. Attribution challenges include oversimplified models, limited data integration, no cross-channel view, poor optimization, and delayed insights."
+        challenges: [
+          "Marketing attribution uses last-click model missing 80% of customer journey touchpoints",
+          "Unable to determine true channel effectiveness and optimal budget allocation",
+          "$5M+ in wasted marketing spend and poor ROI visibility",
+          "Attribution challenges include oversimplified models, limited data integration, no cross-channel view, and delayed insights"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Customer Data Platform",
+          tools: ["Segment", "mParticle", "Tealium"]
+        },
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Multi-Touch Attribution",
+          popularTools: "Last-click model",
+          helium: true
+        },
+        {
+          capability: "Cross-Channel Analysis",
+          popularTools: "Siloed channel data",
+          helium: true
+        },
+        {
+          capability: "Budget Optimization",
+          popularTools: "Segment, mParticle, Tealium",
+          helium: true
+        },
+        {
+          capability: "Real-Time Insights",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "End-to-End Optimization",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium provides multi-touch attribution with all touchpoint tracking, contribution analysis, channel effectiveness, and time decay modeling. The system includes cross-channel analysis with unified customer view, channel interactions, synergy effects, and optimal mix. It provides budget optimization with ROI by channel, reallocation recommendations, scenario modeling, and performance forecasting. The system enables real-time insights with campaign performance, channel effectiveness, conversion paths, and optimization opportunities, plus predictive analytics with future performance, budget impact, channel trends, and competitive effects."

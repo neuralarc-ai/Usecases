@@ -11,8 +11,54 @@ export default function Case5Page() {
       backLabel="Back to Resource Planning"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Resource analytics involves limited visibility, manual reporting, delayed insights, poor decision-making, and suboptimal performance. Analytics challenges include no real-time data, manual processes, limited metrics, poor visualization, and delayed actions."
+        challenges: [
+          "Resource analytics involves limited visibility with manual reporting",
+          "Delayed insights and poor decision-making leading to suboptimal performance",
+          "Analytics challenges include no real-time data and manual processes",
+          "Limited metrics, poor visualization, and delayed actions"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        },
+        {
+          category: "Task & Project Management",
+          tools: ["Asana", "Linear", "Monday.com"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Real-Time Dashboards",
+          popularTools: "Manual reporting",
+          helium: true
+        },
+        {
+          capability: "Performance Tracking",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Predictive Analytics",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "Actionable Insights",
+          popularTools: "Asana, Linear, Monday.com",
+          helium: true
+        },
+        {
+          capability: "End-to-End Analytics",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium provides comprehensive resource analytics with real-time dashboards including utilization rates, capacity metrics, skill distribution, and performance indicators. The system provides performance tracking with individual performance, team performance, project outcomes, and trend analysis. It includes predictive analytics with demand forecasting, capacity planning, risk assessment, and optimization opportunities. The system enables actionable insights with specific recommendations, priority ranking, implementation guidance, and impact estimation, plus continuous improvement with trend monitoring, pattern identification, best practice capture, and strategy refinement."

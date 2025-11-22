@@ -11,8 +11,54 @@ export default function Case1Page() {
       backLabel="Back to Maintenance"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Maintenance involves reactive approach, unplanned breakdowns causing 18% downtime, limited prediction capability, high repair costs, and $20M+ annual lost productivity. Maintenance challenges include reactive maintenance, unplanned failures, limited visibility, high costs, and production disruptions."
+        challenges: [
+          "Maintenance involves reactive approach with unplanned breakdowns causing 18% downtime",
+          "Limited prediction capability and high repair costs",
+          "$20M+ annual lost productivity from reactive maintenance",
+          "Maintenance challenges include unplanned failures, limited visibility, high costs, and production disruptions"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "RPA & Process Automation",
+          tools: ["UiPath", "Automation Anywhere", "Blue Prism"]
+        },
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Predictive Maintenance",
+          popularTools: "Reactive approach",
+          helium: true
+        },
+        {
+          capability: "Failure Prediction",
+          popularTools: "UiPath, Automation Anywhere",
+          helium: true
+        },
+        {
+          capability: "Real-Time Monitoring",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Maintenance Optimization",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "End-to-End Automation",
+          popularTools: "Blue Prism",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium enables predictive maintenance with real-time monitoring including equipment status, performance metrics, vibration analysis, temperature monitoring, and anomaly detection. The system provides failure prediction with ML models analyzing equipment data, failure pattern recognition, remaining useful life estimation, and maintenance scheduling. It includes automated alerts with early warning systems, priority routing, maintenance recommendations, and resource allocation. The system enables maintenance optimization with optimal timing, resource planning, spare parts coordination, and cost minimization, plus continuous learning with model improvement, pattern recognition, and optimization."

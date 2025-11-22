@@ -11,8 +11,54 @@ export default function Case5Page() {
       backLabel="Back to Marketing & Sales"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Customer acquisition costs (CAC) average $150, with 40% variation across channels, limited optimization, poor targeting, high waste, and $8M+ in inefficient spend. CAC challenges include no channel optimization, poor targeting, generic messaging, limited testing, and delayed insights."
+        challenges: [
+          "Customer acquisition costs (CAC) average $150 with 40% variation across channels",
+          "Limited optimization and poor targeting leading to high waste",
+          "$8M+ in inefficient spend and delayed insights",
+          "CAC challenges include no channel optimization, poor targeting, generic messaging, and limited testing"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Customer Data Platform",
+          tools: ["Segment", "mParticle", "Tealium"]
+        },
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Social Media Management",
+          tools: ["Hootsuite", "Buffer", "Sprout Social"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Channel Optimization",
+          popularTools: "No optimization",
+          helium: true
+        },
+        {
+          capability: "Targeting Optimization",
+          popularTools: "Poor targeting",
+          helium: true
+        },
+        {
+          capability: "Creative Optimization",
+          popularTools: "Segment, mParticle, Tealium",
+          helium: true
+        },
+        {
+          capability: "Bid Management",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "End-to-End Optimization",
+          popularTools: "Hootsuite, Buffer, Sprout Social",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium optimizes acquisition with channel optimization including CAC by channel, LTV:CAC ratios, efficiency scoring, and budget allocation. The system provides targeting optimization with lookalike modeling, propensity scoring, audience refinement, and waste reduction. It includes creative optimization with A/B testing, performance prediction, message optimization, and visual optimization. The system enables bid management with automated bidding, budget pacing, performance optimization, and ROI maximization, plus lifetime value prediction with customer value forecasting, acquisition investment optimization, segment prioritization, and retention integration."

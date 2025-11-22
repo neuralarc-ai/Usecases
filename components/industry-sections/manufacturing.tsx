@@ -44,12 +44,14 @@ const solutions: Solution[] = [
 export default function ManufacturingSection() {
   return (
     <div className="mt-8">
-      <h4 className="text-3xl font-bold text-gray-900 mb-4" style={{ fontFamily: "var(--font-sora)" }}>
-        Manufacturing
-      </h4>
-      <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mb-8">
-        Optimize production, enhance quality control, and reduce downtime with AI-powered manufacturing solutions.
-      </p>
+      <div className="text-center mb-8">
+        <h4 className="text-3xl font-bold text-gray-900 mb-4" style={{ fontFamily: "var(--font-sora)" }}>
+          Manufacturing
+        </h4>
+        <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+          Optimize production, enhance quality control, and reduce downtime with AI-powered manufacturing solutions.
+        </p>
+      </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {solutions.slice(0, 3).map((solution, index) => (

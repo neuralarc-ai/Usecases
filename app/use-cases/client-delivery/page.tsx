@@ -86,11 +86,11 @@ export default function ClientDeliveryPage() {
           </Link>
           
           {/* Header */}
-          <div className="mb-8">
+          <div className="mb-8 text-center">
             <h1 className="text-2xl font-bold text-gray-900 mb-2 md:text-3xl" style={{ fontFamily: "var(--font-sora)" }}>
               Client Delivery
             </h1>
-            <p className="text-base text-gray-700 leading-relaxed max-w-3xl" style={{ fontFamily: "var(--font-manrope)" }}>
+            <p className="text-base text-gray-700 leading-relaxed max-w-3xl mx-auto" style={{ fontFamily: "var(--font-manrope)" }}>
               Enhance project management, deliverable creation, and client engagement with AI-powered delivery solutions.
             </p>
           </div>

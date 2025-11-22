@@ -11,8 +11,54 @@ export default function Case2Page() {
       backLabel="Back to Quality Control"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Quality management is reactive, detecting defects after production, limited prediction capability, high scrap costs, and customer dissatisfaction. Quality challenges include reactive approach, delayed detection, limited prevention, high costs, and poor customer experience."
+        challenges: [
+          "Quality management is reactive detecting defects after production",
+          "Limited prediction capability and high scrap costs",
+          "Customer dissatisfaction from reactive approach and delayed detection",
+          "Quality challenges include limited prevention, high costs, and poor customer experience"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "RPA & Process Automation",
+          tools: ["UiPath", "Automation Anywhere", "Blue Prism"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Predictive Quality",
+          popularTools: "Reactive detection",
+          helium: true
+        },
+        {
+          capability: "Real-Time Detection",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Preventive Measures",
+          popularTools: "UiPath, Automation Anywhere",
+          helium: true
+        },
+        {
+          capability: "Quality Analytics",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "End-to-End Quality Control",
+          popularTools: "Blue Prism",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium prevents defects proactively with predictive quality including process parameter monitoring, defect prediction models, early warning systems, and preventive action recommendations. The system provides real-time monitoring with continuous process tracking, anomaly detection, drift identification, and trend analysis. It includes automated adjustments with parameter optimization, process control, corrective actions, and validation. The system enables quality forecasting with defect probability prediction, risk assessment, impact analysis, and prevention strategies, plus continuous learning with model improvement, pattern recognition, and optimization."

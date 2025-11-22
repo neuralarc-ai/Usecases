@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { preventOrphans } from "@/lib/utils";
 
 interface SolutionCardProps {
   icon: React.ComponentType<{ className?: string }>;
@@ -8,6 +11,9 @@ interface SolutionCardProps {
 }
 
 export default function SolutionCard({ icon: Icon, title, description, href }: SolutionCardProps) {
+  // Process description to prevent orphans
+  const processedDescription = preventOrphans(description);
+
   const CardContent = (
     <div className="flex flex-col h-full">
       {/* Icon and Title Row */}
@@ -24,8 +30,14 @@ export default function SolutionCard({ icon: Icon, title, description, href }: S
       <hr className="border-gray-200 mb-4 w-full" />
       
       {/* Description */}
-      <p className="text-base text-gray-600 leading-relaxed mb-4 flex-1">
-        {description}
+      <p 
+        className="text-[15px] text-gray-600 leading-relaxed mb-4 flex-1"
+        style={{ 
+          textWrap: 'balance' as any,
+          wordBreak: 'break-word'
+        }}
+      >
+        {processedDescription}
       </p>
       
       {/* Arrow at bottom right */}

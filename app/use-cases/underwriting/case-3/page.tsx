@@ -11,8 +11,50 @@ export default function Case3Page() {
       backLabel="Back to Underwriting"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Insurance portfolio management involves 100,000+ policies across multiple products, concentration risks (geographic, product, industry), catastrophe exposure, reinsurance optimization, and capital requirements. Manual analysis includes quarterly reviews (too infrequent), limited scenario analysis, reactive risk management, suboptimal reinsurance, and $50M+ in unnecessary capital."
+        challenges: [
+          "Insurance portfolio management involves 100,000+ policies across multiple products, with concentration risks (geographic, product, industry), catastrophe exposure, reinsurance optimization, and capital requirements",
+          "Manual analysis includes quarterly reviews (too infrequent), limited scenario analysis, and reactive risk management",
+          "Suboptimal reinsurance and $50M+ in unnecessary capital",
+          "Limited ability to optimize portfolio in real-time and respond to changing market conditions"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Market Research",
+          tools: ["Gartner", "Forrester", "IDC"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Real-Time Portfolio Analytics",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Catastrophe Modeling",
+          popularTools: "Gartner, Forrester, IDC",
+          helium: true
+        },
+        {
+          capability: "Portfolio Optimization",
+          popularTools: "Quarterly reviews only",
+          helium: true
+        },
+        {
+          capability: "Reinsurance Optimization",
+          popularTools: "Manual analysis",
+          helium: true
+        },
+        {
+          capability: "Proactive Risk Management",
+          popularTools: "Reactive approach",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium optimizes portfolio in real-time. The system provides portfolio analytics with concentration analysis, geographic exposure, catastrophe modeling, correlation analysis, and capital optimization. It includes risk monitoring with real-time exposure tracking, emerging risk identification, trend analysis, and early warning signals. The system includes an optimization engine for portfolio rebalancing, reinsurance optimization, capital allocation, and pricing adjustments. It performs catastrophe modeling for hurricane, earthquake, flood scenarios, probable maximum loss (PML), aggregate exposure, and reinsurance recovery. The system generates regulatory reporting with solvency calculations, risk-based capital, catastrophe reports, and concentration disclosures."

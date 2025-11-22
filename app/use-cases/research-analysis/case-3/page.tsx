@@ -11,8 +11,54 @@ export default function Case3Page() {
       backLabel="Back to Research & Analysis"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Data analysis for clients takes 50-80 hours per project, manual data cleaning (40% of time), limited visualization, inconsistent quality, and high costs. Analysis challenges include data quality issues, manual processing, limited tools, inconsistent methods, and time-consuming work."
+        challenges: [
+          "Data analysis for clients takes 50-80 hours per project with manual data cleaning (40% of time)",
+          "Limited visualization and inconsistent quality leading to high costs",
+          "Analysis challenges include data quality issues and manual processing",
+          "Limited tools, inconsistent methods, and time-consuming work"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        },
+        {
+          category: "Web Research & Analysis",
+          tools: ["Perplexity", "ChatGPT", "Claude"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Automated Data Cleaning",
+          popularTools: "Manual cleaning (40% of time)",
+          helium: true
+        },
+        {
+          capability: "Advanced Analytics",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Automated Visualization",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "Insight Extraction",
+          popularTools: "Perplexity, ChatGPT, Claude",
+          helium: true
+        },
+        {
+          capability: "End-to-End Automation",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium accelerates data analysis with automated data cleaning including quality validation, outlier detection, missing data handling, and standardization. The system provides advanced analytics with statistical analysis, predictive modeling, segmentation, and correlation analysis. It includes automated visualization with chart generation, dashboard creation, interactive reports, and custom formats. The system enables insight extraction with pattern identification, trend analysis, anomaly detection, and recommendation generation, plus report automation with template-based generation, narrative creation, executive summaries, and technical appendices."

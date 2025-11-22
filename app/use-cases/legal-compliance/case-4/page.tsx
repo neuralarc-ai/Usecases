@@ -11,8 +11,50 @@ export default function Case4Page() {
       backLabel="Back to Legal & Compliance"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Audit preparation requires 500+ hours of manual documentation gathering across 20+ systems (core banking, loan origination, CRM, document management, email, trading platforms, risk management, compliance, HR, and more). Incomplete audit trails result in qualified audit opinions, regulatory scrutiny and follow-up exams, extended audit timelines (3-4 months), high audit costs ($800K+ annually), compliance risks, and management distraction."
+        challenges: [
+          "Audit preparation requires 500+ hours of manual documentation gathering across 20+ systems (core banking, loan origination, CRM, document management, email, trading platforms, etc.)",
+          "Incomplete audit trails result in qualified audit opinions, regulatory scrutiny and follow-up exams",
+          "Extended audit timelines (3-4 months), high audit costs ($800K+ annually), and compliance risks",
+          "Management distraction from core business activities due to audit preparation burden"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        },
+        {
+          category: "Document Generation",
+          tools: ["Jasper", "Copy.ai", "Writesonic"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Automated Activity Logging",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "Document Capture & Organization",
+          popularTools: "Manual collection",
+          helium: true
+        },
+        {
+          capability: "AI Classification",
+          popularTools: "Jasper, Copy.ai, Writesonic",
+          helium: true
+        },
+        {
+          capability: "Audit Package Assembly",
+          popularTools: "Manual compilation",
+          helium: true
+        },
+        {
+          capability: "Real-Time Readiness Metrics",
+          popularTools: "Limited visibility",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium automatically captures and organizes all audit documentation. The system records all system activities automatically (user actions, transactions, system changes, data modifications, access attempts, approvals), collects supporting documentation (policies, meeting minutes, approval memos, risk assessments, training records, correspondence), categorizes and tags documents intelligently, connects activities to supporting evidence, assembles audit packages automatically by regulatory requirement or business process, provides real-time audit readiness metrics, and creates audit reports on demand."

@@ -17,8 +17,8 @@ export default function Hero() {
 
       {/* Content Overlay */}
       <div className="relative z-10 flex flex-col items-start justify-start px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 text-left">
-        <h1 className="mb-6 text-5xl font-bold leading-tight text-black md:text-7xl lg:text-6xl font-sora">
-        Single Intelligent Platform <br /> delivering all your AI<br /> in one place.
+        <h1 className="mb-6 text-5xl font-bold leading-tight text-black md:text-7xl lg:text-5xl font-sora">
+        A single system of intelligence.<br/>Seamless, integrated, and built<br /> for faster value.
         </h1>
         <div className="max-w-2xl text-2xl leading-relaxed text-black md:text-4xl mb-8">
           <p className="mb-2">Stop Juggling Dozens of AI Tools.</p>

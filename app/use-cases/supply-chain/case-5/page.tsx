@@ -11,8 +11,54 @@ export default function Case5Page() {
       backLabel="Back to Supply Chain"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Inventory accuracy averages 85%, with annual physical counts (disruptive and expensive), $5M+ in lost sales from inaccurate inventory, stockouts from phantom inventory, overstock from undercounted items, and high carrying costs. Accuracy challenges include manual counting errors, theft and shrinkage, system errors, process gaps, and limited visibility."
+        challenges: [
+          "Inventory accuracy averages 85% with annual physical counts (disruptive and expensive)",
+          "$5M+ in lost sales from inaccurate inventory and stockouts from phantom inventory",
+          "Overstock from undercounted items and high carrying costs",
+          "Accuracy challenges include manual counting errors, theft and shrinkage, system errors, and limited visibility"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        },
+        {
+          category: "RPA & Process Automation",
+          tools: ["UiPath", "Automation Anywhere", "Blue Prism"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Perpetual Inventory",
+          popularTools: "Annual physical counts",
+          helium: true
+        },
+        {
+          capability: "Automated Cycle Counting",
+          popularTools: "Manual counting",
+          helium: true
+        },
+        {
+          capability: "Discrepancy Detection",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "RFID Integration",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "End-to-End Accuracy",
+          popularTools: "UiPath, Automation Anywhere",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium maintains 99% accuracy with perpetual inventory including real-time tracking, transaction validation, automated adjustments, and continuous accuracy. The system provides automated cycle counting with AI-driven count scheduling, high-risk item prioritization, mobile counting apps, and variance investigation. It includes discrepancy detection with real-time variance alerts, pattern analysis, root cause identification, and corrective actions. The system enables RFID integration with automated tracking, real-time location, movement monitoring, and theft detection, plus accuracy analytics with accuracy by location, accuracy by category, trend analysis, and improvement tracking."

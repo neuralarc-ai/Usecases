@@ -11,8 +11,50 @@ export default function Case5Page() {
       backLabel="Back to Human Resources"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Regulatory training in banking requires 40+ hours per employee annually across 15+ compliance areas (Anti-Money Laundering, Know Your Customer, Data Privacy, Securities Regulations, Fair Lending, Consumer Protection, Cybersecurity, Insider Trading, Market Conduct, and more). Manual tracking creates incomplete training records, missed renewal deadlines, audit findings and fines ($500K-$2M per violation), inconsistent training quality, high administrative burden (5+ hours per employee annually), and compliance gaps exposing the institution to risk."
+        challenges: [
+          "Regulatory training requires 40+ hours per employee annually across 15+ compliance areas (AML, KYC, Data Privacy, Securities, Fair Lending, etc.)",
+          "Manual tracking creates incomplete training records, missed renewal deadlines, and audit findings with fines ($500K-$2M per violation)",
+          "Inconsistent training quality and high administrative burden (5+ hours per employee annually)",
+          "Compliance gaps exposing the institution to regulatory risk and potential violations"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Knowledge Management",
+          tools: ["Confluence", "Notion", "SharePoint"]
+        },
+        {
+          category: "Task & Project Management",
+          tools: ["Asana", "Linear", "Monday.com"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Automated Training Assignment",
+          popularTools: "Confluence, Notion, SharePoint",
+          helium: true
+        },
+        {
+          capability: "Adaptive Learning",
+          popularTools: "One-size-fits-all training",
+          helium: true
+        },
+        {
+          capability: "Certification Tracking",
+          popularTools: "Asana, Linear, Monday.com",
+          helium: true
+        },
+        {
+          capability: "Compliance Automation",
+          popularTools: "Manual tracking",
+          helium: true
+        },
+        {
+          capability: "Audit-Ready Documentation",
+          popularTools: "Manual report generation",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium automates the entire compliance training lifecycle. The system identifies required training by role, department, and jurisdiction, automatically assigns relevant training based on job function, system access, geographic location, and certifications held, adjusts content and pace based on knowledge assessment results, learning style preferences, time constraints, and previous training history, tests comprehension with scenario-based questions, case studies, and practical applications, issues, tracks, and renews certifications automatically, monitors expiration dates and triggers renewals 60 days in advance, and generates audit-ready documentation showing 100% compliance."

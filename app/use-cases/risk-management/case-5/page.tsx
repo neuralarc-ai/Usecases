@@ -11,8 +11,50 @@ export default function Case5Page() {
       backLabel="Back to Risk Management"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Risk reporting involves 50+ reports monthly, data from 20+ systems, manual consolidation (100+ hours), inconsistent definitions, limited analytics, and delayed insights. Manual reporting takes 5-7 days to produce, is outdated by publication, has limited drill-down, is inconsistent across risk types, and has high error rates (10-15%)."
+        challenges: [
+          "Risk reporting involves 50+ reports monthly, data from 20+ systems, and manual consolidation (100+ hours)",
+          "Inconsistent definitions, limited analytics, and delayed insights from fragmented data sources",
+          "Manual reporting takes 5-7 days to produce, is outdated by publication, and has limited drill-down capability",
+          "Inconsistent reporting across risk types and high error rates (10-15%) from manual processes"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Unified Risk Reporting",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Automated Report Generation",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "Real-Time Data Integration",
+          popularTools: "Manual consolidation",
+          helium: true
+        },
+        {
+          capability: "Interactive Analytics",
+          popularTools: "Static reports",
+          helium: true
+        },
+        {
+          capability: "Single Source of Truth",
+          popularTools: "Multiple data sources",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium provides unified risk reporting. The system establishes a unified data layer (single source of truth, consistent definitions, real-time updates, data quality controls), automates reporting (50+ standard reports, custom report builder, scheduled distribution, multiple formats), provides interactive analytics (drill-down capability, trend analysis, peer comparison, scenario modeling), includes an executive dashboard (key risk indicators, heat maps, alerts and notifications, mobile access), and generates regulatory reporting (automated generation, validation controls, submission management, audit trail)."

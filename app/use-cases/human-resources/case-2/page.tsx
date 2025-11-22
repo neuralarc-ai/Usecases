@@ -11,8 +11,50 @@ export default function Case2Page() {
       backLabel="Back to Human Resources"
       businessChallenge={{
         title: "Business Challenge",
-        description: "New employee onboarding in banking involves 47 manual steps across 6 departments (HR, IT, Legal, Facilities, Finance, Department Manager), taking 3-4 weeks to complete. This fragmented process creates inconsistent onboarding experiences across departments, 20% of new hires feeling unprepared for their roles, high administrative burden on HR (15+ hours per new hire), compliance gaps with missed training or documentation, poor first impressions impacting 90-day retention, and delayed productivity (new hires not fully productive for 60+ days)."
+        challenges: [
+          "New employee onboarding involves 47 manual steps across 6 departments (HR, IT, Legal, Facilities, Finance, Department Manager), taking 3-4 weeks to complete",
+          "Fragmented process creates inconsistent onboarding experiences across departments, with 20% of new hires feeling unprepared for their roles",
+          "High administrative burden on HR (15+ hours per new hire) and compliance gaps with missed training or documentation",
+          "Poor first impressions impacting 90-day retention and delayed productivity (new hires not fully productive for 60+ days)"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Task & Project Management",
+          tools: ["Asana", "Linear", "Monday.com"]
+        },
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Multi-Department Orchestration",
+          popularTools: "Asana, Linear, Monday.com",
+          helium: true
+        },
+        {
+          capability: "Automated Document Generation",
+          popularTools: "Manual document creation",
+          helium: true
+        },
+        {
+          capability: "Workflow Automation",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "Real-Time Progress Tracking",
+          popularTools: "Limited visibility",
+          helium: true
+        },
+        {
+          capability: "Compliance Automation",
+          popularTools: "Manual tracking",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium orchestrates the entire onboarding process automatically, creating personalized journeys for each new hire. The system coordinates all departments automatically with dependencies and parallel processing, customizes onboarding based on role, department, location, and seniority, creates all required paperwork (employment agreements, tax forms, policies, etc.), enables remote document signing with DocuSign and Adobe Sign, assigns and tracks required regulatory and role-specific training, and provides real-time visibility for HR, managers, and new hires."

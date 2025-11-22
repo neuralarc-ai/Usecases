@@ -11,8 +11,54 @@ export default function Case2Page() {
       backLabel="Back to Analytics & Insights"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Customer behavior analysis is limited to basic metrics (visits, purchases), delayed by days/weeks, missing 80% of behavioral signals, poor predictive capability, and $15M+ in missed opportunities. Analytics gaps include limited data integration, no real-time analysis, poor segmentation, generic insights, and delayed action."
+        challenges: [
+          "Customer behavior analysis limited to basic metrics (visits, purchases) delayed by days/weeks",
+          "Missing 80% of behavioral signals with poor predictive capability",
+          "$15M+ in missed opportunities from limited data integration",
+          "Analytics gaps include no real-time analysis, poor segmentation, generic insights, and delayed action"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Customer Data Platform",
+          tools: ["Segment", "mParticle", "Tealium"]
+        },
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Behavioral Tracking",
+          popularTools: "Basic metrics only",
+          helium: true
+        },
+        {
+          capability: "Predictive Analytics",
+          popularTools: "Segment, mParticle, Tealium",
+          helium: true
+        },
+        {
+          capability: "Real-Time Insights",
+          popularTools: "Days/weeks delay",
+          helium: true
+        },
+        {
+          capability: "Journey Analysis",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "End-to-End Analytics",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium provides deep customer insights with behavioral tracking including all touchpoint capture, clickstream analysis, engagement metrics, and conversion funnels. The system provides predictive analytics with purchase prediction, churn risk, lifetime value, and next-best-action. It includes segmentation with behavioral clustering, value-based segments, engagement levels, and lifecycle stages. The system enables journey analysis with path to purchase, drop-off points, channel effectiveness, and optimization opportunities, plus real-time insights with live dashboards, automated alerts, trend detection, and anomaly identification."

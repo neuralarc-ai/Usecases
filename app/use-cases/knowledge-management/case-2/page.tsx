@@ -11,8 +11,54 @@ export default function Case2Page() {
       backLabel="Back to Knowledge Management"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Best practices are trapped in individual minds, poorly documented, difficult to find, inconsistently applied, and lost when employees leave. Best practice challenges include limited capture, poor organization, difficult search, low reuse, and knowledge loss."
+        challenges: [
+          "Best practices are trapped in individual minds and poorly documented",
+          "Difficult to find and inconsistently applied leading to knowledge loss when employees leave",
+          "Best practice challenges include limited capture and poor organization",
+          "Difficult search, low reuse, and knowledge loss"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Knowledge Management",
+          tools: ["Confluence", "Notion", "SharePoint"]
+        },
+        {
+          category: "Web Research & Analysis",
+          tools: ["Perplexity", "ChatGPT", "Claude"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Best Practice Capture",
+          popularTools: "Trapped in individual minds",
+          helium: true
+        },
+        {
+          capability: "Intelligent Organization",
+          popularTools: "Confluence, Notion, SharePoint",
+          helium: true
+        },
+        {
+          capability: "Easy Search & Discovery",
+          popularTools: "Perplexity, ChatGPT, Claude",
+          helium: true
+        },
+        {
+          capability: "Knowledge Reuse",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "End-to-End Management",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium captures and shares best practices with automated capture including project learnings, success patterns, innovation identification, and expert knowledge. The system provides intelligent organization with categorization, tagging, relationship mapping, and searchability. It includes recommendation engine with context-aware suggestions, similar situation matching, expert identification, and relevant content. The system enables collaboration tools with discussion forums, expert Q&A, peer review, and rating and feedback, plus analytics with usage tracking, value measurement, gap identification, and improvement opportunities."

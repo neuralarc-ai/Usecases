@@ -11,8 +11,54 @@ export default function Case4Page() {
       backLabel="Back to Safety & Compliance"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Risk assessment involves manual processes, limited analysis depth, delayed assessments, inconsistent methodology, and ineffective mitigation. Assessment challenges include time-consuming work, limited tools, poor methodology, delayed actions, and ineffective solutions."
+        challenges: [
+          "Risk assessment involves manual processes with limited analysis depth",
+          "Delayed assessments and inconsistent methodology leading to ineffective mitigation",
+          "Assessment challenges include time-consuming work and limited tools",
+          "Poor methodology, delayed actions, and ineffective solutions"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Web Research & Analysis",
+          tools: ["Perplexity", "ChatGPT", "Claude"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "AI-Powered Analysis",
+          popularTools: "Manual processes",
+          helium: true
+        },
+        {
+          capability: "Comprehensive Assessment",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Mitigation Recommendations",
+          popularTools: "Perplexity, ChatGPT, Claude",
+          helium: true
+        },
+        {
+          capability: "Action Tracking",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "End-to-End Assessment",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium accelerates risk assessment with AI-powered analysis including risk identification, probability calculation, impact assessment, and priority ranking. The system provides comprehensive assessment with multi-factor analysis, scenario modeling, relationship mapping, and trend analysis. It includes mitigation recommendations with specific actions, implementation plans, effectiveness prediction, and cost-benefit analysis. The system enables action tracking with implementation monitoring, effectiveness measurement, validation, and continuous improvement, plus knowledge capture with risk documentation, best practice capture, and prevention strategies."

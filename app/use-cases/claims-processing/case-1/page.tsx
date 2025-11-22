@@ -11,8 +11,54 @@ export default function Case1Page() {
       backLabel="Back to Claims Processing"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Claims adjusters spend 45 minutes per claim on initial assessment and routing. With 50,000+ claims annually, this consumes 37,500 hours of adjuster time, $1.8M in labor costs, manual triage misses 30% of fraud indicators, 25% of claims routed incorrectly, delays in claim resolution, and customer dissatisfaction. Claims complexity includes multiple claim types (auto, property, liability, workers comp), varying severity levels, different adjuster specializations, geographic considerations, and fraud risk assessment."
+        challenges: [
+          "Claims adjusters spend 45 minutes per claim on initial assessment and routing, consuming 37,500 hours annually and $1.8M in labor costs",
+          "Manual triage misses 30% of fraud indicators and routes 25% of claims incorrectly",
+          "Delays in claim resolution and customer dissatisfaction from inefficient processes",
+          "Claims complexity includes multiple claim types (auto, property, liability, workers comp), varying severity levels, different adjuster specializations, geographic considerations, and fraud risk assessment"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        },
+        {
+          category: "RPA & Process Automation",
+          tools: ["UiPath", "Automation Anywhere", "Blue Prism"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "AI-Powered Classification",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "Intelligent Routing",
+          popularTools: "UiPath, Automation Anywhere, Blue Prism",
+          helium: true
+        },
+        {
+          capability: "Fraud Detection",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "Automated Triage",
+          popularTools: "Manual processes",
+          helium: true
+        },
+        {
+          capability: "Real-Time Priority Scoring",
+          popularTools: "Limited in most tools",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium automates claims triage and intelligent routing. The system uses AI-powered classification to identify claim type, assess severity, score complexity, detect fraud indicators, and assign priority. It provides intelligent routing with adjuster expertise matching, workload balancing, geographic assignment, specialization alignment, and capacity consideration. The system performs fraud screening with 30+ fraud indicators, pattern recognition, network analysis, historical comparison, and risk scoring. It also includes priority scoring based on severity, customer impact, regulatory requirements, time sensitivity, and financial exposure, plus automated customer communication with acknowledgment, adjuster assignment notification, expected timeline, and next steps guidance."

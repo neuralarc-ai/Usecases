@@ -11,8 +11,50 @@ export default function Case3Page() {
       backLabel="Back to Operations"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Banking operations involve 500+ processes across departments, with limited visibility into process bottlenecks and delays, resource utilization and capacity, error rates and rework, cycle times and SLAs, cost per transaction, and improvement opportunities. Manual process analysis takes 3-6 months per process, covers only 10-15% of processes, provides point-in-time snapshots, misses 70% of optimization opportunities, requires expensive consultants, and delivers limited ongoing value."
+        challenges: [
+          "Banking operations involve 500+ processes across departments, with limited visibility into process bottlenecks, delays, resource utilization, and capacity",
+          "Limited insight into error rates, rework, cycle times, SLAs, cost per transaction, and improvement opportunities",
+          "Manual process analysis takes 3-6 months per process, covers only 10-15% of processes, and provides point-in-time snapshots",
+          "Misses 70% of optimization opportunities, requires expensive consultants, and delivers limited ongoing value"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Process Discovery & Mapping",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Bottleneck Identification",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "Continuous Monitoring",
+          popularTools: "Point-in-time analysis",
+          helium: true
+        },
+        {
+          capability: "Optimization Recommendations",
+          popularTools: "Manual analysis",
+          helium: true
+        },
+        {
+          capability: "Predictive Process Analytics",
+          popularTools: "Limited in most tools",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium provides continuous process intelligence. The system automatically discovers actual processes through event log analysis, process flow mapping, variant identification, and bottleneck detection, provides performance analytics (cycle time analysis, resource utilization, error rate tracking, cost per transaction, SLA compliance), identifies bottlenecks through queue analysis, wait time calculation, resource constraints, and system limitations, suggests optimization opportunities (automation opportunities, resource reallocation, process redesign, technology improvements), provides continuous monitoring with real-time dashboards, trend analysis, alert generation, and performance tracking, and models process changes to predict outcomes, calculate ROI, and assess risk."

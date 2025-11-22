@@ -11,8 +11,50 @@ export default function Case4Page() {
       backLabel="Back to Customer Service"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Claims fraud investigation is resource-intensive with 5% of claims flagged for investigation, 40 hours average per investigation, 60% of investigations find no fraud (false positives), $3M annual investigation costs, delayed legitimate claims, and customer dissatisfaction. Investigation challenges include manual evidence collection, limited data sources, time-consuming interviews, inconsistent processes, and poor documentation."
+        challenges: [
+          "Claims fraud investigation is resource-intensive with 5% of claims flagged, 40 hours average per investigation, and 60% finding no fraud (false positives)",
+          "$3M annual investigation costs, delayed legitimate claims, and customer dissatisfaction",
+          "Investigation challenges include manual evidence collection, limited data sources, and time-consuming interviews",
+          "Inconsistent processes and poor documentation contribute to investigation inefficiency"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Web Research & Analysis",
+          tools: ["Perplexity", "ChatGPT", "Claude"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Automated Evidence Collection",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Relationship Mapping",
+          popularTools: "Perplexity, ChatGPT, Claude",
+          helium: true
+        },
+        {
+          capability: "Timeline Construction",
+          popularTools: "Manual processes",
+          helium: true
+        },
+        {
+          capability: "Red Flag Identification",
+          popularTools: "Limited in most tools",
+          helium: true
+        },
+        {
+          capability: "Investigation Workflow",
+          popularTools: "Inconsistent processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium streamlines fraud investigation. The system enables automated evidence collection with claim documentation, historical patterns, social media analysis, public records, and surveillance data. It constructs timelines with event sequencing, inconsistency identification, gap analysis, and witness correlation. The system provides relationship mapping with network visualization, connection identification, fraud ring detection, and pattern recognition. It identifies red flags including inconsistencies, suspicious patterns, known fraud indicators, and behavioral anomalies. The system includes investigation workflow with case management, task assignment, evidence tracking, and report generation. It provides outcome prediction with fraud likelihood, recovery potential, investigation priority, and resource allocation."

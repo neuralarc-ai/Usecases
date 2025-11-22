@@ -11,8 +11,54 @@ export default function Case4Page() {
       backLabel="Back to Maintenance"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Spare parts management involves excess inventory ($8M+), stockouts causing delays, limited visibility, manual tracking, and high costs. Inventory challenges include overstocking, stockouts, limited visibility, manual processes, and high carrying costs."
+        challenges: [
+          "Spare parts management involves excess inventory ($8M+) and stockouts causing delays",
+          "Limited visibility and manual tracking leading to high costs",
+          "Inventory challenges include overstocking and stockouts",
+          "Limited visibility, manual processes, and high carrying costs"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        },
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Demand Forecasting",
+          popularTools: "Manual tracking",
+          helium: true
+        },
+        {
+          capability: "Inventory Optimization",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "Automated Replenishment",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Real-Time Visibility",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "End-to-End Management",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium optimizes spare parts inventory with demand forecasting including usage pattern analysis, failure prediction, lead time consideration, and safety stock calculation. The system provides inventory optimization with optimal stock levels, ABC analysis, turnover optimization, and cost minimization. It includes automated replenishment with reorder point calculation, order quantity optimization, supplier coordination, and delivery scheduling. The system enables real-time visibility with inventory tracking, location management, consumption monitoring, and availability forecasting, plus cost optimization with inventory cost reduction, carrying cost minimization, and total cost optimization."

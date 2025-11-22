@@ -11,8 +11,54 @@ export default function Case3Page() {
       backLabel="Back to Safety & Compliance"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Safety training involves manual administration, inconsistent delivery, limited tracking, certification gaps, and compliance risks. Training challenges include manual processes, time-consuming administration, inconsistent quality, limited tracking, and compliance gaps."
+        challenges: [
+          "Safety training involves manual administration with inconsistent delivery",
+          "Limited tracking and certification gaps leading to compliance risks",
+          "Training challenges include manual processes and time-consuming administration",
+          "Inconsistent quality, limited tracking, and compliance gaps"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        },
+        {
+          category: "Task & Project Management",
+          tools: ["Asana", "Linear", "Monday.com"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Automated Administration",
+          popularTools: "Manual administration",
+          helium: true
+        },
+        {
+          capability: "Personalized Training",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "Certification Management",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "Performance Tracking",
+          popularTools: "Asana, Linear, Monday.com",
+          helium: true
+        },
+        {
+          capability: "End-to-End Automation",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium automates safety training with automated administration including training assignment, scheduling, delivery, and tracking. The system provides personalized training with role-specific content, skill-based learning, adaptive delivery, and progress tracking. It includes certification management with automated certification, renewal tracking, compliance validation, and audit preparation. The system enables performance tracking with completion rates, assessment scores, knowledge retention, and effectiveness measurement, plus continuous improvement with content updates, delivery optimization, and effectiveness enhancement."

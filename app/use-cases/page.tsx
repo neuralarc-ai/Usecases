@@ -100,6 +100,15 @@ function UseCasesContent() {
         </div>
       </section>
       
+      {/* Middle Text Section */}
+      <section className="py-8 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-xl md:text-2xl lg:text-3xl text-gray-900 leading-relaxed font-normal" style={{ fontFamily: "var(--font-sora)" }}>
+            Helium brings all core services together in a single powerful platform — explore the use cases below.
+          </p>
+        </div>
+      </section>
+      
       {/* Content Section */}
       <section className="py-10" ref={tabsSectionRef}>
         <div className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">

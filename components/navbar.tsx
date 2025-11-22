@@ -16,6 +16,7 @@ const navigation = [
 export default function Navbar() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolledPastHero, setScrolledPastHero] = useState(false);
 
   // Close mobile menu when route changes
   useEffect(() => {
@@ -33,6 +34,27 @@ export default function Navbar() {
       document.body.style.overflow = "unset";
     };
   }, [mobileMenuOpen]);
+
+  // Scroll detection for hero section (only on main page)
+  useEffect(() => {
+    // Only apply scroll detection on main page
+    if (pathname !== "/") {
+      setScrolledPastHero(true);
+      return;
+    }
+
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const heroHeight = window.innerHeight; // Hero section is min-h-screen (100vh)
+      setScrolledPastHero(scrollY > heroHeight * 0.8); // Trigger at 40% of hero section
+    };
+
+    // Check initial scroll position
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [pathname]);
 
   return (
     <>
@@ -88,7 +110,8 @@ export default function Navbar() {
               height={32}
               className={cn(
                 "h-10 w-10 transition-all duration-300",
-                pathname === "/why-helium" && "brightness-0"
+                pathname === "/why-helium" && "brightness-0",
+                pathname === "/" && !scrolledPastHero && "brightness-0 invert"
               )}
               priority
             />
@@ -98,42 +121,57 @@ export default function Navbar() {
 
       {/* Desktop Navbar - Transparent with backdrop blur */}
       <nav className="fixed top-4 left-0 right-0 z-50 bg-transparent px-4 sm:px-6 lg:px-8 hidden md:block">
-        <div className="mx-auto max-w-4xl">
-          <div className="bg-white/10 backdrop-blur-md rounded-4xl border border-white/20 shadow-sm">
-            <div className="flex h-16 items-center justify-center px-4 sm:px-6 relative">
+        <div className="mx-auto w-fit">
+          <div className={cn(
+            "backdrop-blur-md rounded-full shadow-sm transition-all duration-300",
+            pathname === "/" && !scrolledPastHero
+              ? "bg-black/10 border border-black/20"
+              : "bg-white/10 border border-white/20"
+          )}>
+            <div className="flex items-center justify-between p-3 sm:p-4 gap-6">
               {/* Logo */}
-              <div className="absolute left-4 sm:left-6 flex items-center justify-center">
+              <div className="flex items-center justify-center shrink-0">
                 <Link href="/" className="flex items-center justify-center">
                   <Image
                     src="/Logo.svg"
                     alt="Logo"
-                    width={32}
-                    height={32}
+                    width={28}
+                    height={28}
                     className={cn(
-                      "h-12 w-12 transition-all duration-300",
-                      pathname === "/why-helium" && "brightness-0"
+                      "h-9 w-9 transition-all duration-300 mb-1",
+                      pathname === "/why-helium" && "brightness-0",
+                      pathname === "/" && !scrolledPastHero && "brightness-0 invert"
                     )}
                     priority
                   />
                 </Link>
               </div>
 
-              {/* Navigation Links - Centered */}
-              <div className="flex items-center justify-center space-x-8 sm:space-x-12">
+              {/* Navigation Links */}
+              <div className="flex items-center space-x-6 sm:space-x-8">
                 {navigation.map((item) => {
-                  const isActive = pathname === item.href;
+                  const isActive = item.name === "UseCases" 
+                    ? pathname.startsWith(item.href)
+                    : pathname === item.href;
+                  const isHeroSection = pathname === "/" && !scrolledPastHero;
                   return (
                     <Link
                       key={item.name}
                       href={item.href}
                       className={cn(
-                        "text-base sm:text-lg font-medium transition-colors text-black hover:opacity-80 relative",
-                        isActive && "font-semibold"
+                        "text-base sm:text-[16px] font-light transition-colors relative hover:opacity-80",
+                        isActive && "font-medium",
+                        isHeroSection
+                          ? "text-white"
+                          : "text-black"
                       )}
                     >
                       {item.name}
                       {isActive && (
-                        <span className="absolute -bottom-2 left-0 right-0 h-0.5 bg-black" />
+                        <span className={cn(
+                          "absolute -bottom-2 left-0 right-0 h-0.5",
+                          isHeroSection ? "bg-white" : "bg-black"
+                        )} />
                       )}
                     </Link>
                   );
@@ -158,7 +196,9 @@ export default function Navbar() {
             <div className="bg-gray-800 rounded-2xl shadow-2xl overflow-hidden border border-gray-700/50">
               <nav className="py-2">
                 {navigation.map((item, index) => {
-                  const isActive = pathname === item.href;
+                  const isActive = item.name === "UseCases" 
+                    ? pathname.startsWith(item.href)
+                    : pathname === item.href;
                   return (
                     <Link
                       key={item.name}
@@ -173,7 +213,7 @@ export default function Navbar() {
                     >
                       {/* Icon */}
                       <div className={cn(
-                        "flex-shrink-0 w-6 h-6 flex items-center justify-center",
+                        "shrink-0 w-6 h-6 flex items-center justify-center",
                         isActive ? "text-white" : "text-gray-400"
                       )}>
                         {item.name === "Home" && (

@@ -11,8 +11,54 @@ export default function Case4Page() {
       backLabel="Back to Research & Analysis"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Trend analysis for clients requires 30-50 hours per industry, manual research and synthesis, limited predictive capability, inconsistent frameworks, and high costs. Trend analysis needs include market dynamics, technology trends, regulatory changes, competitive landscape, and future scenarios."
+        challenges: [
+          "Trend analysis for clients requires 30-50 hours per industry with manual research and synthesis",
+          "Limited predictive capability and inconsistent frameworks leading to high costs",
+          "Trend analysis needs include market dynamics, technology trends, and regulatory changes",
+          "Competitive landscape and future scenarios require extensive manual work"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Web Research & Analysis",
+          tools: ["Perplexity", "ChatGPT", "Claude"]
+        },
+        {
+          category: "Market Research",
+          tools: ["Gartner", "Forrester", "IDC"]
+        },
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Automated Monitoring",
+          popularTools: "Manual research",
+          helium: true
+        },
+        {
+          capability: "Trend Identification",
+          popularTools: "Perplexity, ChatGPT, Claude",
+          helium: true
+        },
+        {
+          capability: "Predictive Forecasting",
+          popularTools: "Gartner, Forrester, IDC",
+          helium: true
+        },
+        {
+          capability: "Synthesis & Reporting",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "End-to-End Intelligence",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium provides trend intelligence with automated monitoring including news and publications, research reports, social media, patent filings, and regulatory changes. The system provides trend identification with pattern recognition, signal detection, momentum analysis, and impact assessment. It includes predictive forecasting with trend projection, scenario modeling, impact analysis, and timeline estimation. The system enables synthesis & reporting with insight generation, implication analysis, recommendation development, and visual presentation, plus continuous updates with real-time monitoring, alert generation, report refreshing, and trend tracking."

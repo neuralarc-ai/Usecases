@@ -11,8 +11,50 @@ export default function Case3Page() {
       backLabel="Back to Legal & Compliance"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Compliance teams manually monitor 200+ regulatory requirements across multiple jurisdictions (federal, state, international). Reactive approach leads to violations discovered during audits (not proactively), $2M+ annual fines and penalties, regulatory scrutiny and consent orders, reputational damage, limited visibility into compliance status, and quarterly compliance reviews (too infrequent)."
+        challenges: [
+          "Compliance teams manually monitor 200+ regulatory requirements across multiple jurisdictions (federal, state, international)",
+          "Reactive approach leads to violations discovered during audits (not proactively) and $2M+ annual fines and penalties",
+          "Regulatory scrutiny and consent orders, reputational damage, and limited visibility into compliance status",
+          "Quarterly compliance reviews are too infrequent to catch issues early"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Web Research & Analysis",
+          tools: ["Perplexity", "ChatGPT", "Claude"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Real-Time Compliance Monitoring",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Automated Control Testing",
+          popularTools: "Perplexity, ChatGPT, Claude",
+          helium: true
+        },
+        {
+          capability: "Risk Prediction",
+          popularTools: "Reactive monitoring only",
+          helium: true
+        },
+        {
+          capability: "Continuous Validation",
+          popularTools: "Quarterly reviews",
+          helium: true
+        },
+        {
+          capability: "Audit-Ready Documentation",
+          popularTools: "Manual preparation",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium provides continuous, real-time compliance monitoring. The system establishes monitoring for all 200+ requirements with control objectives, testing procedures, and evidence requirements, tracks compliance status 24/7 across transactions, system access logs, policy adherence, training completion, and documentation, validates controls automatically through sampling and testing, calculates compliance risk across business units and product lines, identifies potential issues before they occur using trend analysis and pattern recognition, and generates audit-ready documentation."

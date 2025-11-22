@@ -11,8 +11,54 @@ export default function Case5Page() {
       backLabel="Back to Production"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Manufacturing energy costs $15M+ annually, 20-30% waste, limited optimization, manual monitoring, and poor visibility. Energy challenges include high consumption, inefficient processes, limited control, no optimization, and rising costs."
+        challenges: [
+          "Manufacturing energy costs $15M+ annually with 20-30% waste",
+          "Limited optimization and manual monitoring with poor visibility",
+          "Energy challenges include high consumption and inefficient processes",
+          "Limited control, no optimization, and rising costs"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "RPA & Process Automation",
+          tools: ["UiPath", "Automation Anywhere", "Blue Prism"]
+        },
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Real-Time Monitoring",
+          popularTools: "Manual monitoring",
+          helium: true
+        },
+        {
+          capability: "AI-Powered Optimization",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Automated Control",
+          popularTools: "UiPath, Automation Anywhere",
+          helium: true
+        },
+        {
+          capability: "Cost Management",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "End-to-End Optimization",
+          popularTools: "Blue Prism",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium optimizes energy use with real-time monitoring including energy consumption, equipment efficiency, process optimization, and waste identification. The system provides AI-powered optimization with consumption prediction, efficiency recommendations, load balancing, and peak demand management. It includes automated control with equipment scheduling, process optimization, temperature control, and lighting management. The system enables cost management with rate optimization, demand charge reduction, renewable integration, and cost allocation, plus sustainability tracking with carbon footprint, renewable percentage, efficiency trends, and ESG reporting."

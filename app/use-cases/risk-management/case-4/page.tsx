@@ -11,8 +11,50 @@ export default function Case4Page() {
       backLabel="Back to Risk Management"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Banks hold $50M-$500M+ in regulatory capital, with conservative assumptions adding 20-30% buffer, quarterly calculations (outdated quickly), limited optimization, suboptimal capital allocation, and opportunity cost of excess capital. Manual capital management takes 2-3 weeks quarterly, uses simplified models, has limited scenario analysis, is reactive to regulatory changes, and misses optimization opportunities."
+        challenges: [
+          "Banks hold $50M-$500M+ in regulatory capital, with conservative assumptions adding 20-30% buffer",
+          "Quarterly calculations (outdated quickly), limited optimization, and suboptimal capital allocation",
+          "Opportunity cost of excess capital and manual capital management takes 2-3 weeks quarterly",
+          "Uses simplified models, has limited scenario analysis, is reactive to regulatory changes, and misses optimization opportunities"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Market Research",
+          tools: ["Gartner", "Forrester", "IDC"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Real-Time Capital Calculation",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Capital Optimization",
+          popularTools: "Gartner, Forrester, IDC",
+          helium: true
+        },
+        {
+          capability: "Dynamic Capital Management",
+          popularTools: "Quarterly calculations",
+          helium: true
+        },
+        {
+          capability: "Scenario Analysis",
+          popularTools: "Limited scenarios",
+          helium: true
+        },
+        {
+          capability: "Proactive Capital Planning",
+          popularTools: "Reactive approach",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium optimizes regulatory capital dynamically. The system calculates capital requirements (Basel III/IV requirements, stress capital buffer, leverage ratio, liquidity ratios, real-time updates), includes an optimization engine (portfolio optimization, capital allocation, risk-weighted asset reduction, return on equity maximization), enables scenario analysis (stress testing, what-if modeling, regulatory changes, business growth), and generates regulatory reporting (automated report generation, validation and controls, submission management, audit trail)."

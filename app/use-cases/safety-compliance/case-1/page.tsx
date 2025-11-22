@@ -11,8 +11,54 @@ export default function Case1Page() {
       backLabel="Back to Safety & Compliance"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Safety management involves reactive approach, 50+ incidents annually, limited prediction capability, high costs, and employee injuries. Safety challenges include reactive management, limited prevention, poor prediction, delayed response, and high incident rates."
+        challenges: [
+          "Safety management involves reactive approach with 50+ incidents annually",
+          "Limited prediction capability and high costs from employee injuries",
+          "Safety challenges include reactive management and limited prevention",
+          "Poor prediction, delayed response, and high incident rates"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        },
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Predictive Safety",
+          popularTools: "Reactive management",
+          helium: true
+        },
+        {
+          capability: "Incident Prediction",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Real-Time Monitoring",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "Preventive Measures",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "End-to-End Safety Management",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium prevents incidents proactively with predictive analytics including risk factor analysis, incident pattern recognition, probability calculation, and early warning systems. The system provides real-time monitoring with safety condition tracking, hazard detection, behavior monitoring, and environment monitoring. It includes automated alerts with early warning, priority routing, preventive action recommendations, and escalation workflows. The system enables preventive actions with risk mitigation, safety improvements, training recommendations, and process changes, plus continuous learning with pattern recognition, model improvement, and optimization."

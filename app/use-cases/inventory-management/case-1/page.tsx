@@ -11,8 +11,54 @@ export default function Case1Page() {
       backLabel="Back to Inventory Management"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Traditional forecasting methods result in 30% stockouts (lost sales: $15M annually), 25% overstock (carrying costs: $8M annually), manual inventory planning taking 5 days per month, 40% forecast accuracy, excessive safety stock, and poor inventory turnover. Forecasting challenges include seasonal variations, trend changes, promotional impacts, competitor actions, economic factors, and weather effects."
+        challenges: [
+          "Traditional forecasting methods result in 30% stockouts (lost sales: $15M annually) and 25% overstock (carrying costs: $8M annually)",
+          "Manual inventory planning takes 5 days per month with only 40% forecast accuracy",
+          "Excessive safety stock and poor inventory turnover create significant carrying costs",
+          "Forecasting challenges include seasonal variations, trend changes, promotional impacts, competitor actions, economic factors, and weather effects"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        },
+        {
+          category: "Workflow Automation",
+          tools: ["Zapier", "Make", "n8n"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Demand Forecasting",
+          popularTools: "Excel, basic ERP systems",
+          helium: true
+        },
+        {
+          capability: "Real-Time Demand Sensing",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Automated Replenishment",
+          popularTools: "Zapier, Make, n8n",
+          helium: true
+        },
+        {
+          capability: "Multi-Factor Analysis",
+          popularTools: "Manual analysis",
+          helium: true
+        },
+        {
+          capability: "End-to-End Automation",
+          popularTools: "Zapier, Make, n8n, UiPath",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium delivers 85% forecast accuracy through advanced forecasting with ML models analyzing 500+ demand factors including historical sales patterns, seasonal trends, promotional impacts, competitor pricing, economic indicators, weather patterns, and social media trends. The system provides real-time demand sensing with point-of-sale data, online traffic and searches, social media signals, market trends, and competitor actions. It enables automated replenishment with optimal order quantities, reorder point calculation, safety stock optimization, and lead time consideration. The system includes seasonal pattern recognition for holiday planning, back-to-school, weather-driven demand, and event-based spikes, plus supplier integration with automated ordering, lead time tracking, delivery scheduling, and performance monitoring."

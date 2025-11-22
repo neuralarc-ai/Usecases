@@ -11,8 +11,54 @@ export default function Case1Page() {
       backLabel="Back to Resource Planning"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Resource planning involves manual capacity tracking, limited visibility, suboptimal utilization (65%), missed revenue ($5M+ annually), and burnout from overallocation. Planning challenges include no real-time visibility, manual processes, poor forecasting, inconsistent allocation, and bench time waste."
+        challenges: [
+          "Resource planning involves manual capacity tracking with limited visibility",
+          "Suboptimal utilization (65%) and missed revenue ($5M+ annually)",
+          "Burnout from overallocation and bench time waste",
+          "Planning challenges include no real-time visibility, manual processes, poor forecasting, and inconsistent allocation"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Task & Project Management",
+          tools: ["Asana", "Linear", "Monday.com"]
+        },
+        {
+          category: "Database Management",
+          tools: ["Airtable", "Notion", "Coda"]
+        },
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Real-Time Capacity Tracking",
+          popularTools: "Manual tracking",
+          helium: true
+        },
+        {
+          capability: "Demand Forecasting",
+          popularTools: "Asana, Linear, Monday.com",
+          helium: true
+        },
+        {
+          capability: "Optimal Allocation",
+          popularTools: "Airtable, Notion, Coda",
+          helium: true
+        },
+        {
+          capability: "Utilization Analytics",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "End-to-End Optimization",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium optimizes resource planning with real-time capacity tracking including current utilization, future availability, skill inventory, and location considerations. The system provides demand forecasting with pipeline analysis, historical patterns, seasonal trends, and growth projections. It includes optimal allocation with skill matching, availability optimization, travel minimization, and development opportunities. The system enables utilization analytics with individual utilization, team utilization, skill utilization, and trend analysis, plus scenario planning with what-if analysis, capacity scenarios, hiring needs, and investment priorities."

@@ -11,8 +11,50 @@ export default function Case3Page() {
       backLabel="Back to Claims Processing"
       businessChallenge={{
         title: "Business Challenge",
-        description: "Insurance fraud costs the industry $80B+ annually, with traditional detection catching only 55% of fraudulent claims. False positive rates of 40% create customer friction and dissatisfaction, wasted investigation resources, delayed legitimate claims, reputational damage, and $8M+ annual fraud losses per carrier. Fraud types include staged accidents, inflated damages, false injuries, phantom providers, premium fraud, application fraud, and internal fraud."
+        challenges: [
+          "Insurance fraud costs the industry $80B+ annually, with traditional detection catching only 55% of fraudulent claims",
+          "False positive rates of 40% create customer friction, dissatisfaction, wasted investigation resources, and delayed legitimate claims",
+          "Reputational damage and $8M+ annual fraud losses per carrier",
+          "Fraud types include staged accidents, inflated damages, false injuries, phantom providers, premium fraud, application fraud, and internal fraud"
+        ]
       }}
+      toolsUsed={[
+        {
+          category: "Data Analysis & Visualization",
+          tools: ["Tableau", "Power BI", "Looker"]
+        },
+        {
+          category: "Market Research",
+          tools: ["Gartner", "Forrester", "IDC"]
+        }
+      ]}
+      comparisonTable={[
+        {
+          capability: "Real-Time Fraud Detection",
+          popularTools: "Tableau, Power BI, Looker",
+          helium: true
+        },
+        {
+          capability: "Network Analysis",
+          popularTools: "Gartner, Forrester, IDC",
+          helium: true
+        },
+        {
+          capability: "Multi-Factor Analysis",
+          popularTools: "Rule-based systems only",
+          helium: true
+        },
+        {
+          capability: "False Positive Reduction",
+          popularTools: "High false positive rates (40%+)",
+          helium: true
+        },
+        {
+          capability: "Automated Investigation",
+          popularTools: "Manual processes",
+          helium: true
+        }
+      ]}
       heliumSolution={{
         title: "Helium Solution",
         description: "Helium uses advanced ML for fraud detection. The system performs multi-factor analysis analyzing 300+ claim features including claim details and patterns, claimant history and behavior, provider relationships, geographic patterns, timing and circumstances, social network analysis, and external data sources. It provides network analysis for fraud ring identification, connected claims, shared attributes, coordinated activities, and money flow patterns. The system includes behavioral analytics for claimant behavior patterns, provider billing patterns, attorney involvement, witness relationships, and communication analysis. It provides real-time scoring with fraud probability (0-100), risk level (low/medium/high), contributing factors, and confidence score. The system automates investigation with evidence collection, timeline construction, relationship mapping, and red flag identification, plus case management with investigation workflow, investigator assignment, evidence tracking, and resolution documentation."
