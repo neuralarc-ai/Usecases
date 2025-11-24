@@ -112,14 +112,14 @@ function UseCasesContent() {
       {/* Content Section */}
       <section className="py-10" ref={tabsSectionRef}>
         <div className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
-          {/* Left-aligned Header */}
-          <div className="mb-8">
-            <h3 className="text-left text-xl font-bold text-gray-900 md:text-2xl lg:text-3xl mb-6" style={{ fontFamily: "var(--font-sora)" }}>
+          {/* Centered Header */}
+          <div className="mb-8 text-center">
+            <h3 className="text-xl font-bold text-gray-900 md:text-2xl lg:text-3xl mb-6" style={{ fontFamily: "var(--font-sora)" }}>
               AI Solutions for Your Industry:
             </h3>
             
             {/* Industry Selector Tabs */}
-            <div className="flex justify-start max-lg:overflow-x-auto max-lg:scrollbar-hide max-lg:-mx-4 max-lg:px-4">
+            <div className="flex justify-center max-lg:justify-start max-lg:overflow-x-auto max-lg:scrollbar-hide max-lg:-mx-4 max-lg:px-4">
               <Tabs defaultValue={defaultTab} className="w-auto max-lg:w-full">
               <TabsList 
                 className="
